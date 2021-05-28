@@ -1,0 +1,619 @@
+[
+  {
+    "id": "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/6851070",
+    "link": "",
+    "summary": "Id licitación: ASUECO-2020/3416; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 810 EUR; Estado: RES",
+    "title": "Servicios sanitarios RR.MM. 2021",
+    "updated": "2021-01-05T11:32:38.474+01:00",
+    "ContractFolderStatus": {
+      "ContractFolderID": "ASUECO-2020/3416",
+      "ContractFolderStatusCode": "RES",
+      "LocatedContractingParty": {
+        "ContractingPartyTypeCode": 3,
+        "Party": {
+          "WebsiteURI": "http://www.jerez.es",
+          "PartyIdentification": [{"ID": "L01110201"}, {"ID": "P1102000E"}],
+          "PartyName": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez"
+          },
+          "PostalAddress": {
+            "CityName": "Jerez de la Frontera",
+            "PostalZone": 11403,
+            "AddressLine": {"Line": "Consistorio, S/N"},
+            "Country": {"IdentificationCode": "ES", "Name": "España"}
+          },
+          "Contact": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez",
+            "Telephone": 956149565,
+            "Telefax": 956149722,
+            "ElectronicMail": "contratacionadministrativa@aytojerez.es"
+          }
+        }
+      },
+      "ProcurementProject": {
+        "Name": "Servicios sanitarios RR.MM. 2021",
+        "TypeCode": 2,
+        "SubTypeCode": 27,
+        "BudgetAmount": {"TotalAmount": 810, "TaxExclusiveAmount": 810},
+        "RealizedLocation": {
+          "CountrySubentity": "Cádiz",
+          "CountrySubentityCode": "ES612",
+          "Address": {"Country": {"IdentificationCode": "ES", "Name": "España"}}
+        },
+        "PlannedPeriod": {"DurationMeasure": 1}
+      },
+      "TenderResult": {
+        "ResultCode": 8,
+        "AwardDate": "2020-12-30",
+        "ReceivedTenderQuantity": 1,
+        "WinningParty": {
+          "PartyIdentification": {"ID": "Q2866001G"},
+          "PartyName": {"Name": "CRUZ ROJA ESPAÑOLA"}
+        },
+        "AwardedTenderedProject": {
+          "LegalMonetaryTotal": {
+            "TaxExclusiveAmount": 810,
+            "PayableAmount": 810
+          }
+        }
+      },
+      "TenderingProcess": {"ProcedureCode": 6, "UrgencyCode": 1},
+      "ValidNoticeInfo": {
+        "NoticeTypeCode": "DOC_CAN_ADJ",
+        "AdditionalPublicationStatus": {
+          "PublicationMediaName": "Perfil del Contratante",
+          "AdditionalPublicationDocumentReference": [
+            {"IssueDate": "2021-01-05"},
+            {
+              "DocumentTypeCode": "ACTA_ADJ",
+              "Attachment": {
+                "ExternalReference": {
+                  "URI": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&amp;cmpntname=GetDocumentsById&amp;source=library&amp;DocumentIdParam=de53c4bf-9fac-4c46-9bb6-4141a461f8cc",
+                  "FileName": "Certificado Servicios Sanitarios RRMM.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/6851073",
+    "link": "",
+    "summary": "Id licitación: ASUECO-2020/3395; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 11253 EUR; Estado: RES",
+    "title": "Servicio de seguridad y vigilancia RR.MM. 2021",
+    "updated": "2021-01-05T11:29:47.772+01:00",
+    "ContractFolderStatus": {
+      "ContractFolderID": "ASUECO-2020/3395",
+      "ContractFolderStatusCode": "RES",
+      "LocatedContractingParty": {
+        "ContractingPartyTypeCode": 3,
+        "Party": {
+          "WebsiteURI": "http://www.jerez.es",
+          "PartyIdentification": [{"ID": "L01110201"}, {"ID": "P1102000E"}],
+          "PartyName": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez"
+          },
+          "PostalAddress": {
+            "CityName": "Jerez de la Frontera",
+            "PostalZone": 11403,
+            "AddressLine": {"Line": "Consistorio, S/N"},
+            "Country": {"IdentificationCode": "ES", "Name": "España"}
+          },
+          "Contact": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez",
+            "Telephone": 956149565,
+            "Telefax": 956149722,
+            "ElectronicMail": "contratacionadministrativa@aytojerez.es"
+          }
+        }
+      },
+      "ProcurementProject": {
+        "Name": "Servicio de seguridad y vigilancia RR.MM. 2021",
+        "TypeCode": 2,
+        "SubTypeCode": 27,
+        "BudgetAmount": {"TotalAmount": 13616.13, "TaxExclusiveAmount": 11253},
+        "RealizedLocation": {
+          "CountrySubentity": "Cádiz",
+          "CountrySubentityCode": "ES612",
+          "Address": {"Country": {"IdentificationCode": "ES", "Name": "España"}}
+        },
+        "PlannedPeriod": {"DurationMeasure": 1}
+      },
+      "TenderResult": {
+        "ResultCode": 8,
+        "AwardDate": "2020-12-30",
+        "ReceivedTenderQuantity": 3,
+        "WinningParty": {
+          "PartyIdentification": {"ID": "B11974102"},
+          "PartyName": {"Name": "DIVISIÓN DE SERVICIOS DE SEGURIDAD, S.L."}
+        },
+        "AwardedTenderedProject": {
+          "LegalMonetaryTotal": {
+            "TaxExclusiveAmount": 11253,
+            "PayableAmount": 13616.13
+          }
+        }
+      },
+      "TenderingProcess": {"ProcedureCode": 6, "UrgencyCode": 1},
+      "ValidNoticeInfo": {
+        "NoticeTypeCode": "DOC_CAN_ADJ",
+        "AdditionalPublicationStatus": {
+          "PublicationMediaName": "Perfil del Contratante",
+          "AdditionalPublicationDocumentReference": [
+            {"IssueDate": "2021-01-05"},
+            {
+              "DocumentTypeCode": "ACTA_ADJ",
+              "Attachment": {
+                "ExternalReference": {
+                  "URI": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&amp;cmpntname=GetDocumentsById&amp;source=library&amp;DocumentIdParam=da52b7ef-b211-41e7-9c34-3876b49244f0",
+                  "FileName": "Certificado Seguridad RRMM.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/6851081",
+    "link": "",
+    "summary": "Id licitación: ASUECO-2020/3469; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 3625 EUR; Estado: RES",
+    "title": "Suministro de caramelos RR.MM. 2021",
+    "updated": "2021-01-05T11:25:00.895+01:00",
+    "ContractFolderStatus": {
+      "ContractFolderID": "ASUECO-2020/3469",
+      "ContractFolderStatusCode": "RES",
+      "LocatedContractingParty": {
+        "ContractingPartyTypeCode": 3,
+        "Party": {
+          "WebsiteURI": "http://www.jerez.es",
+          "PartyIdentification": [{"ID": "L01110201"}, {"ID": "P1102000E"}],
+          "PartyName": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez"
+          },
+          "PostalAddress": {
+            "CityName": "Jerez de la Frontera",
+            "PostalZone": 11403,
+            "AddressLine": {"Line": "Consistorio, S/N"},
+            "Country": {"IdentificationCode": "ES", "Name": "España"}
+          },
+          "Contact": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez",
+            "Telephone": 956149565,
+            "Telefax": 956149722,
+            "ElectronicMail": "contratacionadministrativa@aytojerez.es"
+          }
+        }
+      },
+      "ProcurementProject": {
+        "Name": "Suministro de caramelos RR.MM. 2021",
+        "TypeCode": 1,
+        "SubTypeCode": 2,
+        "BudgetAmount": {"TotalAmount": 4108.5, "TaxExclusiveAmount": 3625},
+        "RealizedLocation": {
+          "CountrySubentity": "Cádiz",
+          "CountrySubentityCode": "ES612",
+          "Address": {"Country": {"IdentificationCode": "ES", "Name": "España"}}
+        },
+        "PlannedPeriod": {"DurationMeasure": 1}
+      },
+      "TenderResult": {
+        "ResultCode": 8,
+        "AwardDate": "2020-12-30",
+        "ReceivedTenderQuantity": 3,
+        "WinningParty": {
+          "PartyIdentification": {"ID": "B21049861"},
+          "PartyName": {"Name": "MENTA Y LIMÓN, S.L."}
+        },
+        "AwardedTenderedProject": {
+          "LegalMonetaryTotal": {
+            "TaxExclusiveAmount": 3625,
+            "PayableAmount": 4108.5
+          }
+        }
+      },
+      "TenderingProcess": {"ProcedureCode": 6, "UrgencyCode": 1},
+      "ValidNoticeInfo": {
+        "NoticeTypeCode": "DOC_CAN_ADJ",
+        "AdditionalPublicationStatus": {
+          "PublicationMediaName": "Perfil del Contratante",
+          "AdditionalPublicationDocumentReference": [
+            {"IssueDate": "2021-01-05"},
+            {
+              "DocumentTypeCode": "ACTA_ADJ",
+              "Attachment": {
+                "ExternalReference": {
+                  "URI": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&amp;cmpntname=GetDocumentsById&amp;source=library&amp;DocumentIdParam=291d3fa4-c6d5-4b0c-8664-28422cad1120",
+                  "FileName": "Certificado Caramelos RRMM.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/6851096",
+    "link": "",
+    "summary": "Id licitación: ASUECO-2020/3427; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 4024 EUR; Estado: RES",
+    "title": "Suministro mediante alquiler de vallas peatonales y mobiliario RR.MM. 2021. Navidad 2020-2021.",
+    "updated": "2021-01-05T11:17:56.760+01:00",
+    "ContractFolderStatus": {
+      "ContractFolderID": "ASUECO-2020/3427",
+      "ContractFolderStatusCode": "RES",
+      "LocatedContractingParty": {
+        "ContractingPartyTypeCode": 3,
+        "Party": {
+          "WebsiteURI": "http://www.jerez.es",
+          "PartyIdentification": [{"ID": "L01110201"}, {"ID": "P1102000E"}],
+          "PartyName": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez"
+          },
+          "PostalAddress": {
+            "CityName": "Jerez de la Frontera",
+            "PostalZone": 11403,
+            "AddressLine": {"Line": "Consistorio, S/N"},
+            "Country": {"IdentificationCode": "ES", "Name": "España"}
+          },
+          "Contact": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez",
+            "Telephone": 956149565,
+            "Telefax": 956149722,
+            "ElectronicMail": "contratacionadministrativa@aytojerez.es"
+          }
+        }
+      },
+      "ProcurementProject": {
+        "Name": "Suministro mediante alquiler de vallas peatonales y mobiliario RR.MM. 2021. Navidad 2020-2021.",
+        "TypeCode": 1,
+        "SubTypeCode": 1,
+        "BudgetAmount": {"TotalAmount": 4869.04, "TaxExclusiveAmount": 4024},
+        "RealizedLocation": {
+          "CountrySubentity": "Cádiz",
+          "CountrySubentityCode": "ES612",
+          "Address": {"Country": {"IdentificationCode": "ES", "Name": "España"}}
+        },
+        "PlannedPeriod": {"DurationMeasure": 1}
+      },
+      "TenderResult": [
+        {
+          "ResultCode": 8,
+          "AwardDate": "2020-12-30",
+          "ReceivedTenderQuantity": 3,
+          "WinningParty": {
+            "PartyIdentification": {"ID": "B11940202"},
+            "PartyName": {"Name": "DURÁN ALQUILERES, S.L.U."}
+          },
+          "AwardedTenderedProject": {
+            "LegalMonetaryTotal": {
+              "TaxExclusiveAmount": 2990,
+              "PayableAmount": 3617.9
+            }
+          }
+        },
+        {
+          "ResultCode": 8,
+          "AwardDate": "2020-12-30",
+          "ReceivedTenderQuantity": 3,
+          "WinningParty": {
+            "PartyIdentification": {"ID": "B11676806"},
+            "PartyName": {"Name": "ALQUIVALLE, S.L."}
+          },
+          "AwardedTenderedProject": {
+            "LegalMonetaryTotal": {
+              "TaxExclusiveAmount": 600,
+              "PayableAmount": 726
+            }
+          }
+        },
+        {
+          "ResultCode": 8,
+          "AwardDate": "2020-12-30",
+          "ReceivedTenderQuantity": 3,
+          "WinningParty": {
+            "PartyIdentification": {"ID": "B11752722"},
+            "PartyName": {"Name": "JEDAL ALQUILERES, S.L.U."}
+          },
+          "AwardedTenderedProject": {
+            "LegalMonetaryTotal": {
+              "TaxExclusiveAmount": 434,
+              "PayableAmount": 525.14
+            }
+          }
+        }
+      ],
+      "TenderingProcess": {"ProcedureCode": 6, "UrgencyCode": 1},
+      "ValidNoticeInfo": {
+        "NoticeTypeCode": "DOC_CAN_ADJ",
+        "AdditionalPublicationStatus": {
+          "PublicationMediaName": "Perfil del Contratante",
+          "AdditionalPublicationDocumentReference": [
+            {"IssueDate": "2021-01-05"},
+            {
+              "DocumentTypeCode": "ACTA_ADJ",
+              "Attachment": {
+                "ExternalReference": {
+                  "URI": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&amp;cmpntname=GetDocumentsById&amp;source=library&amp;DocumentIdParam=d174cd8e-4edf-43fd-ace3-1fa30f8fb985",
+                  "FileName": "Certificado Vallas RRMM.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/6851100",
+    "link": "",
+    "summary": "Id licitación: ASUECO-2020/3415; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 448 EUR; Estado: RES",
+    "title": "Suministro avituallamiento voluntarios RR.MM. 2021. Navidad 2020-2021",
+    "updated": "2021-01-05T11:15:37.771+01:00",
+    "ContractFolderStatus": {
+      "ContractFolderID": "ASUECO-2020/3415",
+      "ContractFolderStatusCode": "RES",
+      "LocatedContractingParty": {
+        "ContractingPartyTypeCode": 3,
+        "Party": {
+          "WebsiteURI": "http://www.jerez.es",
+          "PartyIdentification": [{"ID": "L01110201"}, {"ID": "P1102000E"}],
+          "PartyName": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez"
+          },
+          "PostalAddress": {
+            "CityName": "Jerez de la Frontera",
+            "PostalZone": 11403,
+            "AddressLine": {"Line": "Consistorio, S/N"},
+            "Country": {"IdentificationCode": "ES", "Name": "España"}
+          },
+          "Contact": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez",
+            "Telephone": 956149565,
+            "Telefax": 956149722,
+            "ElectronicMail": "contratacionadministrativa@aytojerez.es"
+          }
+        }
+      },
+      "ProcurementProject": {
+        "Name": "Suministro avituallamiento voluntarios RR.MM. 2021. Navidad 2020-2021",
+        "TypeCode": 1,
+        "SubTypeCode": 2,
+        "BudgetAmount": {"TotalAmount": 492.8, "TaxExclusiveAmount": 448},
+        "RealizedLocation": {
+          "CountrySubentity": "Cádiz",
+          "CountrySubentityCode": "ES612",
+          "Address": {"Country": {"IdentificationCode": "ES", "Name": "España"}}
+        },
+        "PlannedPeriod": {"DurationMeasure": 1}
+      },
+      "TenderResult": {
+        "ResultCode": 8,
+        "AwardDate": "2020-12-30",
+        "ReceivedTenderQuantity": 1,
+        "WinningParty": {
+          "PartyIdentification": {"ID": "31600002A"},
+          "PartyName": {"Name": "MANUEL RAMIREZ SANCHEZ"}
+        },
+        "AwardedTenderedProject": {
+          "LegalMonetaryTotal": {
+            "TaxExclusiveAmount": 448,
+            "PayableAmount": 492.8
+          }
+        }
+      },
+      "TenderingProcess": {"ProcedureCode": 6, "UrgencyCode": 1},
+      "ValidNoticeInfo": {
+        "NoticeTypeCode": "DOC_CAN_ADJ",
+        "AdditionalPublicationStatus": {
+          "PublicationMediaName": "Perfil del Contratante",
+          "AdditionalPublicationDocumentReference": [
+            {"IssueDate": "2021-01-05"},
+            {
+              "DocumentTypeCode": "ACTA_ADJ",
+              "Attachment": {
+                "ExternalReference": {
+                  "URI": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&amp;cmpntname=GetDocumentsById&amp;source=library&amp;DocumentIdParam=6202a17b-81c6-4dc3-b861-2d91f2a17cf7",
+                  "FileName": "Certificado Avituallamiento RRMM.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/6851070",
+    "link": "",
+    "summary": "Id licitación: ASUECO-2020/3416; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 810 EUR; Estado: RES",
+    "title": "Servicios sanitarios RR.MM. 2021",
+    "updated": "2021-01-05T11:32:38.474+01:00",
+    "ContractFolderStatus": {
+      "ContractFolderID": "ASUECO-2020/3416",
+      "ContractFolderStatusCode": "RES",
+      "LocatedContractingParty": {
+        "ContractingPartyTypeCode": 3,
+        "Party": {
+          "WebsiteURI": "http://www.jerez.es",
+          "PartyIdentification": [{"ID": "L01110201"}, {"ID": "P1102000E"}],
+          "PartyName": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez"
+          },
+          "PostalAddress": {
+            "CityName": "Jerez de la Frontera",
+            "PostalZone": 11403,
+            "AddressLine": {"Line": "Consistorio, S/N"},
+            "Country": {"IdentificationCode": "ES", "Name": "España"}
+          },
+          "Contact": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez",
+            "Telephone": 956149565,
+            "Telefax": 956149722,
+            "ElectronicMail": "contratacionadministrativa@aytojerez.es"
+          }
+        }
+      },
+      "ProcurementProject": {
+        "Name": "Servicios sanitarios RR.MM. 2021",
+        "TypeCode": 2,
+        "SubTypeCode": 27,
+        "BudgetAmount": {"TotalAmount": 810, "TaxExclusiveAmount": 810},
+        "RealizedLocation": {
+          "CountrySubentity": "Cádiz",
+          "CountrySubentityCode": "ES612",
+          "Address": {"Country": {"IdentificationCode": "ES", "Name": "España"}}
+        },
+        "PlannedPeriod": {"DurationMeasure": 1}
+      },
+      "TenderResult": {
+        "ResultCode": 8,
+        "AwardDate": "2020-12-30",
+        "ReceivedTenderQuantity": 1,
+        "WinningParty": {
+          "PartyIdentification": {"ID": "Q2866001G"},
+          "PartyName": {"Name": "CRUZ ROJA ESPAÑOLA"}
+        },
+        "AwardedTenderedProject": {
+          "LegalMonetaryTotal": {
+            "TaxExclusiveAmount": 810,
+            "PayableAmount": 810
+          }
+        }
+      },
+      "TenderingProcess": {"ProcedureCode": 6, "UrgencyCode": 1},
+      "ValidNoticeInfo": {
+        "NoticeTypeCode": "DOC_CAN_ADJ",
+        "AdditionalPublicationStatus": {
+          "PublicationMediaName": "Perfil del Contratante",
+          "AdditionalPublicationDocumentReference": [
+            {"IssueDate": "2021-01-05"},
+            {
+              "DocumentTypeCode": "ACTA_ADJ",
+              "Attachment": {
+                "ExternalReference": {
+                  "URI": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&amp;cmpntname=GetDocumentsById&amp;source=library&amp;DocumentIdParam=de53c4bf-9fac-4c46-9bb6-4141a461f8cc",
+                  "FileName": "Certificado Servicios Sanitarios RRMM.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/6851416",
+    "link": "",
+    "summary": "Id licitación: Asueco-2020/3471; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 14512.98 EUR; Estado: RES",
+    "title": "Suministros para decoración Reyes Magos 2021",
+    "updated": "2021-01-05T09:34:07.366+01:00",
+    "ContractFolderStatus": {
+      "ContractFolderID": "Asueco-2020/3471",
+      "ContractFolderStatusCode": "RES",
+      "LocatedContractingParty": {
+        "ContractingPartyTypeCode": 3,
+        "Party": {
+          "WebsiteURI": "http://www.jerez.es",
+          "PartyIdentification": [
+            {
+              "ID": "L01110201"
+            },
+            {
+              "ID": "P1102000E"
+            }
+          ],
+          "PartyName": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez"
+          },
+          "PostalAddress": {
+            "CityName": "Jerez de la Frontera",
+            "PostalZone": 11403,
+            "AddressLine": {
+              "Line": "Consistorio, S/N"
+            },
+            "Country": {
+              "IdentificationCode": "ES",
+              "Name": "España"
+            }
+          },
+          "Contact": {
+            "Name": "Junta de Gobierno Local del Ayuntamiento de Jerez",
+            "Telephone": 956149565,
+            "Telefax": 956149722,
+            "ElectronicMail": "contratacionadministrativa@aytojerez.es"
+          }
+        }
+      },
+      "ProcurementProject": {
+        "Name": "Suministros para decoración Reyes Magos 2021",
+        "TypeCode": 1,
+        "SubTypeCode": 2,
+        "BudgetAmount": {
+          "TotalAmount": 17560.71,
+          "TaxExclusiveAmount": 14512.98
+        },
+        "RealizedLocation": {
+          "CountrySubentity": "Cádiz",
+          "CountrySubentityCode": "ES612",
+          "Address": {
+            "Country": {
+              "IdentificationCode": "ES",
+              "Name": "España"
+            }
+          }
+        },
+        "PlannedPeriod": {
+          "DurationMeasure": 7
+        }
+      },
+      "TenderResult": {
+        "ResultCode": 8,
+        "AwardDate": "2020-12-30",
+        "ReceivedTenderQuantity": 1,
+        "WinningParty": {
+          "PartyIdentification": {
+            "ID": "A28812618"
+          },
+          "PartyName": {
+            "Name": "Ikea Ibérica, S.A."
+          }
+        },
+        "AwardedTenderedProject": {
+          "LegalMonetaryTotal": {
+            "TaxExclusiveAmount": 14512.98,
+            "PayableAmount": 17560.71
+          }
+        }
+      },
+      "TenderingProcess": {
+        "ProcedureCode": 6,
+        "UrgencyCode": 1
+      },
+      "ValidNoticeInfo": {
+        "NoticeTypeCode": "DOC_CAN_ADJ",
+        "AdditionalPublicationStatus": {
+          "PublicationMediaName": "Perfil del Contratante",
+          "AdditionalPublicationDocumentReference": [
+            {
+              "IssueDate": "2021-01-05"
+            },
+            {
+              "DocumentTypeCode": "ACTA_ADJ",
+              "Attachment": {
+                "ExternalReference": {
+                  "URI": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&amp;cmpntname=GetDocumentsById&amp;source=library&amp;DocumentIdParam=23dbef00-fce9-40b0-aa45-7d3f62af2721",
+                  "FileName": "certificado.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+
+]
