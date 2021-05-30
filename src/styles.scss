@@ -1,2 +1,454 @@
-@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
-@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+// Mis parciales.
+// https://www.udemy.com/course/advanced-css-and-scss/learn/lecture/8274478#overview
+
+@import"/src/app/scss/animations";
+@import"/src/app/scss/base";
+@import"/src/app/scss/typography";
+@import"/src/app/scss/utilities";
+
+@import"/src/app/scss/functions";
+@import"/src/app/scss/mixins";
+@import"/src/app/scss/variables";
+
+
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-balham/sass/legacy/ag-theme-balham-v22-compat.scss";
+
+// $odd-row-background-color: rgb(238, 20, 68);
+
+:root {
+  // The :root pseudo-class represents an element that is the root of the document. In HTML, this is always the HTML element.
+  --fuente-principal: 'Roboto', serif;
+  --primario: #da595e;
+  --obscuro: #484848;
+  --claro: #ffffff;
+}
+
+body{
+  width: 98vw;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+/*************************/
+/*     01. Mis cosas     */
+/*************************/
+// .centrarSection{
+//   min-height: 90vh; /*will cover the 100% of viewport */
+//  overflow: hidden;
+//  display: block;
+//  position: relative;
+//  padding-bottom: 90px; /* height of your footer */
+// }
+
+.mam-text-center {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+  color: blue;
+  font-weight: bold;
+}
+
+.navBarOCM{
+  height:50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* background-color: aqua; */
+  }
+
+  .navbar-center
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    overflow: visible;
+    height: 0;
+}
+
+.homeOCM{
+  font-size: 32px;
+  color: white;
+  margin-right: 40px;
+}
+
+.btnExpand{
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color: green
+ }
+
+ .btnCollapse{
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color: rgb(201, 72, 72)
+ }
+
+ @media screen and (max-width: 1900px) {
+  .ag-cell-value{
+    font-size: 12px;
+}
+
+  #home{
+    font-size: 16px;
+  }
+
+  #logo {
+    margin-top: 2px;
+    width: 173px;
+    height: 37px;
+    }
+    .textoLogo{
+      margin-left:2px;
+      font-size: 20px;
+    }
+
+    .titulo {
+      font-weight: 700 !important;
+      margin-top: 20px;
+      color: #f3f4f5;
+      font-family: var(--fuente-principal);
+      font-size: 28px;
+      text-shadow: 2px 2px 2px rgb(10, 2, 2);
+    }
+}
+
+@media screen and (max-width: 2000px) {
+  .ag-header-cell-text {
+     font-size: 12px;
+    }
+
+  .ag-cell-value{
+      font-size: 12px;
+  }
+
+  #home{
+    font-size: 14px;
+  }
+
+  #logo {
+    margin-top: 2px;
+    width: 173px;
+    height: 37px;
+    }
+    .textoLogo{
+      margin-left:2px;
+      font-size: 16px;
+    }
+
+    .titulo {
+      font-weight: 700 !important;
+      margin-top: 20px;
+      color: #f3f4f5;
+      font-family: var(--fuente-principal);
+      font-size: 24px;
+      text-shadow: 2px 2px 2px rgb(10, 2, 2);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .ag-header-cell-text {
+     font-size: 10px;
+    }
+
+  .ag-cell-value{
+      font-size: 12px;
+  }
+
+  #home{
+    font-size: 14px;
+  }
+
+  #logo {
+    margin-top: 2px;
+    width: 173px;
+    height: 37px;
+    }
+    .textoLogo{
+      margin-left:2px;
+      font-size: 16px;
+    }
+
+    .titulo {
+      font-weight: 700 !important;
+      margin-top: 20px;
+      color: #f3f4f5;
+      font-family: var(--fuente-principal);
+      font-size: 24px;
+      text-shadow: 2px 2px 2px rgb(10, 2, 2);
+    }
+}
+
+@media screen and (max-width: 992px) {
+  // MD Samsung Note apaisado
+  .ag-header-cell-text {
+    font-size: 12px;
+   }
+
+  .ag-cell-value{
+    font-size: 10px;
+}
+
+  #home{
+    font-size: 12px;
+  }
+
+  #logo {
+    margin-top: 2px;
+    width: 173px;
+    height: 37px;
+    }
+    .textoLogo{
+      margin-left:1px;
+      font-size: 8px;
+    }
+
+    .titulo {
+      font-weight: 600 !important;
+      margin-top: 20px;
+      color: #f3f4f5;
+      font-family: var(--fuente-principal);
+      font-size: 20px;
+      text-shadow: 2px 2px 2px rgb(10, 2, 2);
+    }
+}
+
+@media screen and (max-width: 750px) {
+  .ag-header-cell-text {
+    font-size: 9px;
+   }
+
+  .ag-cell-value{
+    font-size: 8px;
+}
+
+  #home{
+    font-size: 10px;
+  }
+
+  #logo {
+    margin-top: 2px;
+    width: 173px;
+    height: 37px;
+    }
+    .textoLogo{
+      margin-left:2px;
+      font-size: 8px;
+    }
+
+    .titulo {
+      font-weight: 500 !important;
+      margin-top: 20px;
+      color: #f3f4f5;
+      font-family: var(--fuente-principal);
+      font-size: 16px;
+      text-shadow: 2px 2px 2px rgb(10, 2, 2);
+    }
+}
+
+@media screen and (max-width: 576px) {
+  .ag-header-cell-text {
+    font-size: 9px;
+   }
+
+  .ag-cell-value{
+    font-size: 5px;
+}
+
+  .homeOCM{
+    font-size: 16px;
+    color: white;
+    margin-right: 40px;
+  }
+
+  #home{
+    font-size: 8px;
+  }
+
+  #logo {
+    margin-top: 2px;
+    width: 173px;
+    height: 37px;
+    }
+    .textoLogo{
+      margin-left:2px;
+      font-size: 8px;
+    }
+
+    .titulo {
+      font-weight: 400 !important;
+      margin-top: 20px;
+      color: #f3f4f5;
+      font-family: var(--fuente-principal);
+      font-size: 12px;
+      text-shadow: 2px 2px 2px rgb(10, 2, 2);
+    }
+}
+
+/******** END Mis cosas *****************/
+
+/*************************/
+/*     02. ag-grid     */
+/*************************/
+.ag-header-group-cell{
+  font-size: 20px;
+  color: red;
+ }
+
+ .ag-header-cell {
+   width: 20px;
+  // transform: rotate(90deg);
+  // margin-top: 10px;
+  /*Since we are rotating a span*/
+  display: inline-block;
+ }
+
+// Sobreescribe lo definido en  /node_modules\ag-grid-community\src\styles\ag-grid.scss :365
+// .ag-header-cell-label {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   color: green;
+//   font-family: Arial;
+//   font-size: 14px;
+//   font-weight: bold;
+//   /*Necessary to allow for text to grow vertically*/
+//   height: 100%;
+//   padding:0 !important;
+// }
+
+.ag-header-cell-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: green;
+  font-family: Arial;
+  font-weight: bold;
+  font-size:12px;
+}
+
+ .ag-cell-label-container{
+  /*Necessary to allow for text to grow vertically*/
+  height: 100%;
+ }
+
+ .ag-pivot-off {
+  color:#8a6d3b;
+ }
+
+ .ag-pivot-on {
+  color:#1b6d85;
+  font-weight: bold;
+ }
+
+ .ag-pivot-off {
+  font-size: 50px;
+  color: red;
+ }
+
+ .ag-pivot-on {
+  font-size: 25px;
+  color: green;
+ }
+ .ag-floating-filter-body input {
+  height:49px;
+ }
+
+ .ag-floating-filter-button {
+  margin-top: -49px;
+ }
+
+ .ag-floating-filter-button button {
+  height:49px
+ }
+
+ .ag-floating-filter-body input {
+  font-size: 15px;
+  font-weight: bold;
+ }
+
+ .ag-row-group-leaf-indent > .ag-group-value {
+  text-align-last: right;
+  width: 100%;
+ }
+
+ .ag-cell-value{
+  // overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+ }
+
+ /******** END ag-grid *****************/
+
+
+
+/*************************/
+/*     03. Preloader     */
+/*************************/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #00bfd8;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% {
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+/******** END Preloader *****************/
+

@@ -1,0 +1,40 @@
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #3253b8;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.mam-logoImg {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../../../assets/images/IconoOCMblanco.png') no-repeat center center;
+  // TODO ! No funciona.
+  // http://www.techmonks.org/angular-alias-paths/
+  // añadido en tsconfig.json
+  // background: url('@images/IconoOCMblanco.png') no-repeat center center;
+  background-size: contain;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.mam-logoText {
+  color: white;
+  font-size: 10px;
+  font-weight: bold
+}
+
+.mam-logoImg:hover{
+  transform: scale(1.1);
+}
+
+.mam-titulo{
+  margin: auto
+}

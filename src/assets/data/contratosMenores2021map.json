@@ -1,0 +1,767 @@
+[
+  {
+    "id": "ASUECO-2020/3415",
+    "status": "RES",
+    "titulo": "Suministro avituallamiento voluntarios RR.MM. 2021. Navidad 2020-2021",
+    "sinIva": 448,
+    "fecha": "2020-12-30",
+    "CIF": "31600002A",
+    "Adjudicatario": "MANUEL RAMIREZ SANCHEZ"
+  },
+  {
+    "id": "ASUECO-2020/3427",
+    "status": "RES",
+    "titulo": "Suministro mediante alquiler de vallas peatonales y mobiliario RR.MM. 2021. Navidad 2020-2021.",
+    "sinIva": 4024,
+    "fecha": "2020-12-30",
+    "CIF": "B11940202",
+    "Adjudicatario": "DURAN ALQUILERES, SLU"
+  },
+  {
+    "id": "ASUECO-2020/3469",
+    "status": "RES",
+    "titulo": "Suministro de caramelos RR.MM. 2021",
+    "sinIva": 3625,
+    "fecha": "2020-12-30",
+    "CIF": "B21049861",
+    "Adjudicatario": "MENTA Y LIMÓN, S.L."
+  },
+  {
+    "id": "ASUECO-2020/3395",
+    "status": "RES",
+    "titulo": "Servicio de seguridad y vigilancia RR.MM. 2021",
+    "sinIva": 11253,
+    "fecha": "2020-12-30",
+    "CIF": "B11974102",
+    "Adjudicatario": "DIVISIÓN DE SERVICIOS DE SEGURIDAD, S.L."
+  },
+  {
+    "id": "ASUECO-2020/3416",
+    "status": "RES",
+    "titulo": "Servicios sanitarios RR.MM. 2021",
+    "sinIva": 810,
+    "fecha": "2020-12-30",
+    "CIF": "Q2866001G",
+    "Adjudicatario": "CRUZ ROJA ESPAÑOLA"
+  },
+  {
+    "id": "Asueco-2020/3471",
+    "status": "RES",
+    "titulo": "Suministros para decoración Reyes Magos 2021",
+    "sinIva": 14512.98,
+    "fecha": "2020-12-30",
+    "CIF": "A28812618",
+    "Adjudicatario": "Ikea Ibérica, S.A."
+  },
+  {
+    "id": "Asueco-2020/3394",
+    "status": "RES",
+    "titulo": "Vestuario para Reyes Magos 2021",
+    "sinIva": 11025,
+    "fecha": "2020-12-30",
+    "CIF": "B11749793",
+    "Adjudicatario": "BROTONS CABALGATAS Y DISFRACES, S.L."
+  },
+  {
+    "id": "ASUECO-2020/3393",
+    "status": "RES",
+    "titulo": "Servicios técnicos para el montaje de sonido e iluminación RR.MM. 2021",
+    "sinIva": 14996,
+    "fecha": "2020-12-30",
+    "CIF": "B18930834",
+    "Adjudicatario": "CREWLIGHT, S.L."
+  },
+  {
+    "id": "ASUECO-2021/14",
+    "status": "RES",
+    "titulo": "Puesta en marcha de los sistemas de calefacción de los CEIP: La Barca, El Membrillar, Guadaluz, La Unión, San José Obrero y La Marquesa",
+    "sinIva": 1908.2,
+    "fecha": "2021-01-13",
+    "CIF": "B11931417",
+    "Adjudicatario": "TECNOCALOR JEREZ, S.L."
+  },
+  {
+    "id": "Asueco-2021/13",
+    "status": "RES",
+    "titulo": "Combustible para la caldera del sistema de calefacción de colegios",
+    "sinIva": 5785.12,
+    "fecha": "2021-01-13",
+    "CIF": "B11681715",
+    "Adjudicatario": "COMBUSTIBLES CAÑADA ANCHA S.L."
+  },
+  {
+    "id": "ASUECO-2021/29",
+    "status": "RES",
+    "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución de las obras del PROFEA 2020.",
+    "sinIva": 4061,
+    "fecha": "2021-01-15",
+    "CIF": "31678050N",
+    "Adjudicatario": "Marco Antonio Rodríguez Calvo"
+  },
+  {
+    "id": "Asueco-2021/19",
+    "status": "RES",
+    "titulo": "Alquiler y mantenimiento de dos máquinas multifunción para la Delegación  de Economía y Hacienda",
+    "sinIva": 1537.58,
+    "fecha": "2021-01-14",
+    "CIF": "B11706520",
+    "Adjudicatario": "Sistemas de Oficina de Jerez, S. L."
+  },
+  {
+    "id": "ASUECO-2021/77",
+    "status": "RES",
+    "titulo": "Servicio de reparación del pavimento del parquet de las pistas de squash del Palacio Municipal de los Deportes.",
+    "sinIva": 4675.5,
+    "fecha": "2021-01-21",
+    "CIF": "B72229784",
+    "Adjudicatario": "EUROFLOOR TARIMAS, S.L."
+  },
+  {
+    "id": "ASUECO-2021/76",
+    "status": "RES",
+    "titulo": "Servicio para la reparación de los ventanales de la sala aerobic del Palacio Municipal de Deportes.",
+    "sinIva": 1910,
+    "fecha": "2021-01-21",
+    "CIF": "B11931508",
+    "Adjudicatario": "BERNAL VIDRIOS Y ACRISTALAMIENTOS, SL"
+  },
+  {
+    "id": "ASUECO-2021/74",
+    "status": "RES",
+    "titulo": "Servicio para reparación de varias cámaras de seguridad del Palacio de Deportes.",
+    "sinIva": 2438.05,
+    "fecha": "2021-01-21",
+    "CIF": "31665172Z",
+    "Adjudicatario": "NATALIO OLIVA FIGUEREDO"
+  },
+  {
+    "id": "ASUECO-2021/80",
+    "status": "RES",
+    "titulo": "Suministro de material de laboratorio para la imprenta",
+    "sinIva": 7872.1,
+    "fecha": "2021-01-21",
+    "CIF": "B41057134",
+    "Adjudicatario": "CODISUR, S.L."
+  },
+  {
+    "id": "ASUECO-2021/58",
+    "status": "RES",
+    "titulo": "Obtención de documentación preceptiva contrato suministro eléctrico para local Municipal en La Greduela.",
+    "sinIva": 540,
+    "fecha": "2021-01-21",
+    "CIF": "A11626389",
+    "Adjudicatario": "JAVIER PEREZ, S.A."
+  },
+  {
+    "id": "ASUECO-2021/51",
+    "status": "RES",
+    "titulo": "Suministro mediante alquiler de sillas para conciertos. Banda Municipal de Música.",
+    "sinIva": 1400,
+    "fecha": "2021-01-21",
+    "CIF": "B11674751",
+    "Adjudicatario": "ALQUILERES SOTO-ARRIAZA, S.L."
+  },
+  {
+    "id": "ASUECO-2021/81",
+    "status": "RES",
+    "titulo": "Suministro de papel a la Imprenta Municipal.",
+    "sinIva": 12247.35,
+    "fecha": "2021-01-21",
+    "CIF": "75869505A",
+    "Adjudicatario": "SAULO RUIZ MORENO"
+  },
+  {
+    "id": "ASUECO-2021/123",
+    "status": "RES",
+    "titulo": "Servicio para el transporte de dos quebrantahuesos de Austria al Zoológico de Jerez.",
+    "sinIva": 1350,
+    "fecha": "2021-01-28",
+    "CIF": 239715003,
+    "Adjudicatario": "UWE WOLF"
+  },
+  {
+    "id": "ASUECO-2021/92",
+    "status": "RES",
+    "titulo": "Servicio para la reparación de las porterías de fútbol ubicadas en los campos de fútbol Manuel Millán y anexo al Campo de la Juventud.",
+    "sinIva": 1701.69,
+    "fecha": "2021-01-28",
+    "CIF": "B11681988",
+    "Adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L."
+  },
+  {
+    "id": "ASUECO-2021/83",
+    "status": "RES",
+    "titulo": "Suministro de una ventana para el Edificio 2002 rota tras actos vandálicos.",
+    "sinIva": 430,
+    "fecha": "2021-01-28",
+    "CIF": "B11754348",
+    "Adjudicatario": "ALIAÑO HIJOS, S.L."
+  },
+  {
+    "id": "ASUECO-2021/128",
+    "status": "RES",
+    "titulo": "Reparación del Saxofón y de suministros para la Banda Municipal de Música.",
+    "sinIva": 488.6,
+    "fecha": "2021-01-28",
+    "CIF": "28912846Y",
+    "Adjudicatario": "FRANCISCO JOSÉ ÁLVAREZ MARÍN"
+  },
+  {
+    "id": "ASUECO-2021/138",
+    "status": "RES",
+    "titulo": "Servicio para la jornada conmemorativa del Aniversario de Lola Flores.",
+    "sinIva": 2455.23,
+    "fecha": "2021-01-28",
+    "CIF": "G01651769",
+    "Adjudicatario": "PEÑA FLAMENCA FEMINISTA LGBTIQ + LA LOLA"
+  },
+  {
+    "id": "ASUECO-2021/126",
+    "status": "RES",
+    "titulo": "Suministro  de uniformes. Banda Municipal de Música.",
+    "sinIva": 5770.2,
+    "fecha": "2021-01-28",
+    "CIF": "31606003R",
+    "Adjudicatario": "MARIA DEL CARMEN MUÑOZ BENITEZ"
+  },
+  {
+    "id": "ASUECOI-2021/91",
+    "status": "RES",
+    "titulo": "Servicio para la reparación de las porterías de rugby en la Pradera de Chapín.",
+    "sinIva": 2530.22,
+    "fecha": "2021-01-28",
+    "CIF": "B11681988",
+    "Adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L."
+  },
+  {
+    "id": "ASUECO-2021/136",
+    "status": "RES",
+    "titulo": "Servicio para la limpieza de las cuadras ecuestres del Complejo de Chapín.",
+    "sinIva": 8000,
+    "fecha": "2021-01-28",
+    "CIF": "B41557687",
+    "Adjudicatario": "DEDESIN, S.L."
+  },
+  {
+    "id": "ASUECO-2021/98",
+    "status": "RES",
+    "titulo": "Suministro por sustitución de extintores para la Delegación de Economía y Hacienda (Edificio Pozuelo).",
+    "sinIva": 377.7,
+    "fecha": "2021-01-28",
+    "CIF": "B11604972",
+    "Adjudicatario": "SEVITAS, SL"
+  },
+  {
+    "id": "ASUECO-2021/93",
+    "status": "RES",
+    "titulo": "Suministro de cajas Parque Scout. Memoria Democrática.",
+    "sinIva": 138,
+    "fecha": "2021-01-28",
+    "CIF": "B11394822",
+    "Adjudicatario": "MAYSER, S.L."
+  },
+  {
+    "id": "ASUECO-2021/127",
+    "status": "RES",
+    "titulo": "Suministro  de paneles rotulados para actividades expositivas.",
+    "sinIva": 2371.99,
+    "fecha": "2021-01-28",
+    "CIF": "B11689254",
+    "Adjudicatario": "RÓTULOS DORANTES. S.L."
+  },
+  {
+    "id": "ASUECO-2021/125",
+    "status": "RES",
+    "titulo": "Suministro de una ventana y una puerta para las Piscinas Cubiertas Arquitecto José Laguillo.",
+    "sinIva": 975,
+    "fecha": "2021-01-28",
+    "CIF": "B11754348",
+    "Adjudicatario": "ALIAÑO HIJOS, S.L."
+  },
+  {
+    "id": "Asueco-2021/165",
+    "status": "RES",
+    "titulo": "Suministro de corazón de ternera, conejo y caparazones de pollo para los animales del Zoológoco.",
+    "sinIva": 12425,
+    "fecha": "2021-02-04",
+    "CIF": "B11695004",
+    "Adjudicatario": "CARNES HERVA, S.L."
+  },
+  {
+    "id": "ASUECO-2021/158",
+    "status": "RES",
+    "titulo": "Reparación de campo de fútbol -Los Albarizones-.",
+    "sinIva": 874,
+    "fecha": "2021-02-04",
+    "CIF": "B11681988",
+    "Adjudicatario": "GESMACONT, S.L.U."
+  },
+  {
+    "id": "ASUECO-2021/155",
+    "status": "RES",
+    "titulo": "Servicio de subsanación de defectos encontrados en la inspección periódica del ascensor del Palacio de Villavicencio",
+    "sinIva": 2400,
+    "fecha": "2021-02-04",
+    "CIF": "B41832478",
+    "Adjudicatario": "GENERAL ELEVADORES XXI, S.L."
+  },
+  {
+    "id": "ASUECO-2021/144",
+    "status": "RES",
+    "titulo": "Servicio de reparación del sistema de imagen del zoológico.",
+    "sinIva": 1180,
+    "fecha": "2021-02-04",
+    "CIF": "31703152K",
+    "Adjudicatario": "Servando Román Estrade"
+  },
+  {
+    "id": "ASUECO-2021/180",
+    "status": "RES",
+    "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución, de las obras de Adaptación y reforma de la Nave del Aceite para espacio Lola Flores. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020.",
+    "sinIva": 950,
+    "fecha": "2021-02-05",
+    "CIF": "31265738K",
+    "Adjudicatario": "Ernesto Martínez García"
+  },
+  {
+    "id": "ASUECO-2021/172",
+    "status": "RES",
+    "titulo": "Servicio de mantenimiento del ascensor del Palacio de Villavicencio del conjunto monumental Alcázar de Jerez",
+    "sinIva": 1020,
+    "fecha": "2021-02-04",
+    "CIF": "B41832478",
+    "Adjudicatario": "GENERAL ELEVADORES XXI, S.L."
+  },
+  {
+    "id": "ASUECO-2021/168",
+    "status": "RES",
+    "titulo": "Servicio de de mantenimiento de equipos de protección contra incendio, incluyendo revisión anual, retimbrados y sustituciones de extintores situados en la oficina y Delegación de Turismo",
+    "sinIva": 122.7,
+    "fecha": "2021-02-04",
+    "CIF": "B11679685",
+    "Adjudicatario": "RUIZ SISTEMAS, S.L."
+  },
+  {
+    "id": "ASUECO-2021/164",
+    "status": "RES",
+    "titulo": "Servicio de reparación de maquinaria grande en servicio en el Departamento de Espacios Públicos/jardines",
+    "sinIva": 3298.85,
+    "fecha": "2021-02-04",
+    "CIF": "75868291P",
+    "Adjudicatario": "DAVID BARROSO NIEVES (MOTOJARDIN)"
+  },
+  {
+    "id": "ASUECO-2021/154",
+    "status": "RES",
+    "titulo": "Servicio para el curso Naquerando: Taller de iniciación a la lengua gitana",
+    "sinIva": 650.5,
+    "fecha": "2021-02-04",
+    "CIF": "22541396Q",
+    "Adjudicatario": "JOAQUÍN LÓPEZ BUSTAMANTE"
+  },
+  {
+    "id": "ASUECO-2021/149",
+    "status": "RES",
+    "titulo": "Servicio para la instalación de varios juegos de canastas de baloncesto así como porterías de fútbol sala en distintas Instalaciones Deportivas Municipales",
+    "sinIva": 14270,
+    "fecha": "2021-02-04",
+    "CIF": "B11681988",
+    "Adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L."
+  },
+  {
+    "id": "ASUECO-2021/145",
+    "status": "RES",
+    "titulo": "Servicio de mantenimiento de los extintores ubicados en los distintos centros de trabajos, periodo desde 15/02/21 a 15/02/22",
+    "sinIva": 115.96,
+    "fecha": "2021-02-04",
+    "CIF": "B11604972",
+    "Adjudicatario": "SEVITAS, SL"
+  },
+  {
+    "id": "ASUECO-2021/142",
+    "status": "RES",
+    "titulo": "Servicio para el arreglo puntual de la bomba de la instalación de las nutrias del Zoológico",
+    "sinIva": 1385,
+    "fecha": "2021-02-04",
+    "CIF": "B11680006",
+    "Adjudicatario": "MAQUIAGRI, S.L."
+  },
+  {
+    "id": "ASUECO-2021/153",
+    "status": "RES",
+    "titulo": "Servicio de mantenimiento anual del material contra incendios del Edificio de Consistorio. Ejercicio 2021",
+    "sinIva": 2029.14,
+    "fecha": "2021-02-04",
+    "CIF": "B11679685",
+    "Adjudicatario": "RUCA SISTEMAS, S.L."
+  },
+  {
+    "id": "ASUECO-2021/141",
+    "status": "RES",
+    "titulo": "Servicio para mantenimiento y conservación del césped natural del campo de fútbol del Estadio Municipal de Chapín, para los meses de febrero y marzo",
+    "sinIva": 6930,
+    "fecha": "2021-02-04",
+    "CIF": "B41557687",
+    "Adjudicatario": "DEDESÍN, S.L."
+  },
+  {
+    "id": "ASUECO-2021/210",
+    "status": "RES",
+    "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución, de las obras de Adaptación y reforma de la Nave del Aceite para espacio Lola Flores. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020.",
+    "sinIva": 1800,
+    "fecha": "2021-02-09",
+    "CIF": "31698361Z",
+    "Adjudicatario": "Germán Márquez Ruiz"
+  },
+  {
+    "id": "Asueco-2021/167",
+    "status": "RES",
+    "titulo": "Silla de trabajo para personal de Recursos Humanos",
+    "sinIva": 320,
+    "fecha": "2021-02-04",
+    "CIF": "B11938271",
+    "Adjudicatario": "SOLER ESTANTERÍAS, S.L."
+  },
+  {
+    "id": "Asueco-2021/166",
+    "status": "RES",
+    "titulo": "Banderolas para campaña de visualización de mujeres gitanas",
+    "sinIva": 1020,
+    "fecha": "2021-02-04",
+    "CIF": "B11741790",
+    "Adjudicatario": "FUSTE CORPORACIÓN DE PUBLICIDAD EXTERIOR, S.L."
+  },
+  {
+    "id": "Asueco-2021/143",
+    "status": "RES",
+    "titulo": "Adquisición de elementos que componen los parques infantiles",
+    "sinIva": 11290,
+    "fecha": "2021-02-04",
+    "CIF": "B30536007",
+    "Adjudicatario": "INDUSTRIAS MOSSER 97 S.L."
+  },
+  {
+    "id": "ASUECO-2021/171",
+    "status": "RES",
+    "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución, de las obras de Demolición y reposición de acerados en Bda. La Cartuja (1º Tramo calle Fraternidad)",
+    "sinIva": 552,
+    "fecha": "2021-02-04",
+    "CIF": "31655294A",
+    "Adjudicatario": "Juan José del Valle Bustillo"
+  },
+  {
+    "id": "ASUECO-2021/170",
+    "status": "RES",
+    "titulo": "Demolición y reposición de acerados en Bda. La Cartuja (1º tramo Calle Fraternidad)",
+    "sinIva": 39775.99,
+    "fecha": "2021-02-04",
+    "CIF": "A11613528",
+    "Adjudicatario": "Manuel Alba, S.A."
+  },
+  {
+    "id": "ASUECO-2021/225",
+    "status": "RES",
+    "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución de las obras de reparación e instalación de zona verde con riego automático en fuentes artísticas situadas en diferentes parques públicos de la Ciudad.",
+    "sinIva": 480,
+    "fecha": "2021-02-11",
+    "CIF": "75762373M",
+    "Adjudicatario": "DANIEL FREIRE BARREIRO"
+  },
+  {
+    "id": "ASUECO-2021/219",
+    "status": "RES",
+    "titulo": "Reparación e instalación de zona verde con riego automático en fuentes artísticas situadas en diferentes parques públicos de la ciudad",
+    "sinIva": 37643.67,
+    "fecha": "2021-02-11",
+    "CIF": "A27178789",
+    "Adjudicatario": "OHL-SERVICIOS INGESAN, S.A."
+  },
+  {
+    "id": "Asueco-2021/214",
+    "status": "RES",
+    "titulo": "Suministro de productos de limpieza y desinfección p ara las instalaciones deportivas municipales.",
+    "sinIva": 4958.69,
+    "fecha": "2021-02-11",
+    "CIF": "B11735958",
+    "Adjudicatario": "RUTESA SUMINISTROS Y SERVICIOS, S.L."
+  },
+  {
+    "id": "Asueco-2021/192",
+    "status": "RES",
+    "titulo": "Suministro de vestuario de invierno para el personal de Infraestructura.",
+    "sinIva": 8019.25,
+    "fecha": "2021-02-11",
+    "CIF": "B11735958",
+    "Adjudicatario": "RUTESA SUMINISTROS Y SERVICIOS, S.L."
+  },
+  {
+    "id": "Asueco-2021/184",
+    "status": "RES",
+    "titulo": "Reparación de cámara frigorífica de fruta de Mercado de Abastos",
+    "sinIva": 357,
+    "fecha": "2021-02-11",
+    "CIF": "B11943776",
+    "Adjudicatario": "FRIVAL SERVICIOS INTEGRALES, S.L."
+  },
+  {
+    "id": "Asueco-2021/223",
+    "status": "RES",
+    "titulo": "Suministro por arrendamiento de mobiliario y equipo (impresora muntifunción) para la sede de los Tribunales Administrativos. TEAJE y Tribunal en materia de Contratación Administrativa.",
+    "sinIva": 1190.73,
+    "fecha": "2021-02-11",
+    "CIF": "B11938271",
+    "Adjudicatario": "SOLER ESTANTERÍAS, S.L."
+  },
+  {
+    "id": "ASUECO-2021/211",
+    "status": "RES",
+    "titulo": "Servicio de mantenimiento del ascensor. Claustros de Santo Domingo.",
+    "sinIva": 984,
+    "fecha": "2021-02-11",
+    "CIF": "A28011153",
+    "Adjudicatario": "ZARDOYA OTIS, S.A."
+  },
+  {
+    "id": "ASUECO-2021/202",
+    "status": "RES",
+    "titulo": "Servicio de actuación flamenca Acto Clausura Día Internacional Mujer 2021",
+    "sinIva": 1800,
+    "fecha": "2021-02-11",
+    "CIF": "31685688Z",
+    "Adjudicatario": "DAVID ZAYAS GONZÁLEZ"
+  },
+  {
+    "id": "ASUECO-2021/187",
+    "status": "RES",
+    "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución de las obras de Reparación de acerado en Avda. Tomás García Figueras (PROFEA 2020).",
+    "sinIva": 962.94,
+    "fecha": "2021-02-11",
+    "CIF": "31655294A",
+    "Adjudicatario": "Juan José del Valle Bustillo"
+  },
+  {
+    "id": "ASUECO-2021/194",
+    "status": "RES",
+    "titulo": "Servicio para el I Ciclo Cultural de Órgano Diócesis de Asidonia-Jerez.",
+    "sinIva": 1500,
+    "fecha": "2021-02-11",
+    "CIF": "31651998L",
+    "Adjudicatario": "ÁNGEL HORTAS RODRÍGUEZ-PASCUAL"
+  },
+  {
+    "id": "Asueco-2021/220",
+    "status": "RES",
+    "titulo": "Suministro de lona para fachada del Museo Lola Flores.",
+    "sinIva": 2925,
+    "fecha": "2021-02-11",
+    "CIF": "B11946514",
+    "Adjudicatario": "SHERRY BOX DIGITAL, S.L.L."
+  },
+  {
+    "id": "ASUECO-2021/189",
+    "status": "RES",
+    "titulo": "Servicio para la instalación y conexión del sistema de alarmas del edificio San Agustín.",
+    "sinIva": 1582,
+    "fecha": "2021-02-11",
+    "CIF": "A11074432",
+    "Adjudicatario": "PROTELEC JL, S.A."
+  },
+  {
+    "id": "ASUECO-2021/183",
+    "status": "RES",
+    "titulo": "Servicio para la muestra Ómnibus. Gastos varios",
+    "sinIva": 1254.15,
+    "fecha": "2021-02-11",
+    "CIF": "B72283120",
+    "Adjudicatario": "ARTE TRANS SERVICIOS INTEGRALES, S.L.U."
+  },
+  {
+    "id": "Asueco-2021/185",
+    "status": "RES",
+    "titulo": "Suministro y colocación de vinilos en las puertas interiores del Palacio de Deportes",
+    "sinIva": 2944.88,
+    "fecha": "2021-02-11",
+    "CIF": "B11827631",
+    "Adjudicatario": "MIDAS PUBLICIDAD, S.L."
+  },
+  {
+    "id": "ASUECO-2021/182",
+    "status": "RES",
+    "titulo": "Servicio para realizar el mantenimiento de las calderas de las Instalaciones Deportivas Municipales durante los meses de febrero a mayo de 2021",
+    "sinIva": 4037,
+    "fecha": "2021-02-11",
+    "CIF": "B11931417",
+    "Adjudicatario": "TECNOCALOR JEREZ, S.L."
+  },
+  {
+    "id": "ASUECO-2021/190",
+    "status": "RES",
+    "titulo": "Servicio para el arranque de veinte palmeras, preparación del cepellón con su malla metálica, eliminación de hojas secas y frutos en vivero del portal y traslado de las mismas a diferentes punto de la ciudad. No incluidos en contratos en vigor.",
+    "sinIva": 2479.33,
+    "fecha": "2021-02-11",
+    "CIF": "A27178789",
+    "Adjudicatario": "OHL SERVICIOS INGESAN, S.A."
+  },
+  {
+    "id": "Asueco-2021/186",
+    "status": "RES",
+    "titulo": "Desinfección de varias dependencias por Covid-19",
+    "sinIva": 7208,
+    "fecha": "2021-02-11",
+    "CIF": "B11729183",
+    "Adjudicatario": "PLAGACON, S.L."
+  },
+  {
+    "id": "Asueco-2021/208",
+    "status": "RES",
+    "titulo": "Suministro y colocación de vidrio en fachada Centro Blas Infante",
+    "sinIva": 1147.43,
+    "fecha": "2021-02-11",
+    "CIF": "B11710720",
+    "Adjudicatario": "CERRAJERÍA NARANJO, S.L.U."
+  },
+  {
+    "id": "ASUECO-2021/243",
+    "status": "RES",
+    "titulo": "Instalación de aire acondicionado en Sala de Exposiciones Pescadería Vieja. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el Marco del Programa Operativo Plurirregional de España 2014-2020",
+    "sinIva": 16525,
+    "fecha": "2021-02-18",
+    "CIF": "B11737749",
+    "Adjudicatario": "EAP REPARACIONES, S.L."
+  },
+  {
+    "id": "Asueco-2021/253",
+    "status": "RES",
+    "titulo": "Suministro material Covid para el personal Plan Extraordinario Covid-19.",
+    "sinIva": 1243.3,
+    "fecha": "2021-02-18",
+    "CIF": "B72171002",
+    "Adjudicatario": "BLADEFAR, S.L. (EL BOTICARIO EN CASA)"
+  },
+  {
+    "id": "Asueco-2021/242",
+    "status": "RES",
+    "titulo": "Suministro de cajas de ceras para cuadernillos para colorear como tributo a las nuestras.",
+    "sinIva": 620,
+    "fecha": "2021-02-18",
+    "CIF": "B11715430",
+    "Adjudicatario": "MITRES LOMA, S.L."
+  },
+  {
+    "id": "Asueco-2021/240",
+    "status": "RES",
+    "titulo": "Suministro de cuadernillos para colorear como tributo a las nuestras.",
+    "sinIva": 940,
+    "fecha": "2021-02-18",
+    "CIF": "B11948668",
+    "Adjudicatario": "SIN LÍMETES MARKETING EMPRESARIAL, S.L."
+  },
+  {
+    "id": "Asueco-2021/239",
+    "status": "RES",
+    "titulo": "Anuario de Andalucía 2021 Grupo Joly.",
+    "sinIva": 1500,
+    "fecha": "2021-02-18",
+    "CIF": "B11000221",
+    "Adjudicatario": "FEDERICO JOLY Y CÍA, S.L."
+  },
+  {
+    "id": "ASUECO-2021/245",
+    "status": "RES",
+    "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución de las obras de -Centro Cultural Lola Flores-. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020.",
+    "sinIva": 1650,
+    "fecha": "2021-02-18",
+    "CIF": "31690912V",
+    "Adjudicatario": "Felipe Alonso González"
+  },
+  {
+    "id": "ASUECO-2021/248",
+    "status": "RES",
+    "titulo": "Servicio de Asesoría externa para la intervención arqueológica preventiva de la obra de -Centro Cultural Lola Flores-. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020.",
+    "sinIva": 3800,
+    "fecha": "2021-02-18",
+    "CIF": "B11855772",
+    "Adjudicatario": "ARQ PATRIMONIO CULTURAL Y TURISMO S.L."
+  },
+  {
+    "id": "ASUECO-2021/255",
+    "status": "RES",
+    "titulo": "Servicio de mantenimiento anual del sonómetro y calibrador sonoro.",
+    "sinIva": 274,
+    "fecha": "2021-02-18",
+    "CIF": "B50771872",
+    "Adjudicatario": "TRADELAB, S.L."
+  },
+  {
+    "id": "ASUECO-2021/252",
+    "status": "RES",
+    "titulo": "Servicio para la representación en Streaming de obra teatral Entre tú y yo.",
+    "sinIva": 2000,
+    "fecha": "2021-02-18",
+    "CIF": "25697017Z",
+    "Adjudicatario": "ANTONIO LÓPEZ GUERRERO"
+  },
+  {
+    "id": "ASUECO-2021/241",
+    "status": "RES",
+    "titulo": "Servicio de mantenimiento y revisión de extintores, de bies, de los grupos contraincendios y de los sistemas de detección de incendios de Participación Ciudadana y de los Distritos Sur, Este y Noreste. Y sistemas de intrusión de Distrito Noreste.",
+    "sinIva": 1123.22,
+    "fecha": "2021-02-18",
+    "CIF": "B11604972",
+    "Adjudicatario": "SEVITAS, SL"
+  },
+  {
+    "id": "ASUECO-2021/237",
+    "status": "RES",
+    "titulo": "Servicio para la Campaña Guía Anuario La Voz del Sur 2021.",
+    "sinIva": 1500,
+    "fecha": "2021-02-18",
+    "CIF": "B11967874",
+    "Adjudicatario": "MARKERTER GLOBAL MEDIA, S.L."
+  },
+  {
+    "id": "ASUECO-2021/259",
+    "status": "RES",
+    "titulo": "Servicio para el Programa de Cooperación Internacional.",
+    "sinIva": 1652.89,
+    "fecha": "2021-02-18",
+    "CIF": "32910535L",
+    "Adjudicatario": "CÉSAR DENEKEN"
+  },
+  {
+    "id": "ASUECO-2021/236",
+    "status": "RES",
+    "titulo": "Servicio de encuadernación de prensa local. Biblioteca.",
+    "sinIva": 892.56,
+    "fecha": "2021-02-18",
+    "CIF": "31606027W",
+    "Adjudicatario": "MANUEL JESÚS SALDAÑA RODRÍGUEZ"
+  },
+  {
+    "id": "ASUECO-2021/233",
+    "status": "RES",
+    "titulo": "Servicio para la reparación de las porterías de fútbol del Campo San Telmo",
+    "sinIva": 736.84,
+    "fecha": "2021-02-18",
+    "CIF": "B11681988",
+    "Adjudicatario": "GESMACONT, S.L.U"
+  },
+  {
+    "id": "Asueco-2021/268",
+    "status": "RES",
+    "titulo": "Suministro urgente de vestuario básico para personal del Servicio de Medio Ambiente:Espacio Públicos-Jardines, Vigilantes Medio ambientales y Conserje.",
+    "sinIva": 4370.16,
+    "fecha": "2021-02-18",
+    "CIF": "B11735958",
+    "Adjudicatario": "RUTESA SUMINISTROS Y SERVICIOS, S.L."
+  },
+  {
+    "id": "Asueco-2021/267",
+    "status": "RES",
+    "titulo": "Suministro de uniformes personal Plan Extraordinario Covid-19.",
+    "sinIva": 1103.7,
+    "fecha": "2021-02-18",
+    "CIF": "31606003R",
+    "Adjudicatario": "MARÍA DEL CARMEN MUÑOZ BENÍTEZ"
+  }
+]

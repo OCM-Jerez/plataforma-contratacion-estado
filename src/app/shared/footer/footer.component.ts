@@ -1,23 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { GetScreenSizeService } from '../../services/get-screen-size.service';
+import { Component } from '@angular/core';
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+	selector: 'app-footer',
+	templateUrl: './footer.component.html',
+	styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
-screenSize!: string
-w!: number;
-anio: number = new Date().getFullYear();
-
-  constructor(public getScreenSizeService: GetScreenSizeService) {}
-
-  ngOnInit() {
-    this.w = window.innerWidth;
-    this.screenSize = this.getScreenSizeService.getIsMobileResolution();
-    window.addEventListener('orientationchange', function() {
-       window.location.reload();
-    }, false);
-  }
-
+export class FooterComponent {
+	anio: number = new Date().getFullYear();
 }

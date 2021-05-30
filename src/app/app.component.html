@@ -1,7 +1,9 @@
+<app-header></app-header>
 <div >
-  <h4 class="text-center"> Ingresos por económico.</h4>
+  <!-- <h4 class="mam-text-center"> Contratos menores licitados por el Ayuntamiento de Jerez.</h4> -->
 
-
+  <button *ngIf="!isExpanded" type="button" class="btn btnExpand" (click)="expandAll()">Expandir todo</button>
+  <button *ngIf="isExpanded" type="button" class="btn btnCollapse" (click)="collapseAll()">Colapsar todo</button>
 
   <ag-grid-angular
     #agGrid
@@ -14,8 +16,11 @@
     [groupSuppressAutoColumn]="true"
     [groupIncludeFooter]="true"
     [groupIncludeTotalFooter]="true"
+    [groupHeaderHeight]="groupHeaderHeight"
+    [headerHeight]="headerHeight"
     [suppressAggFuncInHeader] = "true"
     (gridReady)="onGridReady($event)"
   >
   </ag-grid-angular>
 </div>
+<app-footer></app-footer>

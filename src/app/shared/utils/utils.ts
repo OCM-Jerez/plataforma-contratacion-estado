@@ -25,7 +25,7 @@ export function CellRendererOCM(params: any) {
 					return 'SIN FORMATO';
 			}
 		} else {
-			return `<p style="font-size: 12px; text-align: right">${valorFormateado}</p>`;
+			return `<p style="font-size: 12px;text-align: right">${valorFormateado}</p>`;
 		}
 	} else {
 		return '';
