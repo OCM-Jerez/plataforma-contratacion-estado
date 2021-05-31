@@ -8,7 +8,7 @@ import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 
 import { CellRendererOCM } from './shared/utils/utils';
-// import localeTextESPes from '../assets/data/localeTextESPes.json';
+import localeTextESPes from '../assets/data/localeTextESPes.json';
 
 @Component({
 	selector: 'app-root',
@@ -25,7 +25,7 @@ export class AppComponent {
 	public gridOptions: GridOptions;
 	public groupHeaderHeight = 25;
 	public headerHeight = 25;
-	// public localeText;
+	public localeText;
 	public rowData: any;
 	public isExpanded = false;
 
@@ -37,18 +37,17 @@ export class AppComponent {
 					{
 						headerName: 'Adjudicatario',
 						// field: 'ContractFolderStatus.TenderResult.WinningParty.PartyName.Name',
-						field: 'Adjudicatario',
+						field: 'adjudicatario',
 						width: 350,
 						rowGroup: true,
 						filter: false,
 						pinned: 'left',
 						// showRowGroup: 'ContractFolderStatus.TenderResult.WinningParty.PartyName.Name',
-						showRowGroup: 'Adjudicatario',
+						showRowGroup: 'adjudicatario',
 						cellRenderer: 'agGroupCellRenderer',
 						cellRendererParams: {
-							suppressCount: true,
+							// suppressCount: true,
 							innerRenderer: (params: { node: { group: any }; value: any }) => {
-								// console.log('params', params);
 								if (params.node.group) {
 									// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 									return params.value;
@@ -59,7 +58,7 @@ export class AppComponent {
 							footerValueGetter(params: { value: string; node: { level: any } }) {
 								// const val = params.value.split(' - ')[1];
 								switch (params.node.level) {
-									case 0: // Total capítulo.
+									case 0: // Total adjudicatario.
 										return `<span style="color: red; font-size: 10px;  font-weight: bold; margin-left: 0px;"> Total ${params.value}</span>`;
 									case -1: // Total general.
 										return '';
@@ -78,8 +77,6 @@ export class AppComponent {
 				field: 'id',
 				width: 160,
 				resizable: true
-				// aggFunc: 'sum',
-				// cellRenderer: CellRendererOCM
 			},
 			{
 				headerName: 'Estado',
@@ -130,11 +127,11 @@ export class AppComponent {
 			{
 				headerName: 'Importe sin IVA',
 				// field: 'ContractFolderStatus.ProcurementProject.BudgetAmount.TaxExclusiveAmount',
-				field: 'sinIva',
+				field: 'sinIVA',
 				width: 150,
 				resizable: true,
-				aggFunc: 'sum'
-				// cellRenderer: CellRendererOCM
+				aggFunc: 'sum',
+				cellRenderer: CellRendererOCM
 			}
 		];
 
@@ -144,9 +141,8 @@ export class AppComponent {
 			filter: true
 		};
 
-		// we pass an empty gridOptions in, so we can grab the api out
 		this.gridOptions = {} as GridOptions;
-		// this.localeText = localeTextESPes;
+		this.localeText = localeTextESPes;
 	}
 
 	onGridReady(params: { api: any; columnApi: any }) {

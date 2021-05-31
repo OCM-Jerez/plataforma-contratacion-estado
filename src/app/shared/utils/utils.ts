@@ -1,10 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function CellRendererOCM(params: any) {
-	// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 	if (params.value) {
 		const valorFormateado: number = params.value
 			.toString()
@@ -12,20 +6,20 @@ export function CellRendererOCM(params: any) {
 		if (params.node.footer) {
 			switch (params.node.level) {
 				case 3: // Total cuarto nivel.
-					return `<p style="text-align: right; color: red; font-size: 12px; font-weight: bold">${valorFormateado}</p>`;
+					return `<h1 style="text-align: right; color: red; font-size: 12px; font-weight: bold">${valorFormateado}</h1>`;
 				case 2: // Total tercero nivel.
-					return `<p style="text-align: right; color: red; font-size: 12px; font-weight: bold">${valorFormateado}</p>`;
+					return `<h1 style="text-align: right; color: red; font-size: 12px; font-weight: bold">${valorFormateado}</h1>`;
 				case 1: // Total segundo nivel.
-					return `<p style="text-align: right; color: red; font-size: 12px; font-weight: bold">${valorFormateado}</p>`;
+					return `<h1 style="text-align: right; color: red; font-size: 12px; font-weight: bold">${valorFormateado}</h1>`;
 				case 0: // Total primer nivel.
-					return `<p style="text-align: right; color: red; font-size: 13px; font-weight: bold">${valorFormateado}</p>`;
+					return `<h1 style="text-align: right; color: red; font-size: 10px; font-weight: bold">${valorFormateado}</h1>`;
 				case -1: // Total general.
-					return `<p style="text-align: right; color: red; font-size: 14px; font-weight: bold">${valorFormateado}</p>`;
+					return `<h1 style="text-align: right; color: red; font-size: 10px; font-weight: bold">${valorFormateado}</h1>`;
 				default:
 					return 'SIN FORMATO';
 			}
 		} else {
-			return `<p style="font-size: 12px;text-align: right">${valorFormateado}</p>`;
+			return `<h1 style="font-size: 10px; text-align: right">${valorFormateado}</h1>`;
 		}
 	} else {
 		return '';
