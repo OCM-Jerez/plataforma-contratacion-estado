@@ -16,24 +16,26 @@ Copio entre   <entry></entry>
 Pego en el fichero txt donde voy recopilando entradas.
 Busco siguiente.
 
+
+Crear nuevo fichero.
+Guardar como contratosMenores2021XX.json
+En carpeta
+C:\Users\pc\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Contratos menores\2021\json
+
 https://codebeautify.org/xmltojson
 Copio todo el contenido del fichero txt
 Lo pego en la WEB
 Copio todo el resultado de la conversión en la WEB
 
-Crear nuevo fichero.
-Guardar como contratosMenores2021XX.json
-En carpeta C:\Users\pc\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Contratos menores\2021\json
-
 Lo pego en el fichero json que estoy creando
 crtl + alt + v para comnprobar json valido
 Borro:
      {
-      "entry":
+      "entry":  DEJAR [
 Borro ultima { 
 crtl + alt + v para comprobar json valido
 
-Buscar y quitar  \"
+Buscar y quitar  \" en textos.
 Guardar.
 
 
@@ -101,15 +103,23 @@ Crear un objeto para cada uno de ellos, en la tabla mostrare una misma licitaci�
 
 
 QUITAR `` DE INICIO Y FINAL.
+crtl + shift + p
+JSON beatifu.
+Si es correcto, grabar.
+
+
 Sino consigo un JSON valido, crearlo sin // console.log(JSON.stringify(result));
 Copiar de RUNJS
 Crear nuevo fichero.
 Guardar como contratosMenores2021XXmap.json
-En carpeta C:\Users\pc\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Contratos menores\2021\json
+En carpeta
+C:\Users\pc\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Contratos menores\2021\json
 Añadir "" a los keys y values.
 crtl + alt + v para comprobar json valido
 Guardar
 
+añadir , al ultimo {
+borrar ]
 Añadir mes al ficero JSON con meses anteriores
 crtl + alt + v para comprobar json valido
 Guardar.

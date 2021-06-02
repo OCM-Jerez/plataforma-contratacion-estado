@@ -35,7 +35,7 @@
     "sinIVA": 11253,
     "fecha": "2020-12-30",
     "CIF": "B11974102",
-    "adjudicatario": "DIVISIÓN DE SERVICIOS DE SEGURIDAD, S.L."
+    "adjudicatario": "DIVISIÓN DE SEGURIDAD PRIVADA, S.L."
   },
   {
     "id": "ASUECO-2020/3416",
@@ -125,7 +125,7 @@
     "sinIVA": 1910,
     "fecha": "2021-01-21",
     "CIF": "B11931508",
-    "adjudicatario": "BERNAL VIDRIOS Y ACRISTALAMIENTOS, SL"
+    "adjudicatario": "BERNAL VIDRIOS Y ACRISTALAMIENTOS, S.L."
   },
   {
     "id": "ASUECO-2021/74",
@@ -152,7 +152,7 @@
     "sinIVA": 540,
     "fecha": "2021-01-21",
     "CIF": "A11626389",
-    "adjudicatario": "JAVIER PEREZ, S.A."
+    "adjudicatario": "JAVIER PÉREZ, S.A."
   },
   {
     "id": "ASUECO-2021/51",
@@ -244,7 +244,7 @@
     "sinIVA": 8000,
     "fecha": "2021-01-28",
     "CIF": "B41557687",
-    "adjudicatario": "DEDESIN, S.L."
+    "adjudicatario": "DEDESÍN, S.L."
   },
   {
     "id": "ASUECO-2021/98",
@@ -253,7 +253,7 @@
     "sinIVA": 377,
     "fecha": "2021-01-28",
     "CIF": "B11604972",
-    "adjudicatario": "SEVITAS, SL"
+    "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L."
   },
   {
     "id": "ASUECO-2021/93",
@@ -271,7 +271,7 @@
     "sinIVA": 2371,
     "fecha": "2021-01-28",
     "CIF": "B11689254",
-    "adjudicatario": "RÓTULOS DORANTES. S.L."
+    "adjudicatario": "RÓTULOS DORANTES, S.L."
   },
   {
     "id": "ASUECO-2021/125",
@@ -298,7 +298,7 @@
     "sinIVA": 874,
     "fecha": "2021-02-04",
     "CIF": "B11681988",
-    "adjudicatario": "GESMACONT, S.L.U."
+    "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L."
   },
   {
     "id": "ASUECO-2021/155",
@@ -343,7 +343,7 @@
     "sinIVA": 122,
     "fecha": "2021-02-04",
     "CIF": "B11679685",
-    "adjudicatario": "RUIZ SISTEMAS, S.L."
+    "adjudicatario": "RUCA SISTEMAS, S.L."
   },
   {
     "id": "ASUECO-2021/164",
@@ -352,7 +352,7 @@
     "sinIVA": 3298,
     "fecha": "2021-02-04",
     "CIF": "75868291P",
-    "adjudicatario": "DAVID BARROSO NIEVES (MOTOJARDIN)"
+    "adjudicatario": "DAVID BARROSO NIEVES (MOTOJARDÍN)"
   },
   {
     "id": "ASUECO-2021/154",
@@ -379,7 +379,7 @@
     "sinIVA": 115,
     "fecha": "2021-02-04",
     "CIF": "B11604972",
-    "adjudicatario": "SEVITAS, SL"
+    "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L."
   },
   {
     "id": "ASUECO-2021/142",
@@ -606,7 +606,7 @@
     "sinIVA": 2479,
     "fecha": "2021-02-11",
     "CIF": "A27178789",
-    "adjudicatario": "OHL SERVICIOS INGESAN, S.A."
+    "adjudicatario": "OHL-SERVICIOS INGESAN, S.A."
   },
   {
     "id": "Asueco-2021/186",
@@ -615,7 +615,7 @@
     "sinIVA": 7208,
     "fecha": "2021-02-11",
     "CIF": "B11729183",
-    "adjudicatario": "PLAGACON, S.L."
+    "adjudicatario": "PLAGACON CONTROL INTEGRAL DE PLAGAS DEL SUR, S.L."
   },
   {
     "id": "Asueco-2021/208",
@@ -714,7 +714,7 @@
     "sinIVA": 1123,
     "fecha": "2021-02-18",
     "CIF": "B11604972",
-    "adjudicatario": "SEVITAS, SL"
+    "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L."
   },
   {
     "id": "ASUECO-2021/237",
@@ -750,7 +750,7 @@
     "sinIVA": 736,
     "fecha": "2021-02-18",
     "CIF": "B11681988",
-    "adjudicatario": "GESMACONT, S.L.U"
+    "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L."
   },
   {
     "id": "Asueco-2021/268",
@@ -777,8 +777,8 @@
     "sinIVA": 259,
     "fecha": "2021-02-25",
     "CIF": "B11604972",
-    "adjudicatario": "SEVITAS, SL",
-    "TipoContrato": 2,
+    "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -789,8 +789,8 @@
     "sinIVA": 33081,
     "fecha": "2021-02-25",
     "CIF": "B11681988",
-    "adjudicatario": "GESMACONT, S.L.U.",
-    "TipoContrato": 3,
+    "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L.",
+    "tipoContrato": 3,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -801,8 +801,8 @@
     "sinIVA": 225,
     "fecha": "2021-02-25",
     "CIF": "B11916178",
-    "adjudicatario": "GRUPO JEALSASPAIN, S.L.",
-    "TipoContrato": 2,
+    "adjudicatario": "GRUPO JEALSA SPAIN, S.L.",
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -814,7 +814,7 @@
     "fecha": "2021-02-25",
     "CIF": "A11074432",
     "adjudicatario": "PROTELEC JL, S.A.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -826,7 +826,7 @@
     "fecha": "2021-02-25",
     "CIF": "31712084Y",
     "adjudicatario": "JUAN PEDRO HERRERO FIZ",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -838,7 +838,7 @@
     "fecha": "2021-02-25",
     "CIF": "50413660Y",
     "adjudicatario": "LUIS MANUEL LÓPEZ GONZÁLEZ",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -850,7 +850,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11681988",
     "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -862,7 +862,7 @@
     "fecha": "2021-02-25",
     "CIF": "B41959875",
     "adjudicatario": "MANUEL SUÁREZ MARISCAL, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -874,7 +874,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11699816",
     "adjudicatario": "MATERIALES DE CONSTRUCCIÓN, S.L. (LOZANO RAMOS)",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -886,7 +886,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11687720",
     "adjudicatario": "OLIVA ALQUILERES, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -898,7 +898,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11706520",
     "adjudicatario": "SISTEMAS DE OFICINA DE JEREZ, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -909,8 +909,8 @@
     "sinIVA": 3360,
     "fecha": "2021-02-25",
     "CIF": "B11735958",
-    "adjudicatario": "RUTESA SUMIINISTROS Y SERVICIOS, S.L.",
-    "TipoContrato": 1,
+    "adjudicatario": "RUTESA SUMINISTROS Y SERVICIOS, S.L.",
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -922,7 +922,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11931508",
     "adjudicatario": "BERNAL VIDRIOS Y ACRISTALAMIENTOS, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -934,7 +934,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11674272",
     "adjudicatario": "CARREMAN, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -946,7 +946,7 @@
     "fecha": "2021-02-25",
     "CIF": "31613983T",
     "adjudicatario": "JOSÉ LUIS MAQUEIRA MARÍN",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -958,7 +958,7 @@
     "fecha": "2021-02-25",
     "CIF": "A03813326",
     "adjudicatario": "IMPURSA, S.A.U.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -970,7 +970,7 @@
     "fecha": "2021-02-25",
     "CIF": "31650107Z",
     "adjudicatario": "INMACULADA PARRA ORELLANA",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -982,7 +982,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11706520",
     "adjudicatario": "SISTEMAS DE OFICINA DE JEREZ, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -994,7 +994,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11706520",
     "adjudicatario": "SISTEMAS DE OFICINA DE JEREZ, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1006,7 +1006,7 @@
     "fecha": "2021-02-25",
     "CIF": "F11924883",
     "adjudicatario": "CONSTRUCCIONES VILOITA GUILLEN, S.C.A.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1029,7 +1029,7 @@
     "fecha": "2021-03-04",
     "CIF": "31695214H",
     "adjudicatario": "ANTONIO IGNACIO LÓPEZ CANO(ICA SEGURIDAD)",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1041,7 +1041,7 @@
     "fecha": "2021-03-04",
     "CIF": "B11837499",
     "adjudicatario": "RESIDENCIA CANINA LA LUNA, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1053,7 +1053,7 @@
     "fecha": "2021-03-04",
     "CIF": "B41391731",
     "adjudicatario": "PROVIDEO SEVILLA, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1064,8 +1064,8 @@
     "sinIVA": 2896,
     "fecha": "2021-03-04",
     "CIF": "B11710720",
-    "adjudicatario": "Cerrajería Naranjo S.L.",
-    "TipoContrato": 1,
+    "adjudicatario": "CERRAJERÍA NARANJO, S.L.U.",
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1077,7 +1077,7 @@
     "fecha": "2021-03-04",
     "CIF": "31642061H",
     "adjudicatario": "LUIS FERNANDO ASENCIO RAMÍREZ (PAPELERÍA PUNTO Y APARTE)",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1089,7 +1089,7 @@
     "fecha": "2021-02-25",
     "CIF": "A11613247",
     "adjudicatario": "FITESA, FITOSANITARIOS Y TECNICA, S.A.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1101,7 +1101,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11680006",
     "adjudicatario": "MAQUIAGRI, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1113,7 +1113,7 @@
     "fecha": "2021-02-25",
     "CIF": "B11668878",
     "adjudicatario": "FERRETERÍA XEREZ, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1125,7 +1125,7 @@
     "fecha": "2021-02-25",
     "CIF": "31703152K",
     "adjudicatario": "SERVANDO ROMÁN ESTRADE",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1137,7 +1137,7 @@
     "fecha": "2021-03-04",
     "CIF": "F11751112",
     "adjudicatario": "MÁS QUE SONIDO, S.C.A.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1149,7 +1149,7 @@
     "fecha": "2021-03-04",
     "CIF": "B29648656",
     "adjudicatario": "SERVIREL ANDALUZA DE RELOJES, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1161,7 +1161,7 @@
     "fecha": "2021-03-04",
     "CIF": "75868291P",
     "adjudicatario": "DAVID BARROSO NIEVES (MOTOJARDÍN)",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1173,7 +1173,7 @@
     "fecha": "2021-03-04",
     "CIF": "A48001648",
     "adjudicatario": "SEGUROS BILBAO. BILBAO COMPAÑIA ANÓNIMA DE SEGUROS Y REASEGUROS",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1185,7 +1185,7 @@
     "fecha": "2021-03-04",
     "CIF": "B11704855",
     "adjudicatario": "DANKO EXCLUSIVAS, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1197,7 +1197,7 @@
     "fecha": "2021-03-04",
     "CIF": "B11754348",
     "adjudicatario": "ALUMINIOS CERRAJERÍA Y PVC ALIAÑO HIJOS, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1209,7 +1209,7 @@
     "fecha": "2021-03-11",
     "CIF": "B11706520",
     "adjudicatario": "SISTEMAS DE OFICINA DE JEREZ, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1221,7 +1221,7 @@
     "fecha": "2021-03-11",
     "CIF": "B11938461",
     "adjudicatario": "MOARÉ ESPACIO CREATIVO, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1233,7 +1233,7 @@
     "fecha": "2021-03-11",
     "CIF": "31678050N",
     "adjudicatario": "MARCO ANTONIO RODRÍGUEZ CALVO",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1245,7 +1245,7 @@
     "fecha": "2021-03-11",
     "CIF": "B47724463",
     "adjudicatario": "ESTRUCTURAS ESPECIALES R.H. S.L.U.",
-    "TipoContrato": 3,
+    "tipoContrato": 3,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1257,7 +1257,7 @@
     "fecha": "2021-03-11",
     "CIF": "B11706520",
     "adjudicatario": "SISTEMAS DE OFICINA DE JEREZ, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1268,8 +1268,8 @@
     "sinIVA": 11781,
     "fecha": "2021-03-11",
     "CIF": "B11681988",
-    "adjudicatario": "GESMACONT, S.L.U.",
-    "TipoContrato": 3,
+    "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L.",
+    "tipoContrato": 3,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1281,7 +1281,7 @@
     "fecha": "2021-03-11",
     "CIF": "G11664414",
     "adjudicatario": "ASOCIACIÓN DE BELENISTAS DE JEREZ",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1293,7 +1293,7 @@
     "fecha": "2021-03-12",
     "CIF": "B64076482",
     "adjudicatario": "QUIRONPREVENCION SLU",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1305,7 +1305,7 @@
     "fecha": "2021-03-11",
     "CIF": "31678050N",
     "adjudicatario": "Marco Antonio Rodríguez Calvo",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1317,7 +1317,7 @@
     "fecha": "2021-03-11",
     "CIF": "B12619847",
     "adjudicatario": "ONADANA EDICIONS, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1329,7 +1329,7 @@
     "fecha": "2021-03-11",
     "CIF": "31610897L",
     "adjudicatario": "ANTONIO RODRÍGUEZ CASTILLO (PAPELERÍA CONSISTORIO)",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1341,7 +1341,7 @@
     "fecha": "2021-03-11",
     "CIF": "32060833Y",
     "adjudicatario": "MARIO VIVERO TORO (BORDATE)",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1353,7 +1353,7 @@
     "fecha": "2021-03-11",
     "CIF": "B85103950",
     "adjudicatario": "Vitafauna SL",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1365,7 +1365,7 @@
     "fecha": "2021-03-11",
     "CIF": "31610897L",
     "adjudicatario": "Antonio Rodríguez del Castillo",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1376,8 +1376,8 @@
     "sinIVA": 2917,
     "fecha": "2021-03-11",
     "CIF": "B11681988",
-    "adjudicatario": "GESMACONT, S.L.",
-    "TipoContrato": 2,
+    "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L.",
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1389,7 +1389,7 @@
     "fecha": "2021-03-11",
     "CIF": "78494383Y",
     "adjudicatario": "RAQUEL DÍEZ REAL",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1401,7 +1401,7 @@
     "fecha": "2021-03-11",
     "CIF": "31619634Q",
     "adjudicatario": "CARLOS HERMOSO RÍOS",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1413,7 +1413,7 @@
     "fecha": "2021-03-11",
     "CIF": "31685509L",
     "adjudicatario": "FRANCISCO JAVIER LOBO ARROYO (EQUIPAMIENTO COMERCIAL LOBO)",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1425,7 +1425,7 @@
     "fecha": "2021-03-11",
     "CIF": "B11710720",
     "adjudicatario": "CERRAJERÍA NARANJO, S.L.U.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1437,7 +1437,7 @@
     "fecha": "2021-03-11",
     "CIF": "B11604972",
     "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1449,7 +1449,7 @@
     "fecha": "2021-03-18",
     "CIF": "E11863396",
     "adjudicatario": "FARMACIA DÍAZ RÍOS, C.B.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1460,8 +1460,8 @@
     "sinIVA": 1800,
     "fecha": "2021-03-15",
     "CIF": "B11750601",
-    "adjudicatario": "A Plus N Sistemas en Red y Comunicaciones",
-    "TipoContrato": 2,
+    "adjudicatario": "A+ SISTEMAS EN RED Y DE COMUNICACIONES, S.L.",
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1473,7 +1473,7 @@
     "fecha": "2021-03-18",
     "CIF": "B11944253",
     "adjudicatario": "CALERÍA MAYCHI, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1485,7 +1485,7 @@
     "fecha": "2021-03-18",
     "CIF": "B48505101",
     "adjudicatario": "ELIN MEDICA, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1497,7 +1497,7 @@
     "fecha": "2021-03-18",
     "CIF": "B11622198",
     "adjudicatario": "GRUPO CONTINENTAL SPAIN, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1509,7 +1509,7 @@
     "fecha": "2021-03-18",
     "CIF": "B11735958",
     "adjudicatario": "RUTESA SUMINISTROS Y SERVICIOS, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1521,7 +1521,7 @@
     "fecha": "2021-03-18",
     "CIF": "B11868034",
     "adjudicatario": "BAM MEDIA, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1533,7 +1533,7 @@
     "fecha": "2021-03-18",
     "CIF": "B41557687",
     "adjudicatario": "DEDESÍN, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1545,7 +1545,7 @@
     "fecha": "2021-03-15",
     "CIF": "B11750601",
     "adjudicatario": "A+ SISTEMAS EN RED Y DE COMUNICACIONES, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1557,7 +1557,7 @@
     "fecha": "2021-03-15",
     "CIF": "B11679685",
     "adjudicatario": "RUCA SISTEMAS, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1569,7 +1569,7 @@
     "fecha": "2021-03-15",
     "CIF": "B90189325",
     "adjudicatario": "TESELA COMUNICACIÓN, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1581,7 +1581,7 @@
     "fecha": "2021-03-18",
     "CIF": "B72275985",
     "adjudicatario": "CERRAMIENTOS LA JANDA, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1592,8 +1592,8 @@
     "sinIVA": 1038,
     "fecha": "2021-03-18",
     "CIF": "A11626389",
-    "adjudicatario": "JAVIER PEREZ, S.A.",
-    "TipoContrato": 2,
+    "adjudicatario": "JAVIER PÉREZ, S.A.",
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1605,7 +1605,7 @@
     "fecha": "2021-03-18",
     "CIF": "A11074432",
     "adjudicatario": "PROTELEC JL, S.A.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1617,7 +1617,7 @@
     "fecha": "2021-03-18",
     "CIF": "52313403H",
     "adjudicatario": "RAMÓN GUTIÉRREZ LLUELMA",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1629,7 +1629,7 @@
     "fecha": "2021-03-18",
     "CIF": "34006730B",
     "adjudicatario": "PALOMA TOSAR LÓPEZ",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1641,7 +1641,7 @@
     "fecha": "2021-03-18",
     "CIF": "32058403Z",
     "adjudicatario": "ANTONIO GALANTE GUTIÉRREZ",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1653,7 +1653,7 @@
     "fecha": "2021-03-18",
     "CIF": "B11707296",
     "adjudicatario": "DISLIMJE, S.L.",
-    "TipoContrato": 1,
+    "tipoContrato": 1,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1665,7 +1665,7 @@
     "fecha": "2021-03-18",
     "CIF": "B11604972",
     "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1677,7 +1677,7 @@
     "fecha": "2021-03-18",
     "CIF": "B72103716",
     "adjudicatario": "CPR GESTIÓN BROADCAST, S.L.U.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1689,7 +1689,7 @@
     "fecha": "2021-03-18",
     "CIF": "B11706520",
     "adjudicatario": "SISTEMAS DE OFICINA DE JEREZ, S.L.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
@@ -1701,119 +1701,11 @@
     "fecha": "2021-03-25",
     "CIF": "A28007268",
     "adjudicatario": "GENERALI  ESPAÑA, S.A.",
-    "TipoContrato": 2,
+    "tipoContrato": 2,
     "tipoLicitacion": 6,
     "urgencia": 1
   },
-  {
-    "id": "ASUECO-2021/535",
-    "status": "RES",
-    "titulo": "Elaboración de una figura en bronce de 13 cm, se incluye el derecho a la reproducción",
-    "sinIVA": 3445,
-    "fecha": "2021-03-25",
-    "CIF": "31725224J",
-    "adjudicatario": "MANUEL ALEJANDRO OLIVERA PEREA",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/524",
-    "status": "RES",
-    "titulo": "Servicio de mantenimiento y reparación de la maquinaría del Zoológico",
-    "sinIVA": 2863,
-    "fecha": "2021-03-25",
-    "CIF": "B11680006",
-    "adjudicatario": "MAQUIAGRI, S.L.",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/507",
-    "status": "RES",
-    "titulo": "Servicio de del tratamiento de desinfección Covid para el Mercado Central de Abastos",
-    "sinIVA": 390,
-    "fecha": "2021-03-25",
-    "CIF": "B11729183",
-    "adjudicatario": "PLAGACON CONTROL INTEGRAL DE PLAGAS DEL SUR, S.L.",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/504",
-    "status": "RES",
-    "titulo": "Servicio de retapizado de 178 butacas del salón de actos del Centro Social La Granja",
-    "sinIVA": 2848,
-    "fecha": "2021-03-25",
-    "CIF": "31619062L",
-    "adjudicatario": "JUAN ANTONIO GARCÍA DELGADO",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/503",
-    "status": "RES",
-    "titulo": "Servicio de mantenimiento anual de videoportero IP preventivo-correctivo C/ Taxdirt en el Zoológico",
-    "sinIVA": 300,
-    "fecha": "2021-03-25",
-    "CIF": "A11074432",
-    "adjudicatario": "PROTELEC JL, S.A.",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/499",
-    "status": "RES",
-    "titulo": "Servicio de revisiones anuales obligatorias de los extintores de los Centros de Trabajo Municipales adscritos al Servicio de Acción Social y Mayores durante el presente ejercicio 2021",
-    "sinIVA": 994,
-    "fecha": "2021-03-25",
-    "CIF": "B11679685",
-    "adjudicatario": "RUIZ SISTEMAS, S.L.",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/494",
-    "status": "RES",
-    "titulo": "Servicio para Un verano para disfrutar. Espectáculos infantiles de humor y fantasía en el Patio de Paúl durante los meses de julio y agosto de 2021.",
-    "sinIVA": 2850,
-    "fecha": "2021-03-25",
-    "CIF": "B11865102",
-    "adjudicatario": "EL DUENDE ANIMACIÓN SOCIOCULTURAL, S.L.",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/523",
-    "status": "RES",
-    "titulo": "Servicio de mantenimiento de máquina fotocopiadora MP 2352 no. serie W411K616767, ubicada en Gabinete Jurídico del 01-04-2021 al 30-06-2021",
-    "sinIVA": 279,
-    "fecha": "2021-03-25",
-    "CIF": "B11626736",
-    "adjudicatario": "SHERRYCOPIER, S.L.",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-  {
-    "id": "ASUECO-2021/497",
-    "status": "RES",
-    "titulo": "Servicio de mantenimiento de extintores del Conjunto Monumental del Alcázar de Jerez desde el 1 de abril al 31 de diciembre de 2021",
-    "sinIVA": 200,
-    "fecha": "2021-03-25",
-    "CIF": "B11679685",
-    "adjudicatario": "RUIZ SISTEMAS, S.L.",
-    "TipoContrato": 2,
-    "tipoLicitacion": 6,
-    "urgencia": 1
-  },
-   {
+         {
       "id": "ASUECO-2021/535",
       "status": "RES",
       "titulo": "Elaboración de una figura en bronce de 13 cm, se incluye el derecho a la reproducción",
@@ -1821,7 +1713,7 @@
       "fecha": "2021-03-25",
       "CIF": "31725224J",
       "adjudicatario": "MANUEL ALEJANDRO OLIVERA PEREA",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1833,7 +1725,7 @@
       "fecha": "2021-03-25",
       "CIF": "B11680006",
       "adjudicatario": "MAQUIAGRI, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1845,7 +1737,7 @@
       "fecha": "2021-03-25",
       "CIF": "B11729183",
       "adjudicatario": "PLAGACON CONTROL INTEGRAL DE PLAGAS DEL SUR, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1857,7 +1749,7 @@
       "fecha": "2021-03-25",
       "CIF": "31619062L",
       "adjudicatario": "JUAN ANTONIO GARCÍA DELGADO",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1869,31 +1761,19 @@
       "fecha": "2021-03-25",
       "CIF": "A11074432",
       "adjudicatario": "PROTELEC JL, S.A.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
-    {
+        {
       "id": "ASUECO-2021/499",
       "status": "RES",
       "titulo": "Servicio de revisiones anuales obligatorias de los extintores de los Centros de Trabajo Municipales adscritos al Servicio de Acción Social y Mayores durante el presente ejercicio 2021",
       "sinIVA": 994,
       "fecha": "2021-03-25",
       "CIF": "B11679685",
-      "adjudicatario": "RUIZ SISTEMAS, S.L.",
-      "TipoContrato": 2,
-      "tipoLicitacion": 6,
-      "urgencia": 1
-    },
-    {
-      "id": "ASUECO-2021/499",
-      "status": "RES",
-      "titulo": "Servicio de revisiones anuales obligatorias de los extintores de los Centros de Trabajo Municipales adscritos al Servicio de Acción Social y Mayores durante el presente ejercicio 2021",
-      "sinIVA": 994,
-      "fecha": "2021-03-25",
-      "CIF": "B11679685",
-      "adjudicatario": "RUIZ SISTEMAS, S.L.",
-      "TipoContrato": 2,
+      "adjudicatario": "RUCA SISTEMAS, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1905,7 +1785,7 @@
       "fecha": "2021-03-25",
       "CIF": "B11865102",
       "adjudicatario": "EL DUENDE ANIMACIÓN SOCIOCULTURAL, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1917,7 +1797,7 @@
       "fecha": "2021-03-25",
       "CIF": "B11626736",
       "adjudicatario": "SHERRYCOPIER, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1928,8 +1808,8 @@
       "sinIVA": 200,
       "fecha": "2021-03-25",
       "CIF": "B11679685",
-      "adjudicatario": "RUIZ SISTEMAS, S.L.",
-      "TipoContrato": 2,
+      "adjudicatario": "RUCA SISTEMAS, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1941,7 +1821,7 @@
       "fecha": "2021-03-18",
       "CIF": "31725382X",
       "adjudicatario": "SANDRA GAMBÍN JIMENEZ",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1953,7 +1833,7 @@
       "fecha": "2021-03-25",
       "CIF": "52313403H",
       "adjudicatario": "RAMÓN GUTIÉRREZ LLUELMA",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1965,7 +1845,7 @@
       "fecha": "2021-03-31",
       "CIF": 4207770480,
       "adjudicatario": "SOFTWARE PRODUCTS ITALIA, SRL",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1976,8 +1856,8 @@
       "sinIVA": 457,
       "fecha": "2021-03-31",
       "CIF": "B11679685",
-      "adjudicatario": "RUIZ SISTEMAS, S.L.",
-      "TipoContrato": 2,
+      "adjudicatario": "RUCA SISTEMAS, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -1988,8 +1868,8 @@
       "sinIVA": 427,
       "fecha": "2021-03-31",
       "CIF": "B11604972",
-      "adjudicatario": "SEVITAS, SL",
-      "TipoContrato": 2,
+      "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2001,7 +1881,7 @@
       "fecha": "2021-03-31",
       "CIF": "B11626736",
       "adjudicatario": "SHERRYCOPIER, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2013,7 +1893,7 @@
       "fecha": "2021-03-31",
       "CIF": "B18843821",
       "adjudicatario": "WOOVER TRENDS, S.L.U.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2025,7 +1905,7 @@
       "fecha": "2021-03-31",
       "CIF": "B11606761",
       "adjudicatario": "EL MOTORISTA, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2037,7 +1917,7 @@
       "fecha": "2021-03-31",
       "CIF": "31519144Y",
       "adjudicatario": "NICOLÁS DOMECQ YBARRA",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2049,19 +1929,19 @@
       "fecha": "2021-03-31",
       "CIF": "31519144Y",
       "adjudicatario": "NICOLÁS DOMECQ YBARRA",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
     {
       "id": "Asueco-2021/526",
       "status": "RES",
-      "titulo": "Suministro de material y utillaje ara la actuación control de plan felinas del Plan Extraordinario Covid-19.",
+      "titulo": "Suministro de material y utillaje para la actuación control de plan felinas del Plan Extraordinario Covid-19.",
       "sinIVA": 4500,
       "fecha": "2021-03-25",
       "CIF": "B11627684",
-      "adjudicatario": "LA CASA DE CAMPO, S.L.",
-      "TipoContrato": 1,
+      "adjudicatario": "LA CASA DEL CAMPO, S.L.",
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2073,7 +1953,7 @@
       "fecha": "2021-03-25",
       "CIF": "B11749082",
       "adjudicatario": "BM, SERVICIO Y MANTENIMIENTO DE REDES, S.L.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2084,8 +1964,8 @@
       "sinIVA": 58,
       "fecha": "2021-03-31",
       "CIF": "B11604972",
-      "adjudicatario": "SEVITAS, SL",
-      "TipoContrato": 2,
+      "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2097,7 +1977,7 @@
       "fecha": "2021-03-31",
       "CIF": "31671342C",
       "adjudicatario": "Jesús Campos Macías",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2109,7 +1989,7 @@
       "fecha": "2021-04-06",
       "CIF": "B11739828",
       "adjudicatario": "PROVIS SONIDO E ILUMINACIÓN, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2120,8 +2000,8 @@
       "sinIVA": 1088,
       "fecha": "2021-03-31",
       "CIF": "B11681988",
-      "adjudicatario": "GESMACONT, S.L.",
-      "TipoContrato": 2,
+      "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2133,7 +2013,7 @@
       "fecha": "2021-04-08",
       "CIF": "31678050N",
       "adjudicatario": "MARCO ANTONIO RODRÍGUEZ CALVO",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2145,7 +2025,7 @@
       "fecha": "2021-04-08",
       "CIF": "31684038C",
       "adjudicatario": "RAFAEL MANTARAS DURÁN",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2156,8 +2036,8 @@
       "sinIVA": 300,
       "fecha": "2021-04-08",
       "CIF": "B72360241",
-      "adjudicatario": "Inversiones Inmobiliarias Lobato, S.L.",
-      "TipoContrato": 2,
+      "adjudicatario": "INVERSIONES INMOBILIARIAS LOBATO, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2169,7 +2049,7 @@
       "fecha": "2021-04-08",
       "CIF": "B11700457",
       "adjudicatario": "INFRAESTRUCTURAS URBANAS Y MEDIOAMBIENTALES S.L.",
-      "TipoContrato": 3,
+      "tipoContrato": 3,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2180,8 +2060,8 @@
       "sinIVA": 70,
       "fecha": "2021-04-08",
       "CIF": "B11604972",
-      "adjudicatario": "SEVITAS, SL",
-      "TipoContrato": 2,
+      "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2193,19 +2073,19 @@
       "fecha": "2021-04-08",
       "CIF": "25681445J",
       "adjudicatario": "ROBERT MELERO ASTORGA",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
     {
       "id": "Asueco-2021/616",
       "status": "RES",
-      "titulo": "Suministro de alfalfa, granos y piensos compuestos ara los animales del Parque Zoológico.",
+      "titulo": "Suministro de alfalfa, granos y piensos compuestos para los animales del Parque Zoológico.",
       "sinIVA": 14995,
       "fecha": "2021-04-08",
       "CIF": "B11751724",
       "adjudicatario": "CEREARCOS, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2217,7 +2097,7 @@
       "fecha": "2021-04-08",
       "CIF": "A63232805",
       "adjudicatario": "RAJAPACK, S.A.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2229,7 +2109,7 @@
       "fecha": "2021-04-14",
       "CIF": "B11913324",
       "adjudicatario": "GANADERÍA ALPENDE, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2241,7 +2121,7 @@
       "fecha": "2021-04-15",
       "CIF": "31737418V",
       "adjudicatario": "Carlos Bernal González",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2253,7 +2133,7 @@
       "fecha": "2021-04-15",
       "CIF": "52321781R",
       "adjudicatario": "DIEGO MANUEL LÓPEZ GÓMEZ",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2265,7 +2145,7 @@
       "fecha": "2021-04-15",
       "CIF": "B11842176",
       "adjudicatario": "EVENTUR, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2277,7 +2157,7 @@
       "fecha": "2021-04-15",
       "CIF": "B11916178",
       "adjudicatario": "GRUPO JEALSA SPAIN, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2289,7 +2169,7 @@
       "fecha": "2021-04-15",
       "CIF": "A11074432",
       "adjudicatario": "PROTELEC JL, S.A.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2301,7 +2181,7 @@
       "fecha": "2021-04-15",
       "CIF": "B11689254",
       "adjudicatario": "RÓTULOS DORANTES, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2313,7 +2193,7 @@
       "fecha": "2021-04-15",
       "CIF": "B11735958",
       "adjudicatario": "RUTESA SUMINISTROS Y SERVICIOS, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2325,7 +2205,7 @@
       "fecha": "2021-04-15",
       "CIF": "B11706520",
       "adjudicatario": "SISTEMAS DE OFICINA DE JEREZ, S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2337,7 +2217,7 @@
       "fecha": "2021-04-15",
       "CIF": "B37561354",
       "adjudicatario": "LABORATORIO DE SISTEMAS Y ANÁLISIS, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2349,7 +2229,7 @@
       "fecha": "2021-04-15",
       "CIF": "B11604402",
       "adjudicatario": "RADIO JEREZ, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2361,7 +2241,7 @@
       "fecha": "2021-04-15",
       "CIF": "E11863396",
       "adjudicatario": "FARMACIA DÍAZ RÍOS, C.B.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2373,7 +2253,7 @@
       "fecha": "2021-03-25",
       "CIF": "B81644387",
       "adjudicatario": "SCC (SPECIALIST COMPUTER CENTRES), S.L.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2385,7 +2265,7 @@
       "fecha": "2021-04-15",
       "CIF": "F11924883",
       "adjudicatario": "CONSTRUCCIONES VILOITA GUILLEN, S.C.A.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2397,7 +2277,7 @@
       "fecha": "2021-04-15",
       "CIF": "G11423381",
       "adjudicatario": "CEEI BAHÍA DE CÁDIZ",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2409,7 +2289,7 @@
       "fecha": "2021-04-22",
       "CIF": "31670747T",
       "adjudicatario": "JOSÉ MANUEL DÍAZ OLMO (ÓPTICA MAVER)",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2421,7 +2301,7 @@
       "fecha": "2021-04-22",
       "CIF": "31711674X",
       "adjudicatario": "ADRIÁN OTERO FERNÁNDEZ (LIBROS DEL LABERINTO)",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2433,7 +2313,7 @@
       "fecha": "2021-04-22",
       "CIF": "B88618699",
       "adjudicatario": "AKANZ PARTNERS, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2445,7 +2325,7 @@
       "fecha": "2021-04-22",
       "CIF": "31678050N",
       "adjudicatario": "Marco Antonio Rodríguez Calvo",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2457,7 +2337,7 @@
       "fecha": "2021-04-22",
       "CIF": "B11861200",
       "adjudicatario": "MANIPULACIÓN DE HIERRO ROGELIO PÉREZ, S.L.U.",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2469,7 +2349,7 @@
       "fecha": "2021-04-22",
       "CIF": "A11626389",
       "adjudicatario": "JAVIER PÉREZ, S.A.",
-      "TipoContrato": 3,
+      "tipoContrato": 3,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2481,7 +2361,7 @@
       "fecha": "2021-04-22",
       "CIF": "31678050N",
       "adjudicatario": "MARCO ANTONIO RODRÍGUEZ CALVO",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2493,7 +2373,7 @@
       "fecha": "2021-04-22",
       "CIF": "B72360241",
       "adjudicatario": "INVERSIONES INMOBILIARIAS LOBATO, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2504,8 +2384,8 @@
       "sinIVA": 1076,
       "fecha": "2021-04-22",
       "CIF": "B11739828",
-      "adjudicatario": "PROVIS SONIDO E ILUMINACIÓN,S.L.",
-      "TipoContrato": 1,
+      "adjudicatario": "PROVIS SONIDO E ILUMINACIÓN, S.L.",
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2517,7 +2397,7 @@
       "fecha": "2021-04-22",
       "CIF": "31627323T",
       "adjudicatario": "JOSÉ SÁNCHEZ GARCÍA DE VEAS",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2529,7 +2409,7 @@
       "fecha": "2021-04-22",
       "CIF": "B11676806",
       "adjudicatario": "ALQUIVALLE",
-      "TipoContrato": 1,
+      "tipoContrato": 1,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2541,7 +2421,7 @@
       "fecha": "2021-04-22",
       "CIF": "31207636V",
       "adjudicatario": "ESPERANZA PEINADO MARTÍNEZ",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2552,8 +2432,8 @@
       "sinIVA": 175,
       "fecha": "2021-04-22",
       "CIF": "B11604972",
-      "adjudicatario": "SEVITAS PROTECCIÓN CONTRA INCENDIOS",
-      "TipoContrato": 2,
+      "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2565,7 +2445,7 @@
       "fecha": "2021-04-22",
       "CIF": "31249678S",
       "adjudicatario": "MARÍA DOLORES HERNÁNDEZ SALES",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2599,7 +2479,7 @@
       "fecha": "2021-04-22",
       "CIF": "B87314787",
       "adjudicatario": "EASYWAY SERVICIOS INTERNET, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2622,7 +2502,7 @@
       "fecha": "2021-04-22",
       "CIF": "B72283120",
       "adjudicatario": "ARTE TRANS SERVICIOS INTEGRALES, S.L.U.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2634,7 +2514,7 @@
       "fecha": "2021-04-22",
       "CIF": "J86039005",
       "adjudicatario": "PATIO DE LUECES PRODUCCIONES, S.C.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2657,7 +2537,7 @@
       "fecha": "2021-04-22",
       "CIF": "B11946977",
       "adjudicatario": "KACINFONT, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
     },
@@ -2669,10 +2549,805 @@
       "fecha": "2021-04-22",
       "CIF": "B11679685",
       "adjudicatario": "RUCA SISTEMAS, S.L.",
-      "TipoContrato": 2,
+      "tipoContrato": 2,
       "tipoLicitacion": 6,
       "urgencia": 1
-    }
+    },
+          {
+          "id": "ASUECO-2021/813",
+          "status": "RES",
+          "titulo": "Servicio de reparación de anomalías en el sistema de alarma contra incendios en la Biblioteca Central",
+          "sinIVA": 1789,
+          "fecha": "2021-04-29",
+          "CIF": "B11604972",
+          "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/790",
+          "status": "RES",
+          "titulo": "Servicios para cursos de formación enmarcados dentro del I Plan de Igualdad del Ayuntamiento de Jerez",
+          "sinIVA": 11875,
+          "fecha": "2021-04-29",
+          "CIF": "B72301534",
+          "adjudicatario": "DIFERENCIA2, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/761",
+          "status": "RES",
+          "titulo": "Servicio de impresión del catálogo de la muestra  Desde lo real . Cultura",
+          "sinIVA": 696,
+          "fecha": "2021-04-22",
+          "CIF": "A11024361",
+          "adjudicatario": "SANTA TERESA INDUSTRIAS GRÁFICAS, S.A.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/736",
+          "status": "RES",
+          "titulo": "Suministro de Walkie Talkies para empleados de determinados Departamentos del Zoobotánico.",
+          "sinIVA": 1545,
+          "fecha": "2021-04-22",
+          "CIF": "31688007X",
+          "adjudicatario": "ÁNGEL J. PALENZUELA OCAÑA, FERRETERÍA SAN JOSÉ",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/727",
+          "status": "RES",
+          "titulo": "Desarrollo del Ciclo Cultural Una Primavera de Libros",
+          "sinIVA": 3637,
+          "fecha": "2021-04-22",
+          "CIF": "B11865102",
+          "adjudicatario": "EL DUENDE ANIMACIÓN SOCIOCULTURAL, S.L.",
+          "CIF1": "B11674751",
+          "adjudicatario1": "ALQUILERES SOTO-ARRIAZA, S.L."
+      },
+      {
+          "id": "ASUECO-2021/794",
+          "status": "RES",
+          "titulo": "Servicio para la realización del curso “Agentes de Salud ",
+          "sinIVA": 10290,
+          "fecha": "2021-04-29",
+          "CIF": "G11919321",
+          "adjudicatario": "SEMBRADORAS DE SALUD",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/808",
+          "status": "RES",
+          "titulo": "Servicio para el Plan Local de Igualdad y Diversidad",
+          "sinIVA": 6500,
+          "fecha": "2021-04-29",
+          "CIF": "B02592756",
+          "adjudicatario": "CONCILIA2 SOLUCIONES, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/796",
+          "status": "RES",
+          "titulo": "Suministro de artículos de papelería para Juventud.",
+          "sinIVA": 1405,
+          "fecha": "2021-04-29",
+          "CIF": "31604759E",
+          "adjudicatario": "ESTEBAN ROMERO SOTO (DISTRIPAPEL)",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/176",
+          "status": "RES",
+          "titulo": "Suministro de artículos de papelería para Juventud.",
+          "sinIVA": 1405,
+          "fecha": "2021-04-29",
+          "CIF": "31604759E",
+          "adjudicatario": "ESTEBAN ROMERO SOTO (DISTRIPAPEL)",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/793",
+          "status": "RES",
+          "titulo": "Suministro de placa histórica en homenaje a Francisco Camacho Mendoza",
+          "sinIVA": 450,
+          "fecha": "2021-04-29",
+          "CIF": "B11715349",
+          "adjudicatario": "MÁRMOLES ALADRO, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/787",
+          "status": "RES",
+          "titulo": "Suministro de material de oficinas no contemplado en el contrattao unificado.",
+          "sinIVA": 159,
+          "fecha": "2021-04-29",
+          "CIF": "B14479356",
+          "adjudicatario": "RECUTON I, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/778",
+          "status": "RES",
+          "titulo": "Suministro para material electrónico para la reparación del marcador del Polideportivo Ruíz Mateos.",
+          "sinIVA": 598,
+          "fecha": "2021-04-29",
+          "CIF": "20810865M",
+          "adjudicatario": "JORGE GALÁN GRAU (LEKDRON)",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/817",
+          "status": "RES",
+          "titulo": "Suministro de purificadores de aire Hepa para el Servicio del Órgano para la Resolución de las Reclamaciones Económico Administrativas y del Tribunal Administrativo de Recursos Contractuales del Ayuntamiento de Jerez.",
+          "sinIVA": 493,
+          "fecha": "2021-05-06",
+          "CIF": "A28017895",
+          "adjudicatario": "EL CORTE INGLÉS, S.A.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/867",
+          "status": "RES",
+          "titulo": "Servicio de reparación equipos de diseño gráfico Imac",
+          "sinIVA": 4515,
+          "fecha": "2021-05-06",
+          "CIF": "A41362401",
+          "adjudicatario": "AUTOEDICIÓN GRÁFICA, S.A.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/890",
+          "status": "RES",
+          "titulo": "Instalación de climatización en Biblioteca Municipal -Agustín Muñoz y Gómez-. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el Marco del Programa Operativo Plurirregional de España 2014-2020.",
+          "sinIVA": 14435,
+          "fecha": "2021-05-06",
+          "CIF": "B11737749",
+          "adjudicatario": "EAP REPARACIONES, S.L.",
+          "TipoContrato": 3,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/830",
+          "status": "RES",
+          "titulo": "Servicio de retirada de uralita y depósito en vertedero autorizado en el Zoológico",
+          "sinIVA": 2450,
+          "fecha": "2021-05-06",
+          "CIF": "B11713476",
+          "adjudicatario": "HNOS. SOTO LABRADOR",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/891",
+          "status": "RES",
+          "titulo": "Servicio técnico de Redacción de proyecto, Dirección de obra y  Coordinación de Seguridad y Salud en fase de ejecución de las obras de Construcción de un Circuito Parkour y Pista de Break-Dance. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020",
+          "sinIVA": 5975,
+          "fecha": "2021-05-06",
+          "CIF": "31668160N",
+          "adjudicatario": "FRANCISCO JAVIER ROMÁN GUTIÉRREZ",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/873",
+          "status": "RES",
+          "titulo": "Suministro material vegetal para el Zoológico.",
+          "sinIVA": 2995,
+          "fecha": "2021-05-06",
+          "CIF": "B11563608",
+          "adjudicatario": "VIVEROS EL LAGO, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/877",
+          "status": "RES",
+          "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución de las obras de Arreglo de acerados en el entorno del Paseo de  las Delicias: La Canaleja, Bami y Paseo de las Delicias",
+          "sinIVA": 840,
+          "fecha": "2021-05-06",
+          "CIF": "75762373M",
+          "adjudicatario": "DANIEL FREIRE BARREIRO",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/824",
+          "status": "RES",
+          "titulo": "Sustitución de superficies de amortiguación en parques infantiles",
+          "sinIVA": 39222,
+          "fecha": "2021-05-06",
+          "CIF": "B90271768",
+          "adjudicatario": "PAVIMENTOS GARVEL, S.L.U.",
+          "TipoContrato": 3,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/831",
+          "status": "RES",
+          "titulo": "Arrendamiento de carretilla elevadora para cementerio municipal.",
+          "sinIVA": 1960,
+          "fecha": "2021-05-06",
+          "CIF": "B11674272",
+          "adjudicatario": "CARREMAN, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/826",
+          "status": "RES",
+          "titulo": "Suministro de señales de orientación del zoológico",
+          "sinIVA": 948,
+          "fecha": "2021-05-06",
+          "CIF": "B11692399",
+          "adjudicatario": "Publixerez, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/827",
+          "status": "RES",
+          "titulo": "Servicio para la actividad  Música es Femenino .",
+          "sinIVA": 2454,
+          "fecha": "2021-05-06",
+          "CIF": "G11900347",
+          "adjudicatario": "ASOCIACIÓN CULTURAL LA GUARIDA DEL ÁNGEL",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/887",
+          "status": "RES",
+          "titulo": "Servicio técnico de Redacción de proyecto, Dirección de obra y  Coordinación de Seguridad y Salud en fase de ejecución de las obras de Actuación en la pista de atletismo anexa y zonas adyacentes en el Complejo Deportivo Chapín.  Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020.",
+          "sinIVA": 7101,
+          "fecha": "2021-05-06",
+          "CIF": "31622596B",
+          "adjudicatario": "ANTONIO BALLESTEROS MARRA-LÓPEZ",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/907",
+          "status": "RES",
+          "titulo": "Difusión del Festival de Jerez 2021 en TV.",
+          "sinIVA": 14900,
+          "fecha": "2021-05-07",
+          "CIF": "B11673803",
+          "adjudicatario": "ALCESTES",
+          "CIF1": "B11943750",
+          "adjudicatario1": "GRUPO DE COMUNICAIONES COMARCA DE JEREZ"
+      },
+      {
+          "id": "30M/2021",
+          "status": "RES",
+          "titulo": "Servicio para la realización del video promocional de la Marca  Socuéllamos Patria del Vino .",
+          "sinIVA": 3000,
+          "fecha": "2021-04-22",
+          "CIF": "70352646Q",
+          "adjudicatario": "SANTOS LOPEZ VILLANUEVA",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/901",
+          "status": "RES",
+          "titulo": "Campaña de Difusión Festival de Jerez 2021 en Radio.",
+          "sinIVA": 14900,
+          "fecha": "2021-05-07",
+          "CIF": "B72391998",
+          "adjudicatario": "GADIR COMUNICACIONES, S.L.",
+          "CIF1": "B11604402",
+          "adjudicatario1": "Radio Jerez, S.L."
+      },
+       {
+          "id": "Asueco-2021/906",
+          "status": "RES",
+          "titulo": "Campaña de difusión del Festival de Jerez en medios impresos",
+          "sinIVA": 14900,
+          "fecha": "2021-05-07",
+          "CIF": "B11792587",
+          "adjudicatario": "PERIÓDICOS GRATUITOS VIVA",
+          "CIF1": "B11000221",
+          "adjudicatario1": "FEDERICO JOLY Y CIA.,"
+      },
+      {
+          "id": "Asueco-2021902",
+          "status": "RES",
+          "titulo": "Campaña de difusión del Festival de Jerez en medios digitales",
+          "sinIVA": 14775,
+          "fecha": "2021-05-07",
+          "CIF": "A11627395",
+          "adjudicatario": "PUBLICACIONES DEL SUR",
+          "CIF1": "B11000221",
+          "adjudicatario1": "FEDERICO JOLY Y CIA, S.A.,"
+      },
+      {
+          "id": "ASUECO-2021/927",
+          "status": "RES",
+          "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución de las obras de Reparación de fachada de hormigón visto en Edificio de Onda Jerez en calle Caballeros n.º 35",
+          "sinIVA": 658,
+          "fecha": "2021-05-13",
+          "CIF": "31678050N",
+          "adjudicatario": "MARCO ANTONIO RODRÍGUEZ CALVO",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/928",
+          "status": "RES",
+          "titulo": "Reparación de fachada de hormigón visto en Edificio de Onda Jerez en calle Caballeros n.º 35",
+          "sinIVA": 12261,
+          "fecha": "2021-05-13",
+          "CIF": "B11681988",
+          "adjudicatario": "GESMACONT MANTENIMIENTO Y REPARACIONES, S.L.",
+          "TipoContrato": 3,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/823",
+          "status": "RES",
+          "titulo": "Servicio técnico de Redacción de proyecto de adecuación de una parte de los Claustros de Santos Domingo para su uso como sala de exposiciones temporales de bienes culturales. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020",
+          "sinIVA": 9950,
+          "fecha": "2021-05-06",
+          "CIF": "44044459B",
+          "adjudicatario": "MARIA DEL PILAR GALLEGO PEREZ",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/925",
+          "status": "RES",
+          "titulo": "Servicio técnico de Coordinación de Seguridad y Salud en fase de ejecución de las obras de Reparación de edificio municipal en calle Larga, nº 39.",
+          "sinIVA": 585,
+          "fecha": "2021-05-13",
+          "CIF": "31678050N",
+          "adjudicatario": "Marco Antonio Rodríguez Calvo",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/924",
+          "status": "RES",
+          "titulo": "Reparación de edificio municipal en calle Larga, n.º 39.",
+          "sinIVA": 39748,
+          "fecha": "2021-05-13",
+          "CIF": "B11862406",
+          "adjudicatario": "ATRIO VIVIENDAS, S.L.",
+          "TipoContrato": 3,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/960",
+          "status": "RES",
+          "titulo": "Servicio técnico de Redacción de proyecto de ejecución de Taller del Centro de Formación El Zagal. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020.",
+          "sinIVA": 4800,
+          "fecha": "2021-05-13",
+          "CIF": "32059444C",
+          "adjudicatario": "Silvia Ramos Méndez",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/957",
+          "status": "RES",
+          "titulo": "Reparación del quemador de una de las calderas del Estadio Municipal de Chapín.",
+          "sinIVA": 1353,
+          "fecha": "2021-05-13",
+          "CIF": "B11931417",
+          "adjudicatario": "TECNOCALOR JEREZ, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/936",
+          "status": "RES",
+          "titulo": "Suministro de botas de trabajo para el personal operativo del Zoobotánico.",
+          "sinIVA": 3006,
+          "fecha": "2021-05-13",
+          "CIF": "B11668878",
+          "adjudicatario": "FERRETERÍA XEREZ, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/923",
+          "status": "RES",
+          "titulo": "Suministro de banderolas para Campaña de Sensibilización, diversidad Sexual y de Género.",
+          "sinIVA": 1020,
+          "fecha": "2021-05-13",
+          "CIF": "B11741790",
+          "adjudicatario": "FUSTE CORPORACIÓN DE PUBLICIDAD EXTERIOR, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/971",
+          "status": "RES",
+          "titulo": "Servicio de organización del concierto Música Joven en el Astoria",
+          "sinIVA": 14954,
+          "fecha": "2021-05-13",
+          "CIF": "B11928306",
+          "adjudicatario": "TRITON LIVEFUN, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/885",
+          "status": "RES",
+          "titulo": "Servicio de analíticas de piscinas cubiertas Arquitecto José Laquillo.",
+          "sinIVA": 336,
+          "fecha": "2021-05-06",
+          "CIF": "B29539806",
+          "adjudicatario": "LABORATORIO ANAYCO, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/883",
+          "status": "RES",
+          "titulo": "Servicio para la reparación del cerramiento de las pistas deportivas de fraternidad la Cartuja.",
+          "sinIVA": 3300,
+          "fecha": "2021-05-06",
+          "CIF": "F11924883",
+          "adjudicatario": "CONSTRUCCIONES VILOITA GUILLEN, S.C.A.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/872",
+          "status": "RES",
+          "titulo": "Servicio para la reparación de sistemas y equipos de agua (bombas de estanque), para el conjunto monumental del Alcázar de Jerez.",
+          "sinIVA": 469,
+          "fecha": "2021-05-06",
+          "CIF": "31650941C",
+          "adjudicatario": "JOSÉ MORALES GONZÁLEZ",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/868",
+          "status": "RES",
+          "titulo": "Servicio de reparación CTP (filmadora de planchas) de la Imprenta Municipal.",
+          "sinIVA": 6800,
+          "fecha": "2021-05-06",
+          "CIF": "B11938461",
+          "adjudicatario": "MOARÉ ESPACIO CREATIVO, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/965",
+          "status": "RES",
+          "titulo": "Servicio de la conferencia Día Mundial de la Diversidad Cultural 2021",
+          "sinIVA": 600,
+          "fecha": "2021-05-20",
+          "CIF": "01392377A",
+          "adjudicatario": "Carlos Giménez Romero",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/935",
+          "status": "RES",
+          "titulo": "Servicio para la reparación del sistema de ozono de las piscinas cubiertas Arquitectos José Laguillo",
+          "sinIVA": 953,
+          "fecha": "2021-05-13",
+          "CIF": "B72018450",
+          "adjudicatario": "INGENIERÍA DEL OZONO, S.L.U.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/944",
+          "status": "RES",
+          "titulo": "Servicio para el proyecto participativo de mediación artística  Ponle color a tu barrio .",
+          "sinIVA": 2052,
+          "fecha": "2021-05-13",
+          "CIF": "31723098A",
+          "adjudicatario": "BENJAMÍN GALLEGO MEDINA",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/929",
+          "status": "RES",
+          "titulo": "Servicio para organizar la reunión de atletismo escolar en el Estado Chapín.",
+          "sinIVA": 2262,
+          "fecha": "2021-05-13",
+          "CIF": "B72078827",
+          "adjudicatario": "SERVICIOS Y SOCORRISMO, S.L.",
+          "CIF1": "Q6855015A",
+          "adjudicatario1": "FEDERACIÓN ANDALUZA DE ATLETISMO"
+      },
+      {
+          "id": "ASUECO-2021/791",
+          "status": "RES",
+          "titulo": "Servicio de Asistencia Técnica para el desarrollo y puesta en funcionamiento del  Programa de formación empresarial y para la ciudadanía: Herramientas para una economía más social y sostenible ",
+          "sinIVA": 14850,
+          "fecha": "2021-05-13",
+          "CIF": "R2800828B",
+          "adjudicatario": "ESIC BUSINESS &amp; MARKETING SCHOOL",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/825",
+          "status": "RES",
+          "titulo": "Servicio de transporte de un Bisonte macho, tres Milanos Reales y una pareja de Grulla Damisela desde Francia al Zoológico Jerez",
+          "sinIVA": 2500,
+          "fecha": "2021-05-06",
+          "CIF": "25681445J",
+          "adjudicatario": "ROBERT MELERO ASTORGA",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/932",
+          "status": "RES",
+          "titulo": "Servicio de revisión obligatoria de ascensores en Colegios Luis Vives, Pablo Picasso de Estella y El Retiro.",
+          "sinIVA": 219,
+          "fecha": "2021-05-13",
+          "CIF": "F91892919",
+          "adjudicatario": "INGENIERÍA Y SISTEMAS DE AUDITORÍA E INSPECCIÓN, S.C.A.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/1031",
+          "status": "RES",
+          "titulo": "Servicio para el desarrollo de actividades de la propuesta  Jerez, Ciudad por el Comercio Justo .",
+          "sinIVA": 3000,
+          "fecha": "2021-05-20",
+          "CIF": "F14472542",
+          "adjudicatario": "IDEAS, Cooperativa de Comercio Justo",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/999",
+          "status": "RES",
+          "titulo": "Suministro de 6 chalecos de verano para el Servicio de Inspección del Departamento de Disciplina de la Delegación de Urbanismo.",
+          "sinIVA": 106,
+          "fecha": "2021-05-20",
+          "CIF": "B11735958",
+          "adjudicatario": "RUTESA SUMINISTROS Y SERVICIOS, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/997",
+          "status": "RES",
+          "titulo": "Servicio de radiología en el ámbito de la Prevención de riesgos para la Salud por exposición al amianto.",
+          "sinIVA": 525,
+          "fecha": "2021-05-20",
+          "CIF": "B72170079",
+          "adjudicatario": "CENTRO MÉDICO DE DIAGNÓSTICO INTEGRAL JEREZ, S.L. (GRUPO CMDI)",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/982",
+          "status": "RES",
+          "titulo": "Servicio por revisión de extintores en Bibliotecas y Sala Compañía.",
+          "sinIVA": 722,
+          "fecha": "2021-05-20",
+          "CIF": "B11604972",
+          "adjudicatario": "SEVITAS MATERIAL DE SEGURIDAD, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/972",
+          "status": "RES",
+          "titulo": "Servicio para Ciclo Cultural  Hontoria en Domingo2.",
+          "sinIVA": 2462,
+          "fecha": "2021-05-20",
+          "CIF": "B11865102",
+          "adjudicatario": "EL DUENDE ANIMACIÓN SOCIOCULTURAL, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/940",
+          "status": "RES",
+          "titulo": "Servicio de asistencia técnica para la organización de Jornadas de Innovación en el Sector Vitivinícola de Jerez",
+          "sinIVA": 14919,
+          "fecha": "2021-05-20",
+          "CIF": "B88554332",
+          "adjudicatario": "DIGITAL BRIDGE SL",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/1036",
+          "status": "RES",
+          "titulo": "Servicio de limpieza para las elecciones a representantes de alcaldía en barriadas rurales",
+          "sinIVA": 2028,
+          "fecha": "2021-05-24",
+          "CIF": "B72001282",
+          "adjudicatario": "ACTIVA Y SERVICIOS DE MANTENIMIENTO, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/1075",
+          "status": "RES",
+          "titulo": "“Servicios de seguridad y ambulancias para la celebración del IX Rallye Ciudad de Jerez”.",
+          "sinIVA": 3702,
+          "fecha": "2021-05-26",
+          "CIF": "A11749538",
+          "adjudicatario": "SEMESUR, S.A.U.",
+          "CIF1": "A79252219",
+          "adjudicatario1": "SECURITAS SEGURIDAD ESPAÑA"
+      },
+      {
+          "id": "Asueco-2021/1074",
+          "status": "RES",
+          "titulo": "Suministro de trofeos y vinilos para la Celebración del IX Rallye Ciudad de Jerez.",
+          "sinIVA": 3516,
+          "fecha": "2021-05-26",
+          "CIF": "B90399528",
+          "adjudicatario": "ANDRÉS VILCHES, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/1037",
+          "status": "RES",
+          "titulo": "Suministro de productos zoosanitarios y medicamentos veterinarios para llevar a cabo el programa de control de colonias felinas en el Centro Municipal de Protección Animal de Jerez de la Frontera.",
+          "sinIVA": 2999,
+          "fecha": "2021-05-26",
+          "CIF": "B11627684",
+          "adjudicatario": "LA CASA DEL CAMPO, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/987",
+          "status": "RES",
+          "titulo": "Servicio para Campaña de Difusión, Promoción y Publicidad de los valores del Zoobotánico, por la Provincia de Cádiz durante los meses de verano.",
+          "sinIVA": 4697,
+          "fecha": "2021-05-20",
+          "CIF": "31702732S",
+          "adjudicatario": "JORGE LÓPOEZ PEÑA (ElDíaD)",
+          "CIF1": "B11909645",
+          "adjudicatario1": "ALLSPORTSOURCING, S.L."
+      },
+      {
+          "id": "Asueco-2021/943",
+          "status": "RES",
+          "titulo": "Suministro de placas distintivas metacrilato y tablón de anuncios",
+          "sinIVA": 1993,
+          "fecha": "2021-05-13",
+          "CIF": "B11946514",
+          "adjudicatario": "SHERRY BOX DIGITAL, S.L.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/1008",
+          "status": "RES",
+          "titulo": "Instalación de climatización en Biblioteca Municipal -Ramón de Cala-. Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el Marco del Programa Operativo Plurirregional de España 2014-2020.",
+          "sinIVA": 14620,
+          "fecha": "2021-05-20",
+          "CIF": "B11737749",
+          "adjudicatario": "EAP REPARACIONES, S.L.",
+          "TipoContrato": 3,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "ASUECO-2021/1049",
+          "status": "RES",
+          "titulo": "Servicio de limpieza para las elecciones a representantes de Alcaldía en barriadas rurales.",
+          "sinIVA": 2900,
+          "fecha": "2021-05-24",
+          "CIF": "B11974102",
+          "adjudicatario": "DIVISIÓN DE SEGURIDAD PRIVADA, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-20211021",
+          "status": "RES",
+          "titulo": "Instalación de pulsadores de alarma de incendios y canalización de tubo PVC",
+          "sinIVA": 240,
+          "fecha": "2021-05-20",
+          "CIF": "B11916178",
+          "adjudicatario": "GRUPO JEALSA SPAIN, S.L.",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/1028",
+          "status": "RES",
+          "titulo": "Suministro de banderolas y lona para la Feria del Libro 2021",
+          "sinIVA": 989,
+          "fecha": "2021-05-20",
+          "CIF": "A11024361",
+          "adjudicatario": "INDUSTRIAS GRÁFICAS, S.A. (SANTA TERESA)",
+          "TipoContrato": 1,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      },
+      {
+          "id": "Asueco-2021/1020",
+          "status": "RES",
+          "titulo": "Servicio de dinamización Campaña-Respeta Diversión sin Agresión.",
+          "sinIVA": 2131,
+          "fecha": "2021-05-20",
+          "CIF": "B11928306",
+          "adjudicatario": "TRITON LIVEFUN, S.L.",
+          "TipoContrato": 2,
+          "tipoLicitacion": 6,
+          "urgencia": 1
+      }
   ]
-
 

@@ -75,7 +75,7 @@ export class AppComponent {
 				headerName: 'ID',
 				// field: 'ContractFolderStatus.ContractFolderID',
 				field: 'id',
-				width: 160,
+				width: 130,
 				resizable: true
 			},
 			{
@@ -89,7 +89,7 @@ export class AppComponent {
 				headerName: 'Fecha',
 				// field: 'ContractFolderStatus.TenderResult.AwardDate',
 				field: 'fecha',
-				width: 100,
+				width: 90,
 				resizable: true
 			},
 			{
@@ -103,7 +103,7 @@ export class AppComponent {
 				headerName: 'CIF',
 				// field: 'ContractFolderStatus.TenderResult.WinningParty.PartyIdentification.ID',
 				field: 'CIF',
-				width: 100,
+				width: 90,
 				resizable: true
 			},
 			// si hay varios adjudicatarios no se muestra,
