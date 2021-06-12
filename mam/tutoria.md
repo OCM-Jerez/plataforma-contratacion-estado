@@ -1,12 +1,3 @@
-1.- Comportamiento diferente en cellRenderer: CellRendererOCM con OCMpre2020eje20210507
-2.- Mejora procedimiento para pasar de XML2JSON
-
-Problemas:
-Cuando hay varios adjudicatarios, tengo que iterar sobre su array conociendo la cantidad de ellos.
-Crear un objeto para cada uno de ellos, en la tabla mostrare una misma licitación con los diferentes adjudicatarios.
-
-
-
 1.- Estructura del proyecto.
 2.- Capturar errores en programas.controller o en programas.service.
 3.- Como pasar los posible errores al front.

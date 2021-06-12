@@ -1,0 +1,25 @@
+<div >
+  <button *ngIf="!isExpanded" type="button" class="btn btnExpand" (click)="expandAll()">Expandir todo</button>
+  <button *ngIf="isExpanded" type="button" class="btn btnCollapse" (click)="collapseAll()">Colapsar todo</button>
+
+  <ag-grid-angular
+    #agGrid
+    style="width: 100%; height: 90vh; padding-right: 20px; margin-left: 10px"
+    class="ag-theme-balham"
+    [rowData]="rowData | async"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    rowSelection="multiple"
+    [groupSuppressAutoColumn]="true"
+    [groupIncludeFooter]="true"
+    [groupIncludeTotalFooter]="true"
+    [groupHeaderHeight]="groupHeaderHeight"
+    [headerHeight]="headerHeight"
+    [localeText]="localeText"
+    [suppressAggFuncInHeader] = "true"
+    (gridReady)="onGridReady($event)"
+  >
+  </ag-grid-angular>
+</div>
+
+

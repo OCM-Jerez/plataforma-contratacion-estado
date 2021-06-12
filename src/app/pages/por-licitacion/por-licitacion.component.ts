@@ -7,15 +7,15 @@ import { HttpClient } from '@angular/common/http';
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 
-import { CellRendererOCM } from './shared/utils/utils';
-import localeTextESPes from '../assets/data/localeTextESPes.json';
+import { CellRendererOCM } from '../../shared/utils/utils';
+import localeTextESPes from '../../../assets/data/localeTextESPes.json';
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
+  selector: 'app-por-licitacion',
+  templateUrl: './por-licitacion.component.html',
+  styleUrls: ['./por-licitacion.component.scss']
 })
-export class AppComponent {
+export class PorLicitacionComponent {
 	@ViewChild('agGrid', { static: false })
 	agGrid!: AgGridAngular;
 	private gridApi: any;
@@ -100,7 +100,7 @@ export class AppComponent {
 								switch (params.node.level) {
 									case 0: // Total adjudicatario.
 										// return `<span style="color: red; font-size: 10px;  font-weight: bold; margin-left: 0px;"> Total ${params.value}</span>`;
-                    return `<span style="color: red; font-size: 10px;  font-weight: bold; margin-left: 0px;"> Total</span>`;
+										return `<span style="color: red; font-size: 10px;  font-weight: bold; margin-left: 0px;"> Total</span>`;
 									case -1: // Total general.
 										return '';
 									default:

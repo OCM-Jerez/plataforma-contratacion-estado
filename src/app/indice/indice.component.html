@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="container__profile">
+		<img src="../../../assets/images/IconoOCM.png" alt="ocm" />
+		<div class="container__profile__text">
+			<p>Los datos estan extraidos de la Plataforma de contratación del Estado.</p>
+			<a href="https://bit.ly/3ggbyO5">Pagina de datos abiertos</a>
+			<p>
+				Se pueden observar problemas en los datos, por ejemplo: diferentes razones sociales para un
+				mismo CIF y falta de cantidades en las adjudicaciones.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper">
+	<div class="grid23">
+		<span class="mam-opciones">Opciones visualización de los datos</span>
+	</div>
+
+	<div class="grid31">
+		<a (click)="porLicitacion()" class="myButton">Por licitación</a>
+	</div>
+
+	<div class="grid32">
+		<a (click)="porAdjudicatario()" class="myButton">Por razón social</a>
+	</div>
+
+	<div class="grid33">
+		<a (click)="porCIF()" class="myButton">Por CIF</a>
+	</div>
+</div>
