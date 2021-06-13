@@ -21,4 +21,8 @@ export class IndiceComponent {
 	porCIF() {
 		this.router?.navigate(['/porCIF']);
 	}
+
+	graficos() {
+		this.router?.navigate(['/importe']);
+	}
 }

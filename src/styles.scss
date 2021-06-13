@@ -42,6 +42,47 @@ body{
 //  padding-bottom: 90px; /* height of your footer */
 // }
 
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [col] auto [col] auto [col] auto;
+  grid-template-rows: [row] auto [row] auto [row] auto [row] auto;
+  background-color: #fff;
+  color: #444;
+  margin: 40px;
+}
+
+
+
+.grid13 {
+  grid-column: col 2;
+  grid-row: row 1;
+  margin-bottom: 50px;
+   }
+
+.grid23 {
+  grid-column: col 1 / span 3;
+  grid-row: row 2;
+  margin-top: 50px;
+}
+.grid31 {
+  grid-column: col 1 ;
+  grid-row: row 3;
+}
+.grid32 {
+  grid-column: col 2 ;
+  grid-row: row 3 ;
+}
+.grid33 {
+  grid-column: col 3;
+  grid-row: row 3;
+}
+
+.grid41 {
+  grid-column: col 1 / span 3;
+  grid-row: row 4;
+}
+
 .mam-titulo{
   margin: auto;
   font-size: 22px;

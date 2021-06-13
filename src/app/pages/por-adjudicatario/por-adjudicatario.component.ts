@@ -28,8 +28,10 @@ export class PorAdjudicatarioComponent {
 	public localeText;
 	public rowData: any;
 	public isExpanded = false;
+	public rowHeight = 50;
 
 	constructor(private http: HttpClient) {
+		// this.rowHeight = 180;
 		this.columnDefs = [
 			{
 				// headerName: 'Capitulo-Económico.',
@@ -87,7 +89,8 @@ export class PorAdjudicatarioComponent {
 						resizable: true,
 						rowGroup: false,
 						filter: false,
-						pinned: 'left'
+						pinned: 'left',
+						wrapText: true
 					},
 					{
 						headerName: 'TOTAL',
