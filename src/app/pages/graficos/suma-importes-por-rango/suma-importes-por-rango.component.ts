@@ -7,25 +7,31 @@ import contratosmenoresJson from '../../../../assets/data/contratosMenores2020ma
 import { IChartContrato } from '../../../models/contratos.interfaces';
 import { Static } from '../../../util/static';
 @Component({
-	selector: 'app-importe',
-	templateUrl: './importe.component.html',
-	styleUrls: ['./importe.component.scss']
+	selector: 'app-suma-importes-por-rango',
+	templateUrl: './suma-importes-por-rango.component.html',
+	styleUrls: ['./suma-importes-por-rango.component.scss']
 })
-export class ImporteComponent {
+export class SumaImportesPorRangoComponent {
 	public options: any;
 	constructor() {
 		this.generarDataImporte();
 		this.options = {
-			title: { text: 'Número de contratos por rango de importe.' },
+			title: { text: 'Suma de importes de contratos por rango de importe.' },
 			// subtitle: { text: 'in billion U.S. dollars' },
-			legend: { enabled: false },
+			padding: {
+				top: 40,
+				right: 50,
+				bottom: 40,
+				left: 40
+			},
+			legend: { enabled: false, spacing: 40 },
 			data: this.generarDataImporte(),
 			series: [
 				{
 					type: 'bar',
 					xKey: 'rangePayableAmount',
-					yKeys: ['contratos'],
-					yNames: ['Nº contratos'],
+					yKeys: ['sumPayableAmount'],
+					yNames: ['Suma importes'],
 					formatter: () => ({
 						fill: ['#0075CD']
 					}),
@@ -34,7 +40,9 @@ export class ImporteComponent {
 						fontWeight: 'bold',
 						formatter: function (params: any) {
 							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-							return params.value === undefined ? '' : params.value.toFixed(0);
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 						}
 					}
 				}
@@ -42,7 +50,16 @@ export class ImporteComponent {
 			axes: [
 				{
 					type: 'number',
-					position: 'bottom'
+					position: 'bottom',
+					label: {
+						fontWeight: 'bold',
+						formatter: function (params: any) {
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+						}
+					}
 				},
 				{
 					type: 'category',

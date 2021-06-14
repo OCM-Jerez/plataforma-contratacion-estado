@@ -1,6 +1,3 @@
-Problema 2 usuarios en GitHub => remotos en VScode. por ejemplo xml2jsnon
-
-
 Necesidad de utilizar indice por no saber hacerlo en app.component
 
 TypeCode:
@@ -76,3 +73,26 @@ UrgencyCode
 1 = Ordinaria
 2 = Urgente
 3 = Emergencia
+
+{
+"link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=n509E6xCx8Gmq21uxhbaVQ%3D%3D",
+"summary": "Id licitación: Mensum-2020/1; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 8760.33 EUR; Estado: RES",
+"title": "Suministro de juguetes para la campaña navideña en Barriadas Rurales",
+"updated": "2020-01-03T13:08:40.442+01:00",
+"ContractFolderID": "Mensum-2020/1",
+"ContractFolderStatusCode": "RES",
+"Name": "Suministro de juguetes para la campaña navideña en Barriadas Rurales",
+"TypeCode": "1",
+"SubTypeCode": "2",
+"TotalAmount": 10600,
+"TaxExclusiveAmount": 8760,
+"ResultCode": "8",
+"AwardDate": "2020-01-03",
+"ReceivedTenderQuantity": "1",
+"PartyIdentification": "B11607967",
+"PartyName": "Almacenes Bahía, S.L.",
+"TaxExclusiveAmount1": 8760,
+"PayableAmount": 10600,
+"ProcedureCode": "6",
+"UrgencyCode": "1"
+},

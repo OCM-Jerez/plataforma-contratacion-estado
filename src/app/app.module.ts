@@ -17,6 +17,17 @@ import { GraficosComponent } from './pages/graficos/graficos.component';
 import { AgChartsAngularModule } from 'ag-charts-angular';
 import { ImporteComponent } from './pages/graficos/importe/importe.component';
 import { DatosComponent } from './pages/graficos/datos/datos.component';
+import { SumaImportesPorRangoComponent } from './pages/graficos/suma-importes-por-rango/suma-importes-por-rango.component';
+import { PorTypecodeComponent } from './pages/graficos/por-typecode/por-typecode.component';
+import { SumaImportesPorTypecodeComponent } from './pages/graficos/suma-importes-por-typecode/suma-importes-por-typecode.component';
+import { PorSubtypecodeComponent } from './pages/graficos/por-subtypecode/por-subtypecode.component';
+import { SumaImportesPorSubtypecodeComponent } from './pages/graficos/suma-importes-por-subtypecode/suma-importes-por-subtypecode.component';
+import { PorResultcodeComponent } from './pages/graficos/por-resultcode/por-resultcode.component';
+import { SumaImportesPorResultcodeComponent } from './pages/graficos/suma-importes-por-resultcode/suma-importes-por-resultcode.component';
+import { PorProcedurecodeComponent } from './pages/graficos/por-procedurecode/por-procedurecode.component';
+import { SumaImportesPorProcedurecodeComponent } from './pages/graficos/suma-importes-por-procedurecode/suma-importes-por-procedurecode.component';
+import { PorUrgencycodeComponent } from './pages/graficos/por-urgencycode/por-urgencycode.component';
+import { SumaImportesPorUrgencycodeComponent } from './pages/graficos/suma-importes-por-urgencycode/suma-importes-por-urgencycode.component';
 
 @NgModule({
 	declarations: [
@@ -29,7 +40,18 @@ import { DatosComponent } from './pages/graficos/datos/datos.component';
 		PorCIFComponent,
 		GraficosComponent,
 		ImporteComponent,
-  DatosComponent
+		DatosComponent,
+		SumaImportesPorRangoComponent,
+  PorTypecodeComponent,
+  SumaImportesPorTypecodeComponent,
+  PorSubtypecodeComponent,
+  SumaImportesPorSubtypecodeComponent,
+  PorResultcodeComponent,
+  SumaImportesPorResultcodeComponent,
+  PorProcedurecodeComponent,
+  SumaImportesPorProcedurecodeComponent,
+  PorUrgencycodeComponent,
+  SumaImportesPorUrgencycodeComponent
 	],
 	imports: [
 		BrowserModule,

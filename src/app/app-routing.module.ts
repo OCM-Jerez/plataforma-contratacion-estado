@@ -7,6 +7,7 @@ import { PorCIFComponent } from './pages/por-cif/por-cif.component';
 import { PorLicitacionComponent } from './pages/por-licitacion/por-licitacion.component';
 import { GraficosComponent } from './pages/graficos/graficos.component';
 import { ImporteComponent } from './pages/graficos/importe/importe.component';
+import { SumaImportesPorRangoComponent } from './pages/graficos/suma-importes-por-rango/suma-importes-por-rango.component';
 
 const routes: Routes = [
 	{ path: 'home', component: IndiceComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
 	{ path: 'porAdjudicatario', component: PorAdjudicatarioComponent },
 	{ path: 'porCIF', component: PorCIFComponent },
 	{ path: 'graficos', component: GraficosComponent },
-  { path: 'importe', component: ImporteComponent },
+	{ path: 'importe', component: ImporteComponent },
+	{ path: 'sumaImporte', component: SumaImportesPorRangoComponent },
 	{ path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

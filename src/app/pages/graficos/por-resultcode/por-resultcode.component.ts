@@ -7,16 +7,16 @@ import contratosmenoresJson from '../../../../assets/data/contratosMenores2020ma
 import { IChartContrato } from '../../../models/contratos.interfaces';
 import { Static } from '../../../util/static';
 @Component({
-	selector: 'app-importe',
-	templateUrl: './importe.component.html',
-	styleUrls: ['./importe.component.scss']
+	selector: 'app-por-resultcode',
+	templateUrl: './por-resultcode.component.html',
+	styleUrls: ['./por-resultcode.component.scss']
 })
-export class ImporteComponent {
+export class PorResultcodeComponent {
 	public options: any;
 	constructor() {
 		this.generarDataImporte();
 		this.options = {
-			title: { text: 'Número de contratos por rango de importe.' },
+			title: { text: 'Por resulCode' },
 			// subtitle: { text: 'in billion U.S. dollars' },
 			legend: { enabled: false },
 			data: this.generarDataImporte(),
@@ -55,9 +55,6 @@ export class ImporteComponent {
 	private generarDataImporte() {
 		const data: IChartContrato[] = [];
 		data.push(
-			this.getDataRango(13),
-			this.getDataRango(12),
-			this.getDataRango(11),
 			this.getDataRango(10),
 			this.getDataRango(9),
 			this.getDataRango(8),
@@ -65,7 +62,6 @@ export class ImporteComponent {
 			this.getDataRango(6),
 			this.getDataRango(5),
 			this.getDataRango(4),
-			this.getDataRango(3),
 			this.getDataRango(2),
 			this.getDataRango(1)
 		);
@@ -73,75 +69,44 @@ export class ImporteComponent {
 		return data;
 	}
 	private getDataRango(rango: number): IChartContrato {
-		let rangoInicial = 0;
-		let rangoFinal = 99;
-		let rangePayableAmount = '0 - 100';
+		let _TypeCode = '1';
+		let rangePayableAmount = 'Adjudicado Provisionalmente';
 		switch (rango) {
 			case 2:
-				rangoInicial = 100;
-				rangoFinal = 499;
-				rangePayableAmount = '100 - 500';
-				break;
-			case 3:
-				rangoInicial = 500;
-				rangoFinal = 999;
-				rangePayableAmount = '500 - 1.000';
+				_TypeCode = '2';
+				rangePayableAmount = 'Adjudicado Definitivamente';
 				break;
 			case 4:
-				rangoInicial = 1000;
-				rangoFinal = 1999;
-				rangePayableAmount = '1.000 - 2.000';
+				_TypeCode = '4';
+				rangePayableAmount = 'Desistimiento';
 				break;
 			case 5:
-				rangoInicial = 2000;
-				rangoFinal = 2999;
-				rangePayableAmount = '2.000 - 3.000';
+				_TypeCode = '5';
+				rangePayableAmount = 'Renuncia';
 				break;
 			case 6:
-				rangoInicial = 3000;
-				rangoFinal = 3999;
-				rangePayableAmount = '3.000 - 4.000';
+				_TypeCode = '6';
+				rangePayableAmount = 'Desierto Provisionalmente';
 				break;
 			case 7:
-				rangoInicial = 4000;
-				rangoFinal = 4999;
-				rangePayableAmount = '4.000 - 5.000';
+				_TypeCode = '7';
+				rangePayableAmount = 'Desierto Definitivamente';
 				break;
 			case 8:
-				rangoInicial = 5000;
-				rangoFinal = 9999;
-				rangePayableAmount = '5.000 - 10.000';
+				_TypeCode = '8';
+				rangePayableAmount = 'Adjudicado';
 				break;
 			case 9:
-				rangoInicial = 10000;
-				rangoFinal = 13999;
-				rangePayableAmount = '10.000 - 14.000';
+				_TypeCode = '9';
+				rangePayableAmount = 'Formalizado';
 				break;
 			case 10:
-				rangoInicial = 14000;
-				rangoFinal = 14999;
-				rangePayableAmount = '14.000 - 15.000';
-				break;
-			case 11:
-				rangoInicial = 15000;
-				rangoFinal = 24999;
-				rangePayableAmount = '15.000 - 25.000';
-				break;
-			case 12:
-				rangoInicial = 25000;
-				rangoFinal = 34999;
-				rangePayableAmount = '25.000 - 35.000';
-				break;
-			case 13:
-				rangoInicial = 35000;
-				rangoFinal = 45000;
-				rangePayableAmount = '35.000 - 45.000';
+				_TypeCode = '10';
+				rangePayableAmount = 'Licitador mejor valorado:Requerimiento de documentacion';
 				break;
 		}
 		// Static.TIPOS.find(x=>x.id==5);
-		const rango1 = contratosmenoresJson.filter(
-			(item) => item.TaxExclusiveAmount1 >= rangoInicial && item.TaxExclusiveAmount1 <= rangoFinal
-		);
+		const rango1 = contratosmenoresJson.filter((item) => item.TypeCode === _TypeCode);
 		let suma = 0;
 		rango1.forEach((x) => {
 			suma = suma + x.TaxExclusiveAmount1;
