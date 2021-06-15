@@ -8,8 +8,7 @@ import { IChartContrato } from '../../../models/contratos.interfaces';
 import { Static } from '../../../util/static';
 @Component({
 	selector: 'app-suma-importes-por-typecode',
-	templateUrl: './suma-importes-por-typecode.component.html',
-	styleUrls: ['./suma-importes-por-typecode.component.scss']
+	templateUrl: './suma-importes-por-typecode.component.html'
 })
 export class SumaImportesPorTypecodeComponent {
 	public options: any;
@@ -17,13 +16,18 @@ export class SumaImportesPorTypecodeComponent {
 		this.generarDataImporte();
 		this.options = {
 			title: { text: 'Por TypeCode acumulado' },
-			// subtitle: { text: 'in billion U.S. dollars' },
+			padding: {
+				top: 40,
+				right: 50,
+				bottom: 40,
+				left: 40
+			},
 			legend: { enabled: false },
 			data: this.generarDataImporte(),
 			series: [
 				{
 					type: 'bar',
-					xKey: 'rangePayableAmount',
+					xKey: 'codeText',
 					yKeys: ['sumPayableAmount'],
 					yNames: ['Nº contratos'],
 					formatter: () => ({
@@ -34,7 +38,9 @@ export class SumaImportesPorTypecodeComponent {
 						fontWeight: 'bold',
 						formatter: function (params: any) {
 							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-							return params.value === undefined ? '' : params.value.toFixed(0);
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 						}
 					}
 				}
@@ -42,7 +48,17 @@ export class SumaImportesPorTypecodeComponent {
 			axes: [
 				{
 					type: 'number',
-					position: 'bottom'
+					position: 'bottom',
+					label: {
+						fontWeight: 'bold',
+						rotation: 45,
+						formatter: function (params: any) {
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+						}
+					}
 				},
 				{
 					type: 'category',
@@ -71,59 +87,59 @@ export class SumaImportesPorTypecodeComponent {
 		return data;
 	}
 	private getDataRango(rango: number): IChartContrato {
-		let _TypeCode = '1';
-		let rangePayableAmount = 'Suministros';
+		let codeSearch = '1';
+		let codeText = 'Suministros';
 		switch (rango) {
 			case 2:
-				_TypeCode = '2';
-				rangePayableAmount = 'Servicios';
+				codeSearch = '2';
+				codeText = 'Servicios';
 				break;
 			case 3:
-				_TypeCode = '3';
-				rangePayableAmount = 'Obras';
+				codeSearch = '3';
+				codeText = 'Obras';
 				break;
 			case 4:
-				_TypeCode = '21';
-				rangePayableAmount = 'Gestión de Servicios Públicos';
+				codeSearch = '21';
+				codeText = 'Gestión de Servicios Públicos';
 				break;
 			case 5:
-				_TypeCode = '22';
-				rangePayableAmount = 'Concesión de Servicios';
+				codeSearch = '22';
+				codeText = 'Concesión de Servicios';
 				break;
 			case 6:
-				_TypeCode = '31';
-				rangePayableAmount = 'Concesión de Obras Públicas';
+				codeSearch = '31';
+				codeText = 'Concesión de Obras Públicas';
 				break;
 			case 7:
-				_TypeCode = '32';
-				rangePayableAmount = 'Concesión de Obras';
+				codeSearch = '32';
+				codeText = 'Concesión de Obras';
 				break;
 			case 8:
-				_TypeCode = '40';
-				rangePayableAmount = 'Colaboración entre el sector público y sector privado';
+				codeSearch = '40';
+				codeText = 'Colaboración entre el sector público y sector privado';
 				break;
 			case 9:
-				_TypeCode = '7';
-				rangePayableAmount = 'Administrativo especial';
+				codeSearch = '7';
+				codeText = 'Administrativo especial';
 				break;
 			case 10:
-				_TypeCode = '8';
-				rangePayableAmount = 'Privado';
+				codeSearch = '8';
+				codeText = 'Privado';
 				break;
 			case 11:
-				_TypeCode = '50';
-				rangePayableAmount = 'Patrimonial';
+				codeSearch = '50';
+				codeText = 'Patrimonial';
 				break;
 		}
 		// Static.TIPOS.find(x=>x.id==5);
-		const rango1 = contratosmenoresJson.filter((item) => item.TypeCode === _TypeCode);
+		const rango1 = contratosmenoresJson.filter((item) => item.TypeCode === codeSearch);
 		let suma = 0;
 		rango1.forEach((x) => {
 			suma = suma + x.TaxExclusiveAmount1;
 		});
 
 		const itemRango: IChartContrato = {
-			rangePayableAmount,
+			codeText,
 			contratos: rango1.length,
 			sumPayableAmount: suma
 		};

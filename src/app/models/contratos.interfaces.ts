@@ -22,7 +22,7 @@ export interface IContratoMenor {
 }
 
 export interface IChartContrato {
-	rangePayableAmount: string;
+	codeText: string;
 	contratos: number;
 	sumPayableAmount: number;
 }

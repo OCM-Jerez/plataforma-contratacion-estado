@@ -8,8 +8,7 @@ import { IChartContrato } from '../../../models/contratos.interfaces';
 import { Static } from '../../../util/static';
 @Component({
 	selector: 'app-por-urgencycode',
-	templateUrl: './por-urgencycode.component.html',
-	styleUrls: ['./por-urgencycode.component.scss']
+	templateUrl: './por-urgencycode.component.html'
 })
 export class PorUrgencycodeComponent {
 	public options: any;
@@ -17,13 +16,18 @@ export class PorUrgencycodeComponent {
 		this.generarDataImporte();
 		this.options = {
 			title: { text: 'Por UrgencyCode' },
-			// subtitle: { text: 'in billion U.S. dollars' },
+			padding: {
+				top: 40,
+				right: 50,
+				bottom: 40,
+				left: 40
+			},
 			legend: { enabled: false },
 			data: this.generarDataImporte(),
 			series: [
 				{
 					type: 'bar',
-					xKey: 'rangePayableAmount',
+					xKey: 'codeText',
 					yKeys: ['contratos'],
 					yNames: ['Nº contratos'],
 					formatter: () => ({
@@ -34,7 +38,9 @@ export class PorUrgencycodeComponent {
 						fontWeight: 'bold',
 						formatter: function (params: any) {
 							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-							return params.value === undefined ? '' : params.value.toFixed(0);
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 						}
 					}
 				}
@@ -42,7 +48,16 @@ export class PorUrgencycodeComponent {
 			axes: [
 				{
 					type: 'number',
-					position: 'bottom'
+					position: 'bottom',
+					label: {
+						fontWeight: 'bold',
+						formatter: function (params: any) {
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+						}
+					}
 				},
 				{
 					type: 'category',
@@ -59,27 +74,27 @@ export class PorUrgencycodeComponent {
 		return data;
 	}
 	private getDataRango(rango: number): IChartContrato {
-		let CodeSearch = '1';
-		let rangePayableAmount = 'Ordinaria';
+		let codeSearch = '1';
+		let codeText = 'Ordinaria';
 		switch (rango) {
 			case 2:
-				CodeSearch = '2';
-				rangePayableAmount = 'Urgente';
+				codeSearch = '2';
+				codeText = 'Urgente';
 				break;
 			case 3:
-				CodeSearch = '3';
-				rangePayableAmount = 'Emergencia';
+				codeSearch = '3';
+				codeText = 'Emergencia';
 				break;
 		}
 		// Static.TIPOS.find(x=>x.id==5);
-		const rango1 = contratosmenoresJson.filter((item) => item.UrgencyCode === CodeSearch);
+		const rango1 = contratosmenoresJson.filter((item) => item.UrgencyCode === codeSearch);
 		let suma = 0;
 		rango1.forEach((x) => {
 			suma = suma + x.TaxExclusiveAmount1;
 		});
 
 		const itemRango: IChartContrato = {
-			rangePayableAmount,
+			codeText,
 			contratos: rango1.length,
 			sumPayableAmount: suma
 		};

@@ -23,6 +23,6 @@ export class IndiceComponent {
 	}
 
 	graficos() {
-		this.router?.navigate(['/graficos']);
+		this.router?.navigate(['/indiceGraficos']);
 	}
 }

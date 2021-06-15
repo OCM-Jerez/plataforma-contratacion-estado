@@ -8,8 +8,7 @@ import { IChartContrato } from '../../../models/contratos.interfaces';
 import { Static } from '../../../util/static';
 @Component({
 	selector: 'app-por-subtypecode',
-	templateUrl: './por-subtypecode.component.html',
-	styleUrls: ['./por-subtypecode.component.scss']
+	templateUrl: './por-subtypecode.component.html'
 })
 export class PorSubtypecodeComponent {
 	public options: any;
@@ -17,13 +16,18 @@ export class PorSubtypecodeComponent {
 		this.generarDataImporte();
 		this.options = {
 			title: { text: 'Por SubTypeCode' },
-			// subtitle: { text: 'in billion U.S. dollars' },
+			padding: {
+				top: 40,
+				right: 50,
+				bottom: 40,
+				left: 40
+			},
 			legend: { enabled: false },
 			data: this.generarDataImporte(),
 			series: [
 				{
 					type: 'bar',
-					xKey: 'rangePayableAmount',
+					xKey: 'codeText',
 					yKeys: ['contratos'],
 					yNames: ['Nº contratos'],
 					formatter: () => ({
@@ -34,7 +38,9 @@ export class PorSubtypecodeComponent {
 						fontWeight: 'bold',
 						formatter: function (params: any) {
 							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-							return params.value === undefined ? '' : params.value.toFixed(0);
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 						}
 					}
 				}
@@ -42,7 +48,17 @@ export class PorSubtypecodeComponent {
 			axes: [
 				{
 					type: 'number',
-					position: 'bottom'
+					position: 'bottom',
+					label: {
+						fontWeight: 'bold',
+						rotation: 45,
+						formatter: function (params: any) {
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+						}
+					}
 				},
 				{
 					type: 'category',
@@ -88,126 +104,127 @@ export class PorSubtypecodeComponent {
 		return data;
 	}
 	private getDataRango(rango: number): IChartContrato {
-		let _SubTypeCode = '1';
-		let rangePayableAmount = 'Servicios de mantenimiento y reparación';
+		let codeSearch = '1';
+		let codeText = 'Servicios de mantenimiento y reparación';
 		switch (rango) {
 			case 2:
-				_SubTypeCode = '2';
-				rangePayableAmount =
-					'Servicios de transporte por vía terrestre, incluidos los servicios de furgones blindados y servicios de mensajería, excepto el transporte de correo';
+				codeSearch = '2';
+				codeText = 'Servicios de transporte por vía terrestre...';
+				// 'Servicios de transporte por vía terrestre, incluidos los servicios de furgones blindados y servicios de mensajería, excepto el transporte de correo';
 				break;
 			case 3:
-				_SubTypeCode = '3';
-				rangePayableAmount =
-					'Servicios de transporte aéreo: transporte de pasajeros y carga, excepto el transporte de correo';
+				codeSearch = '3';
+				codeText = 'Servicios de transporte aéreo...';
+				// 'Servicios de transporte aéreo: transporte de pasajeros y carga, excepto el transporte de correo';
 				break;
 			case 4:
-				_SubTypeCode = '4';
-				rangePayableAmount = 'Transporte de correo por vía terrestre y por vía aérea';
+				codeSearch = '4';
+				codeText = 'Transporte de correo por vía terrestre y por vía aérea';
 				break;
 			case 5:
-				_SubTypeCode = '5';
-				rangePayableAmount = 'Servicios de telecomunicación';
+				codeSearch = '5';
+				codeText = 'Servicios de telecomunicación';
 				break;
 			case 6:
-				_SubTypeCode = '6';
-				rangePayableAmount =
-					'Servicios financieros: a) servicios de seguros; b) servicios bancarios y de inversión';
+				codeSearch = '6';
+				codeText = 'Servicios financieros...';
+				// 'Servicios financieros: a) servicios de seguros; b) servicios bancarios y de inversión';
 				break;
 			case 7:
-				_SubTypeCode = '7';
-				rangePayableAmount = 'Servicios de informática y servicios conexos';
+				codeSearch = '7';
+				codeText = 'Servicios de informática y servicios conexos';
 				break;
 			case 8:
-				_SubTypeCode = '8';
-				rangePayableAmount = 'Servicios de investigación y desarrollo';
+				codeSearch = '8';
+				codeText = 'Servicios de investigación y desarrollo';
 				break;
 			case 9:
-				_SubTypeCode = '9';
-				rangePayableAmount = 'ervicios de contabilidad, auditoría y teneduría de libros';
+				codeSearch = '9';
+				codeText = 'Servicios de contabilidad, auditoría...';
+				// codeText = 'Servicios de contabilidad, auditoría y teneduría de libros';
 				break;
 			case 10:
-				_SubTypeCode = '10';
-				rangePayableAmount =
-					'Servicios de investigación de estudios y encuestas de la opinión pública';
+				codeSearch = '10';
+				codeText = 'Servicios de investigación de estudios ....';
+				// codeText = 'Servicios de investigación de estudios y encuestas de la opinión pública';
 				break;
 			case 11:
-				_SubTypeCode = '11';
-				rangePayableAmount = 'Servicios de consultores de dirección y servicios conexos';
+				codeSearch = '11';
+				codeText = 'Servicios de consultores de dirección y servicios conexos';
 				break;
 			case 12:
-				_SubTypeCode = '12';
-				rangePayableAmount = 'Servicios de arquitectura';
+				codeSearch = '12';
+				codeText = 'Servicios de arquitectura';
 				break;
 			case 13:
-				_SubTypeCode = '13';
-				rangePayableAmount =
-					'Servicios de publicidad Servicios de limpieza de edificios y servicios de administración de bienes raíces';
+				codeSearch = '13';
+				codeText = 'Servicios de publicidad Servicios de limpieza de edificios...';
+				// 'Servicios de publicidad Servicios de limpieza de edificios y servicios de administración de bienes raíces';
 				break;
 			case 15:
-				_SubTypeCode = '15';
-				rangePayableAmount = 'Servicios editoriales y de imprenta, por tarifa o por contrato';
+				codeSearch = '15';
+				codeText = 'Servicios editoriales y de imprenta, por tarifa o por contrato';
 				break;
 			case 16:
-				_SubTypeCode = '16';
-				rangePayableAmount =
-					'Servicios de alcantarillado y eliminación de desperdicios: servicios de saneamiento y servicios similares';
+				codeSearch = '16';
+				codeText = 'Servicios de alcantarillado y eliminación de desperdicios....';
+				// 'Servicios de alcantarillado y eliminación de desperdicios: servicios de saneamiento y servicios similares';
 				break;
 			case 17:
-				_SubTypeCode = '17';
-				rangePayableAmount = 'Servicios de hostelería y restaurante';
+				codeSearch = '17';
+				codeText = 'Servicios de hostelería y restaurante';
 				break;
 			case 18:
-				_SubTypeCode = '18';
-				rangePayableAmount = 'Servicios de transporte por ferrocarril';
+				codeSearch = '18';
+				codeText = 'Servicios de transporte por ferrocarril';
 				break;
 			case 19:
-				_SubTypeCode = '19';
-				rangePayableAmount = 'Servicios de transporte fluvial y marítimo';
+				codeSearch = '19';
+				codeText = 'Servicios de transporte fluvial y marítimo';
 				break;
 			case 20:
-				_SubTypeCode = '20';
-				rangePayableAmount = 'Servicios de transporte complementarios y auxiliares';
+				codeSearch = '20';
+				codeText = 'Servicios de transporte complementarios y auxiliares';
 				break;
 			case 21:
-				_SubTypeCode = '21';
-				rangePayableAmount = 'Servicios jurídicos';
+				codeSearch = '21';
+				codeText = 'Servicios jurídicos';
 				break;
 			case 22:
-				_SubTypeCode = '22';
-				rangePayableAmount = 'Servicios de colocación y suministro de personal';
+				codeSearch = '22';
+				codeText = 'Servicios de colocación y suministro de personal';
 				break;
 			case 23:
-				_SubTypeCode = '23';
-				rangePayableAmount =
-					'Servicios de investigación y seguridad, excepto los servicios de furgones blindados';
+				codeSearch = '23';
+				codeText = 'Servicios de investigación y seguridad...';
+				// 'Servicios de investigación y seguridad, excepto los servicios de furgones blindados';
 				break;
 			case 24:
-				_SubTypeCode = '24';
-				rangePayableAmount = 'Servicios de educación y formación profesional';
+				codeSearch = '24';
+				codeText = 'Servicios de educación y formación profesional';
 				break;
 			case 25:
-				_SubTypeCode = '25';
-				rangePayableAmount = 'Servicios sociales y de salud';
+				codeSearch = '25';
+				codeText = 'Servicios sociales y de salud';
 				break;
 			case 26:
-				_SubTypeCode = '26';
-				rangePayableAmount = 'Servicios de esparcimiento, culturales y deportivos';
+				codeSearch = '26';
+				codeText = 'Servicios de esparcimiento, culturales y deportivos';
 				break;
 			case 27:
-				_SubTypeCode = '27';
-				rangePayableAmount = 'Otros servicios';
+				codeSearch = '27';
+				codeText = 'Otros servicios';
 				break;
 		}
 		// Static.TIPOS.find(x=>x.id==5);
-		const rango1 = contratosmenoresJson.filter((item) => item.SubTypeCode === _SubTypeCode);
+		const rango1 = contratosmenoresJson.filter((item) => item.SubTypeCode === codeSearch);
 		let suma = 0;
 		rango1.forEach((x) => {
 			suma = suma + x.TaxExclusiveAmount1;
 		});
 
 		const itemRango: IChartContrato = {
-			rangePayableAmount,
+			codeText,
 			contratos: rango1.length,
 			sumPayableAmount: suma
 		};

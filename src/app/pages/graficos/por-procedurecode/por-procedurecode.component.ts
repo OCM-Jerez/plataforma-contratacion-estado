@@ -8,8 +8,7 @@ import { IChartContrato } from '../../../models/contratos.interfaces';
 import { Static } from '../../../util/static';
 @Component({
 	selector: 'app-por-procedurecode',
-	templateUrl: './por-procedurecode.component.html',
-	styleUrls: ['./por-procedurecode.component.scss']
+	templateUrl: './por-procedurecode.component.html'
 })
 export class PorProcedurecodeComponent {
 	public options: any;
@@ -17,13 +16,18 @@ export class PorProcedurecodeComponent {
 		this.generarDataImporte();
 		this.options = {
 			title: { text: 'Por ProcedureCode' },
-			// subtitle: { text: 'in billion U.S. dollars' },
+			padding: {
+				top: 40,
+				right: 50,
+				bottom: 40,
+				left: 40
+			},
 			legend: { enabled: false },
 			data: this.generarDataImporte(),
 			series: [
 				{
 					type: 'bar',
-					xKey: 'rangePayableAmount',
+					xKey: 'codeText',
 					yKeys: ['contratos'],
 					yNames: ['Nº contratos'],
 					formatter: () => ({
@@ -34,7 +38,9 @@ export class PorProcedurecodeComponent {
 						fontWeight: 'bold',
 						formatter: function (params: any) {
 							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-							return params.value === undefined ? '' : params.value.toFixed(0);
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 						}
 					}
 				}
@@ -42,7 +48,16 @@ export class PorProcedurecodeComponent {
 			axes: [
 				{
 					type: 'number',
-					position: 'bottom'
+					position: 'bottom',
+					label: {
+						fontWeight: 'bold',
+						formatter: function (params: any) {
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+						}
+					}
 				},
 				{
 					type: 'category',
@@ -75,75 +90,75 @@ export class PorProcedurecodeComponent {
 		return data;
 	}
 	private getDataRango(rango: number): IChartContrato {
-		let _TypeCode = '1';
-		let rangePayableAmount = 'Abierto';
+		let codeSearch = '1';
+		let codeText = 'Abierto';
 		switch (rango) {
 			case 2:
-				_TypeCode = '2';
-				rangePayableAmount = 'Restringido';
+				codeSearch = '2';
+				codeText = 'Restringido';
 				break;
 			case 3:
-				_TypeCode = '3';
-				rangePayableAmount = 'Negociado sin publicidad';
+				codeSearch = '3';
+				codeText = 'Negociado sin publicidad';
 				break;
 			case 4:
-				_TypeCode = '4';
-				rangePayableAmount = 'Negociado con publicidad';
+				codeSearch = '4';
+				codeText = 'Negociado con publicidad';
 				break;
 			case 5:
-				_TypeCode = '5';
-				rangePayableAmount = 'Diálogo competitivo';
+				codeSearch = '5';
+				codeText = 'Diálogo competitivo';
 				break;
 			case 6:
-				_TypeCode = '6';
-				rangePayableAmount = 'Contrato menor';
+				codeSearch = '6';
+				codeText = 'Contrato menor';
 				break;
 			case 7:
-				_TypeCode = '7';
-				rangePayableAmount = 'Derivado de acuerdo marco';
+				codeSearch = '7';
+				codeText = 'Derivado de acuerdo marco';
 				break;
 			case 8:
-				_TypeCode = '8';
-				rangePayableAmount = 'Concurso de proyectos';
+				codeSearch = '8';
+				codeText = 'Concurso de proyectos';
 				break;
 			case 9:
-				_TypeCode = '9';
-				rangePayableAmount = 'Abierto simplificado';
+				codeSearch = '9';
+				codeText = 'Abierto simplificado';
 				break;
 			case 10:
-				_TypeCode = '10';
-				rangePayableAmount = 'Asociación para la innovación';
+				codeSearch = '10';
+				codeText = 'Asociación para la innovación';
 				break;
 			case 11:
-				_TypeCode = '11';
-				rangePayableAmount = 'Derivado de asociación para la innovación';
+				codeSearch = '11';
+				codeText = 'Derivado de asociación para la innovación';
 				break;
 			case 12:
-				_TypeCode = '12';
-				rangePayableAmount = ' Basado en un sistema dinámico de adquisición';
+				codeSearch = '12';
+				codeText = ' Basado en un sistema dinámico de adquisición';
 				break;
 			case 13:
-				_TypeCode = '13';
-				rangePayableAmount = 'Licitación con negociación';
+				codeSearch = '13';
+				codeText = 'Licitación con negociación';
 				break;
 			case 100:
-				_TypeCode = '100';
-				rangePayableAmount = 'Normas internas';
+				codeSearch = '100';
+				codeText = 'Normas internas';
 				break;
 			case 999:
-				_TypeCode = '999';
-				rangePayableAmount = 'Otros';
+				codeSearch = '999';
+				codeText = 'Otros';
 				break;
 		}
 		// Static.TIPOS.find(x=>x.id==5);
-		const rango1 = contratosmenoresJson.filter((item) => item.TypeCode === _TypeCode);
+		const rango1 = contratosmenoresJson.filter((item) => item.ProcedureCode === codeSearch);
 		let suma = 0;
 		rango1.forEach((x) => {
 			suma = suma + x.TaxExclusiveAmount1;
 		});
 
 		const itemRango: IChartContrato = {
-			rangePayableAmount,
+			codeText,
 			contratos: rango1.length,
 			sumPayableAmount: suma
 		};

@@ -12,8 +12,7 @@ import localeTextESPes from '../../../assets/data/localeTextESPes.json';
 
 @Component({
 	selector: 'app-por-cif',
-	templateUrl: './por-cif.component.html',
-	styleUrls: ['./por-cif.component.scss']
+	templateUrl: './por-cif.component.html'
 })
 export class PorCIFComponent {
 	@ViewChild('agGrid', { static: false })

@@ -4,8 +4,7 @@ import * as agCharts from 'ag-charts-community';
 
 @Component({
 	selector: 'app-graficos',
-	templateUrl: './graficos.component.html',
-	styleUrls: ['./graficos.component.scss']
+	templateUrl: './graficos.component.html'
 })
 export class GraficosComponent {
 	public options: any;

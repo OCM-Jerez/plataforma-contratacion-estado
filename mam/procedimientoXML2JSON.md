@@ -5,17 +5,16 @@ C:\Users\pc\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos
 Crear nuevo fichero.
 Guardar como contratosMenores2021XX.txt
 En carpeta:
- C:\Users\pc\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Contratos menores\2021\xml
+C:\Users\pc\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Contratos menores\2021\xml
 
 Arrastrar fichero a VScode
 CRLR + SHIF - P => Fold level 3
-Buscar 
+Buscar
 Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez
 Minimizo <entry></entry>
-Copio entre   <entry></entry>
+Copio entre <entry></entry>
 Pego en el fichero txt donde voy recopilando entradas.
 Busco siguiente.
-
 
 Crear nuevo fichero.
 Guardar como contratosMenores2021XX.json
@@ -30,69 +29,68 @@ Copio todo el resultado de la conversión en la WEB
 Lo pego en el fichero json que estoy creando
 crtl + alt + v para comnprobar json valido
 Borro:
-     {
-      "entry":  DEJAR [
-Borro ultima { 
+{
+"entry": DEJAR [
+Borro ultima {
 crtl + alt + v para comprobar json valido
 
-Buscar y quitar  \" en textos.
+Buscar y quitar \" en textos.
 Guardar.
 
-
 Copiar el json, crear const con la matriz:
-lici =  ([] ya esta en el fichero)
+lici = ([] ya esta en el fichero)
 Iterar con map() en RunJS
 
 const result = lici.map((elem) => {
-  if (Array.isArray(elem.ContractFolderStatus.TenderResult)) {
-    return {
-      id: elem.ContractFolderStatus.ContractFolderID,
-      status: elem.ContractFolderStatus.ContractFolderStatusCode,
-      titulo: elem.title,
-      // objeto: elem.ContractFolderStatus.ProcurementProject.Name,
-      sinIVA: Math.trunc(
-        elem.ContractFolderStatus.ProcurementProject.BudgetAmount
-          .TaxExclusiveAmount
-      ),
-      fecha: elem.ContractFolderStatus.TenderResult[0].AwardDate,
-      CIF:
-        elem.ContractFolderStatus.TenderResult[0].WinningParty
-          .PartyIdentification.ID,
-      adjudicatario:
-        elem.ContractFolderStatus.TenderResult[0].WinningParty.PartyName.Name,
-      CIF1:
-        elem.ContractFolderStatus.TenderResult[1].WinningParty
-          .PartyIdentification.ID,
-      adjudicatario1:
-        elem.ContractFolderStatus.TenderResult[1].WinningParty.PartyName.Name,
-      // CIF2: elem.ContractFolderStatus.TenderResult[2].WinningParty.PartyIdentification.ID,
-      // Adjudicatario2: elem.ContractFolderStatus.TenderResult[2].WinningParty.PartyName.Name,
-      // fecha1: elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[0].IssueDate,
-      // URL:  elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[1].Attachment.ExternalReference.URI
-    };
-  } else {
-    return {
-      id: elem.ContractFolderStatus.ContractFolderID,
-      status: elem.ContractFolderStatus.ContractFolderStatusCode,
-      titulo: elem.title,
-      // objeto: elem.ContractFolderStatus.ProcurementProject.Name,
-      sinIVA: Math.trunc(
-        elem.ContractFolderStatus.ProcurementProject.BudgetAmount
-          .TaxExclusiveAmount
-      ),
-      fecha: elem.ContractFolderStatus.TenderResult.AwardDate,
-      CIF:
-        elem.ContractFolderStatus.TenderResult.WinningParty.PartyIdentification
-          .ID,
-      adjudicatario:
-        elem.ContractFolderStatus.TenderResult.WinningParty.PartyName.Name,
-      TipoContrato: elem.ContractFolderStatus.ProcurementProject.TypeCode,
-      tipoLicitacion: elem.ContractFolderStatus.TenderingProcess.ProcedureCode,
-      urgencia: elem.ContractFolderStatus.TenderingProcess.UrgencyCode,
-      // fecha1: elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[0].IssueDate,
-      // URL:  elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[1].Attachment.ExternalReference.URI
-    };
-  }
+if (Array.isArray(elem.ContractFolderStatus.TenderResult)) {
+return {
+id: elem.ContractFolderStatus.ContractFolderID,
+status: elem.ContractFolderStatus.ContractFolderStatusCode,
+titulo: elem.title,
+// objeto: elem.ContractFolderStatus.ProcurementProject.Name,
+sinIVA: Math.trunc(
+elem.ContractFolderStatus.ProcurementProject.BudgetAmount
+.TaxExclusiveAmount
+),
+fecha: elem.ContractFolderStatus.TenderResult[0].AwardDate,
+CIF:
+elem.ContractFolderStatus.TenderResult[0].WinningParty
+.PartyIdentification.ID,
+adjudicatario:
+elem.ContractFolderStatus.TenderResult[0].WinningParty.PartyName.Name,
+CIF1:
+elem.ContractFolderStatus.TenderResult[1].WinningParty
+.PartyIdentification.ID,
+adjudicatario1:
+elem.ContractFolderStatus.TenderResult[1].WinningParty.PartyName.Name,
+// CIF2: elem.ContractFolderStatus.TenderResult[2].WinningParty.PartyIdentification.ID,
+// Adjudicatario2: elem.ContractFolderStatus.TenderResult[2].WinningParty.PartyName.Name,
+// fecha1: elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[0].IssueDate,
+// URL: elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[1].Attachment.ExternalReference.URI
+};
+} else {
+return {
+id: elem.ContractFolderStatus.ContractFolderID,
+status: elem.ContractFolderStatus.ContractFolderStatusCode,
+titulo: elem.title,
+// objeto: elem.ContractFolderStatus.ProcurementProject.Name,
+sinIVA: Math.trunc(
+elem.ContractFolderStatus.ProcurementProject.BudgetAmount
+.TaxExclusiveAmount
+),
+fecha: elem.ContractFolderStatus.TenderResult.AwardDate,
+CIF:
+elem.ContractFolderStatus.TenderResult.WinningParty.PartyIdentification
+.ID,
+adjudicatario:
+elem.ContractFolderStatus.TenderResult.WinningParty.PartyName.Name,
+TipoContrato: elem.ContractFolderStatus.ProcurementProject.TypeCode,
+tipoLicitacion: elem.ContractFolderStatus.TenderingProcess.ProcedureCode,
+urgencia: elem.ContractFolderStatus.TenderingProcess.UrgencyCode,
+// fecha1: elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[0].IssueDate,
+// URL: elem.ContractFolderStatus.ValidNoticeInfo.AdditionalPublicationStatus.AdditionalPublicationDocumentReference[1].Attachment.ExternalReference.URI
+};
+}
 });
 
 // console.log(JSON.stringify(result));
@@ -101,12 +99,10 @@ console.log(result);
 Cuando hay varios adjudicatarios, tengo que iterar sobre su array conociendo la cantidad de ellos.
 Crear un objeto para cada uno de ellos, en la tabla mostrare una misma licitación con los diferentes adjudicatarios.
 
-
 QUITAR `` DE INICIO Y FINAL.
 crtl + shift + p
 JSON beatifu.
 Si es correcto, grabar.
-
 
 Sino consigo un JSON valido, crearlo sin // console.log(JSON.stringify(result));
 Copiar de RUNJS
@@ -123,7 +119,6 @@ borrar ]
 Añadir mes al ficero JSON con meses anteriores
 crtl + alt + v para comprobar json valido
 Guardar.
-
 
 TypeCode:
 1 Suministros.
@@ -199,11 +194,28 @@ UrgencyCode
 2 = Urgente
 3 = Emergencia
 
-
-
-
-
-
+{
+"link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=n509E6xCx8Gmq21uxhbaVQ%3D%3D",
+"summary": "Id licitación: Mensum-2020/1; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 8760.33 EUR; Estado: RES",
+"title": "Suministro de juguetes para la campaña navideña en Barriadas Rurales",
+"updated": "2020-01-03T13:08:40.442+01:00",
+"ContractFolderID": "Mensum-2020/1",
+"ContractFolderStatusCode": "RES",
+"Name": "Suministro de juguetes para la campaña navideña en Barriadas Rurales",
+"TypeCode": "1",
+"SubTypeCode": "2",
+"TotalAmount": 10600,
+"TaxExclusiveAmount": 8760,
+"ResultCode": "8",
+"AwardDate": "2020-01-03",
+"ReceivedTenderQuantity": "1",
+"PartyIdentification": "B11607967",
+"PartyName": "Almacenes Bahía, S.L.",
+"TaxExclusiveAmount1": 8760,
+"PayableAmount": 10600,
+"ProcedureCode": "6",
+"UrgencyCode": "1"
+},
 
 Datos del mes en curso:
 https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx

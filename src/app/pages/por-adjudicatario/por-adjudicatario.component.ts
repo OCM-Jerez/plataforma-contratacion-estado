@@ -12,8 +12,7 @@ import localeTextESPes from '../../../assets/data/localeTextESPes.json';
 
 @Component({
 	selector: 'app-por-adjudicatario',
-	templateUrl: './por-adjudicatario.component.html',
-	styleUrls: ['./por-adjudicatario.component.scss']
+	templateUrl: './por-adjudicatario.component.html'
 })
 export class PorAdjudicatarioComponent {
 	@ViewChild('agGrid', { static: false })

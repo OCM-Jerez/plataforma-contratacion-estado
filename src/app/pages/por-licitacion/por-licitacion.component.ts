@@ -11,9 +11,8 @@ import { CellRendererOCM } from '../../shared/utils/utils';
 import localeTextESPes from '../../../assets/data/localeTextESPes.json';
 
 @Component({
-  selector: 'app-por-licitacion',
-  templateUrl: './por-licitacion.component.html',
-  styleUrls: ['./por-licitacion.component.scss']
+	selector: 'app-por-licitacion',
+	templateUrl: './por-licitacion.component.html'
 })
 export class PorLicitacionComponent {
 	@ViewChild('agGrid', { static: false })
@@ -108,7 +107,7 @@ export class PorLicitacionComponent {
 								}
 							}
 						}
-					},
+					}
 					// {
 					// 	headerName: 'Fecha',
 					// 	field: 'AwardDate',

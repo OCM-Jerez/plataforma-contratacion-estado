@@ -8,8 +8,7 @@ import { IChartContrato } from '../../../models/contratos.interfaces';
 import { Static } from '../../../util/static';
 @Component({
 	selector: 'app-suma-importes-por-urgencycode',
-	templateUrl: './suma-importes-por-urgencycode.component.html',
-	styleUrls: ['./suma-importes-por-urgencycode.component.scss']
+	templateUrl: './suma-importes-por-urgencycode.component.html'
 })
 export class SumaImportesPorUrgencycodeComponent {
 	public options: any;
@@ -17,13 +16,18 @@ export class SumaImportesPorUrgencycodeComponent {
 		this.generarDataImporte();
 		this.options = {
 			title: { text: 'Por UrgencyCode acumulado' },
-			// subtitle: { text: 'in billion U.S. dollars' },
+			padding: {
+				top: 40,
+				right: 50,
+				bottom: 40,
+				left: 40
+			},
 			legend: { enabled: false },
 			data: this.generarDataImporte(),
 			series: [
 				{
 					type: 'bar',
-					xKey: 'rangePayableAmount',
+					xKey: 'codeText',
 					yKeys: ['sumPayableAmount'],
 					yNames: ['Nº contratos'],
 					formatter: () => ({
@@ -34,7 +38,9 @@ export class SumaImportesPorUrgencycodeComponent {
 						fontWeight: 'bold',
 						formatter: function (params: any) {
 							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
-							return params.value === undefined ? '' : params.value.toFixed(0);
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 						}
 					}
 				}
@@ -42,7 +48,17 @@ export class SumaImportesPorUrgencycodeComponent {
 			axes: [
 				{
 					type: 'number',
-					position: 'bottom'
+					position: 'bottom',
+					label: {
+						fontWeight: 'bold',
+						rotation: 45,
+						formatter: function (params: any) {
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+							return params.value === undefined
+								? ''
+								: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+						}
+					}
 				},
 				{
 					type: 'category',
@@ -60,15 +76,15 @@ export class SumaImportesPorUrgencycodeComponent {
 	}
 	private getDataRango(rango: number): IChartContrato {
 		let CodeSearch = '1';
-		let rangePayableAmount = 'Ordinaria';
+		let codeText = 'Ordinaria';
 		switch (rango) {
 			case 2:
 				CodeSearch = '2';
-				rangePayableAmount = 'Urgente';
+				codeText = 'Urgente';
 				break;
 			case 3:
 				CodeSearch = '3';
-				rangePayableAmount = 'Emergencia';
+				codeText = 'Emergencia';
 				break;
 		}
 		// Static.TIPOS.find(x=>x.id==5);
@@ -79,7 +95,7 @@ export class SumaImportesPorUrgencycodeComponent {
 		});
 
 		const itemRango: IChartContrato = {
-			rangePayableAmount,
+			codeText,
 			contratos: rango1.length,
 			sumPayableAmount: suma
 		};

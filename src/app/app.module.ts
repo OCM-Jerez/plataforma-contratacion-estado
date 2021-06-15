@@ -28,6 +28,12 @@ import { PorProcedurecodeComponent } from './pages/graficos/por-procedurecode/po
 import { SumaImportesPorProcedurecodeComponent } from './pages/graficos/suma-importes-por-procedurecode/suma-importes-por-procedurecode.component';
 import { PorUrgencycodeComponent } from './pages/graficos/por-urgencycode/por-urgencycode.component';
 import { SumaImportesPorUrgencycodeComponent } from './pages/graficos/suma-importes-por-urgencycode/suma-importes-por-urgencycode.component';
+import { IndiceGraficosComponent } from './indice-graficos/indice-graficos.component';
+import { GraficosPorProcedimientoComponent } from './pages/graficos/graficos-por-procedimiento/graficos-por-procedimiento.component';
+import { GraficosPorResultcodeComponent } from './pages/graficos/graficos-por-resultcode/graficos-por-resultcode.component';
+import { GraficosPorTypecodeComponent } from './pages/graficos/graficos-por-typecode/graficos-por-typecode.component';
+import { GraficosPorSubtypecodeComponent } from './pages/graficos/graficos-por-subtypecode/graficos-por-subtypecode.component';
+import { GraficosPorUrgencycodeComponent } from './pages/graficos/graficos-por-urgencycode/graficos-por-urgencycode.component';
 
 @NgModule({
 	declarations: [
@@ -51,7 +57,13 @@ import { SumaImportesPorUrgencycodeComponent } from './pages/graficos/suma-impor
   PorProcedurecodeComponent,
   SumaImportesPorProcedurecodeComponent,
   PorUrgencycodeComponent,
-  SumaImportesPorUrgencycodeComponent
+  SumaImportesPorUrgencycodeComponent,
+  IndiceGraficosComponent,
+  GraficosPorProcedimientoComponent,
+  GraficosPorResultcodeComponent,
+  GraficosPorTypecodeComponent,
+  GraficosPorSubtypecodeComponent,
+  GraficosPorUrgencycodeComponent
 	],
 	imports: [
 		BrowserModule,
