@@ -4,6 +4,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import contratosmenoresJson from '../../../assets/data/contratosMenores2020map.json';
+
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 
@@ -141,6 +143,7 @@ export class PorCIFComponent {
 		this.gridApi = params.api;
 		this.gridColumnApi = params.columnApi;
 		this.rowData = this.http.get('../assets/data/contratosMenores2020map.json');
+		// this.rowData = contratosmenoresJson;
 	}
 
 	expandAll() {
