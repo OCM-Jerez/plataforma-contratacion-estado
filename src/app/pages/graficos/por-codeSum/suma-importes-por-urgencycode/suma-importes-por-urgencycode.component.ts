@@ -15,7 +15,7 @@ export class SumaImportesPorUrgencycodeComponent {
 	constructor() {
 		this.generarDataImporte();
 		this.options = {
-			title: { text: 'Por UrgencyCode acumulado' },
+			title: { text: 'Por UrgencyCode aaaaaaaaacumulado' },
 			padding: {
 				top: 40,
 				right: 50,

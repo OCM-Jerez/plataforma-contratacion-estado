@@ -30,7 +30,8 @@ export interface IChartContrato {
 }
 
 export interface IChannelChart {
-	titulo: string;
+	titulo1: string;
+	titulo2: string;
 	tituloPagina: string;
 	tipoReporte: TipoGrafico;
 	rangos: number[];

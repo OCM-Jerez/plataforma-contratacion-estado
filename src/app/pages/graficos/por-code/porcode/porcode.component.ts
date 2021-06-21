@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IChartContrato, IContratoMenor } from '../../../../models/contratos.interfaces';
 import { TipoGrafico } from '../../../../models/tipos-graficos.type';
 import { Static } from '../../../../util/static';
@@ -7,11 +7,11 @@ import { ChannelChartsService } from '../../../../channel-charts.service';
 
 @Component({
 	selector: 'app-porcode',
-	templateUrl: './porcode.component.html',
-	styleUrls: ['./porcode.component.scss']
+	templateUrl: './porcode.component.html'
 })
 export class PorcodeComponent {
-	titulo = '';
+	titulo1 = '';
+	titulo2 = '';
 	tipoReporte: TipoGrafico = 'por importe';
 	rangos: number[] = [];
 	tituloPagina = '';
@@ -20,20 +20,20 @@ export class PorcodeComponent {
 
 	constructor(private _channelChartsService: ChannelChartsService) {
 		this._channelChartsService.$subject.subscribe((data) => {
-			this.titulo = data.titulo;
+			this.titulo1 = data.titulo1;
+			this.titulo2 = data.titulo2;
 			this.tipoReporte = data.tipoReporte;
 			this.rangos = data.rangos;
 			this.tituloPagina = data.tituloPagina;
 			const dataChart = this._generarData();
-			this.options1 = this._generarChart('contratos', dataChart);
-			this.options2 = this._generarChart('sumPayableAmount', dataChart);
+			this.options1 = this._generarChart('contratos', dataChart, this.titulo1);
+			this.options2 = this._generarChart('sumPayableAmount', dataChart, this.titulo2);
 		});
 	}
 
-	private _generarChart(yKeys: string, data: IChartContrato[]) {
+	private _generarChart(yKeys: string, data: IChartContrato[], titulo: string) {
 		return {
-			title: { text: this.titulo },
-			// subtitle: { text: 'in billion U.S. dollars' },
+			title: { text: titulo },
 			legend: { enabled: false },
 			data: data,
 			series: [
@@ -60,6 +60,7 @@ export class PorcodeComponent {
 					position: 'bottom',
 					label: {
 						fontWeight: 'bold',
+						rotation: 45,
 						formatter: (params: { value: number }) => {
 							return this._formatearMoneda(params);
 						}
@@ -96,7 +97,6 @@ export class PorcodeComponent {
 		switch (this.tipoReporte) {
 			case 'por importe': {
 				const datosTipoReporte = Static.RANGO_IMPORTE.find((item) => item.id === rango);
-
 				rangoFilter = contratosmenoresJson.filter(
 					(item) =>
 						item.TaxExclusiveAmount1 >= datosTipoReporte!.value.rangoInicial &&
@@ -108,10 +108,34 @@ export class PorcodeComponent {
 			case 'por procedure': {
 				const procedure = Static.TIPOS_PROCEDURE.find((item) => item.id === rango);
 				codeText = procedure ? procedure.value : 'Sin dato';
-
 				rangoFilter = contratosmenoresJson.filter(
 					(item) => item.ProcedureCode === rango.toString()
 				);
+				break;
+			}
+			case 'por urgency': {
+				const procedure = Static.TIPOS_URGENCY.find((item) => item.id === rango);
+				codeText = procedure ? procedure.value : 'Sin dato';
+				rangoFilter = contratosmenoresJson.filter((item) => item.UrgencyCode === rango.toString());
+				break;
+			}
+			case 'por type': {
+				const procedure = Static.TIPOS_TYPE.find((item) => item.id === rango);
+				codeText = procedure ? procedure.value : 'Sin dato';
+				rangoFilter = contratosmenoresJson.filter((item) => item.TypeCode === rango.toString());
+				break;
+			}
+			case 'por subtype': {
+				const procedure = Static.TIPOS_SUBTYPE.find((item) => item.id === rango);
+				codeText = procedure ? procedure.value : 'Sin dato';
+				rangoFilter = contratosmenoresJson.filter((item) => item.SubTypeCode === rango.toString());
+				break;
+			}
+			case 'por result': {
+				const procedure = Static.TIPOS_RESULT.find((item) => item.id === rango);
+				codeText = procedure ? procedure.value : 'Sin dato';
+				rangoFilter = contratosmenoresJson.filter((item) => item.ResultCode === rango.toString());
+				break;
 			}
 		}
 
