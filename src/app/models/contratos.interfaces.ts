@@ -1,3 +1,5 @@
+import { TipoGrafico } from './tipos-graficos.type';
+
 export interface IContratoMenor {
 	link: string;
 	summary: string;
@@ -25,4 +27,11 @@ export interface IChartContrato {
 	codeText: string;
 	contratos: number;
 	sumPayableAmount: number;
+}
+
+export interface IChannelChart {
+	titulo: string;
+	tituloPagina: string;
+	tipoReporte: TipoGrafico;
+	rangos: number[];
 }
