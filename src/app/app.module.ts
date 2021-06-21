@@ -13,7 +13,6 @@ import { IndiceComponent } from './indice/indice.component';
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
 import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
 import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
-import { GraficosPorImporteComponent } from './pages/graficos/container2Graphs/graficos-por-importe/graficos-por-importe.component';
 import { AgChartsAngularModule } from 'ag-charts-angular';
 import { PorImporteComponent } from './pages/graficos/por-code/por-importe/por-importe.component';
 import { SumaImportesPorRangoComponent } from './pages/graficos/por-codeSum/suma-importes-por-rango/suma-importes-por-rango.component';
@@ -28,11 +27,6 @@ import { SumaImportesPorProcedurecodeComponent } from './pages/graficos/por-code
 import { PorUrgencycodeComponent } from './pages/graficos/por-code/por-urgencycode/por-urgencycode.component';
 import { SumaImportesPorUrgencycodeComponent } from './pages/graficos/por-codeSum/suma-importes-por-urgencycode/suma-importes-por-urgencycode.component';
 import { IndiceGraficosComponent } from './pages/graficos/indice-graficos/indice-graficos.component';
-import { GraficosPorProcedimientoComponent } from './pages/graficos/container2Graphs/graficos-por-procedimiento/graficos-por-procedimiento.component';
-import { GraficosPorResultcodeComponent } from './pages/graficos/container2Graphs/graficos-por-resultcode/graficos-por-resultcode.component';
-import { GraficosPorTypecodeComponent } from './pages/graficos/container2Graphs/graficos-por-typecode/graficos-por-typecode.component';
-import { GraficosPorSubtypecodeComponent } from './pages/graficos/container2Graphs/graficos-por-subtypecode/graficos-por-subtypecode.component';
-import { GraficosPorUrgencycodeComponent } from './pages/graficos/container2Graphs/graficos-por-urgencycode/graficos-por-urgencycode.component';
 import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.component';
 
 @NgModule({
@@ -44,7 +38,6 @@ import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.comp
 		PorLicitacionComponent,
 		PorAdjudicatarioComponent,
 		PorCIFComponent,
-		GraficosPorImporteComponent,
 		PorImporteComponent,
 		SumaImportesPorRangoComponent,
 		PorTypecodeComponent,
@@ -58,11 +51,6 @@ import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.comp
 		PorUrgencycodeComponent,
 		SumaImportesPorUrgencycodeComponent,
 		IndiceGraficosComponent,
-		GraficosPorProcedimientoComponent,
-		GraficosPorResultcodeComponent,
-		GraficosPorTypecodeComponent,
-		GraficosPorSubtypecodeComponent,
-		GraficosPorUrgencycodeComponent,
 		PorcodeComponent
 	],
 	imports: [
