@@ -15,17 +15,11 @@ import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-
 import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
 import { AgChartsAngularModule } from 'ag-charts-angular';
 import { PorImporteComponent } from './pages/graficos/por-code/por-importe/por-importe.component';
-import { SumaImportesPorRangoComponent } from './pages/graficos/por-codeSum/suma-importes-por-rango/suma-importes-por-rango.component';
 import { PorTypecodeComponent } from './pages/graficos/por-code/por-typecode/por-typecode.component';
-import { SumaImportesPorTypecodeComponent } from './pages/graficos/por-codeSum/suma-importes-por-typecode/suma-importes-por-typecode.component';
 import { PorSubtypecodeComponent } from './pages/graficos/por-code/por-subtypecode/por-subtypecode.component';
-import { SumaImportesPorSubtypecodeComponent } from './pages/graficos/por-codeSum/suma-importes-por-subtypecode/suma-importes-por-subtypecode.component';
 import { PorResultcodeComponent } from './pages/graficos/por-code/por-resultcode/por-resultcode.component';
-import { SumaImportesPorResultcodeComponent } from './pages/graficos/por-codeSum/suma-importes-por-resultcode/suma-importes-por-resultcode.component';
 import { PorProcedurecodeComponent } from './pages/graficos/por-code/por-procedurecode/por-procedurecode.component';
-import { SumaImportesPorProcedurecodeComponent } from './pages/graficos/por-codeSum/suma-importes-por-procedurecode/suma-importes-por-procedurecode.component';
 import { PorUrgencycodeComponent } from './pages/graficos/por-code/por-urgencycode/por-urgencycode.component';
-import { SumaImportesPorUrgencycodeComponent } from './pages/graficos/por-codeSum/suma-importes-por-urgencycode/suma-importes-por-urgencycode.component';
 import { IndiceGraficosComponent } from './pages/graficos/indice-graficos/indice-graficos.component';
 import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.component';
 
@@ -39,17 +33,11 @@ import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.comp
 		PorAdjudicatarioComponent,
 		PorCIFComponent,
 		PorImporteComponent,
-		SumaImportesPorRangoComponent,
 		PorTypecodeComponent,
-		SumaImportesPorTypecodeComponent,
 		PorSubtypecodeComponent,
-		SumaImportesPorSubtypecodeComponent,
 		PorResultcodeComponent,
-		SumaImportesPorResultcodeComponent,
 		PorProcedurecodeComponent,
-		SumaImportesPorProcedurecodeComponent,
 		PorUrgencycodeComponent,
-		SumaImportesPorUrgencycodeComponent,
 		IndiceGraficosComponent,
 		PorcodeComponent
 	],
