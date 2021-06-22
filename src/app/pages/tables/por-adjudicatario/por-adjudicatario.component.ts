@@ -2,12 +2,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, ViewChild } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
+import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 
-import { CellRendererOCM } from '../../../shared/utils/utils';
+import { CellRendererOCM } from '../../../util/utils';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
 
 @Component({
@@ -29,7 +29,7 @@ export class PorAdjudicatarioComponent {
 	public isExpanded = false;
 	public rowHeight = 50;
 
-	constructor(private http: HttpClient) {
+	constructor() {
 		// this.rowHeight = 180;
 		this.columnDefs = [
 			{
@@ -127,7 +127,7 @@ export class PorAdjudicatarioComponent {
 	onGridReady(params: { api: any; columnApi: any }) {
 		this.gridApi = params.api;
 		this.gridColumnApi = params.columnApi;
-		this.rowData = this.http.get('../assets/data/contratosMenores2020map.json');
+		this.rowData = contratosmenoresJson;
 	}
 
 	expandAll() {

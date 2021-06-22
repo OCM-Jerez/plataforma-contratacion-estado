@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { ChannelChartsService } from '../../../channel-charts.service';
+import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({
 	selector: 'app-indice-graficos',

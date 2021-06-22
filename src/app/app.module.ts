@@ -14,14 +14,8 @@ import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licita
 import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
 import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
 import { AgChartsAngularModule } from 'ag-charts-angular';
-import { PorImporteComponent } from './pages/graficos/por-code/por-importe/por-importe.component';
-import { PorTypecodeComponent } from './pages/graficos/por-code/por-typecode/por-typecode.component';
-import { PorSubtypecodeComponent } from './pages/graficos/por-code/por-subtypecode/por-subtypecode.component';
-import { PorResultcodeComponent } from './pages/graficos/por-code/por-resultcode/por-resultcode.component';
-import { PorProcedurecodeComponent } from './pages/graficos/por-code/por-procedurecode/por-procedurecode.component';
-import { PorUrgencycodeComponent } from './pages/graficos/por-code/por-urgencycode/por-urgencycode.component';
-import { IndiceGraficosComponent } from './pages/graficos/indice-graficos/indice-graficos.component';
-import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.component';
+import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
+import { PorcodeComponent } from './pages/graficos/generador/porcode.component';
 
 @NgModule({
 	declarations: [
@@ -29,16 +23,10 @@ import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.comp
 		HeaderComponent,
 		FooterComponent,
 		IndiceComponent,
+		IndiceGraficosComponent,
 		PorLicitacionComponent,
 		PorAdjudicatarioComponent,
 		PorCIFComponent,
-		PorImporteComponent,
-		PorTypecodeComponent,
-		PorSubtypecodeComponent,
-		PorResultcodeComponent,
-		PorProcedurecodeComponent,
-		PorUrgencycodeComponent,
-		IndiceGraficosComponent,
 		PorcodeComponent
 	],
 	imports: [

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { IChartContrato, IContratoMenor } from '../../../../models/contratos.interfaces';
-import { TipoGrafico } from '../../../../models/tipos-graficos.type';
-import { Static } from '../../../../util/static';
-import contratosmenoresJson from '../../../../../assets/data/contratosMenores2020map.json';
-import { ChannelChartsService } from '../../../../channel-charts.service';
+import { IChartContrato, IContratoMenor } from '../../../models/contratos.interfaces';
+import { TipoGrafico } from '../../../models/tipos-graficos.type';
+import { Static } from '../../../util/static';
+import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
+import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({
 	selector: 'app-porcode',

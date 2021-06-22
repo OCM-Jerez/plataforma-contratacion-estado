@@ -5,8 +5,8 @@ import { IndiceComponent } from './indice/indice.component';
 import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
 import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
-import { IndiceGraficosComponent } from './pages/graficos/indice-graficos/indice-graficos.component';
-import { PorcodeComponent } from './pages/graficos/por-code/porcode/porcode.component';
+import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
+import { PorcodeComponent } from './pages/graficos/generador/porcode.component';
 
 const routes: Routes = [
 	{ path: 'home', component: IndiceComponent },
