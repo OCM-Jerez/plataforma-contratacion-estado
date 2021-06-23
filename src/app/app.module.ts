@@ -15,7 +15,7 @@ import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-
 import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
 import { AgChartsAngularModule } from 'ag-charts-angular';
 import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
-import { PorcodeComponent } from './pages/graficos/generador/porcode.component';
+import { GeneradorGraficosComponent } from './pages/graficos/generador/generador-graficos.component';
 
 @NgModule({
 	declarations: [
@@ -27,7 +27,7 @@ import { PorcodeComponent } from './pages/graficos/generador/porcode.component';
 		PorLicitacionComponent,
 		PorAdjudicatarioComponent,
 		PorCIFComponent,
-		PorcodeComponent
+		GeneradorGraficosComponent
 	],
 	imports: [
 		BrowserModule,

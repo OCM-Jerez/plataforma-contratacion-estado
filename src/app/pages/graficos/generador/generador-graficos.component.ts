@@ -7,9 +7,9 @@ import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({
 	selector: 'app-porcode',
-	templateUrl: './porcode.component.html'
+	templateUrl: './generador-graficos.component.html'
 })
-export class PorcodeComponent {
+export class GeneradorGraficosComponent {
 	titulo1 = '';
 	titulo2 = '';
 	tipoReporte: TipoGrafico = 'por importe';
