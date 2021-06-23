@@ -8,7 +8,7 @@ import contratosmenoresJson from '../../../../assets/data/contratosMenores2020ma
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 
-import { CellRendererOCM } from '../../../util/utils';
+import { CellRendererOCM } from '../../../util/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
 
 @Component({

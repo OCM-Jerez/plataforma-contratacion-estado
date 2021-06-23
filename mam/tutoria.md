@@ -6,11 +6,18 @@ Unificar tables.
 
 
 global-constants.ts para tener unificado la llamada a los datos en json
+cambio de año datos.
 
 
 revision estructura
 
 
 revision codigo
+
+
+Trato de crear un Type  // public options1: OptionsGraph; 
+    en porcode.component.ts
+
+    
 
 

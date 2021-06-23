@@ -5,3 +5,11 @@ export type TipoGrafico =
 	| 'por type'
 	| 'por subtype'
 	| 'por result';
+
+export type OptionsGraph = {
+	axes: number[];
+	data: [];
+	legend: boolean;
+	series: [];
+	title: string;
+};
