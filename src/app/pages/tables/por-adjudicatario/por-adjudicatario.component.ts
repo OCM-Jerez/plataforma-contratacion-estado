@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, ViewChild } from '@angular/core';
 
-import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
+import contratosmenoresJson from '../../../../assets/data/contratosMenores202106map.json';
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 

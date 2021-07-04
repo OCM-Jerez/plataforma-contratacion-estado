@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IChartContrato, IContratoMenor } from '../../../models/contratos.interfaces';
 import { OptionsGraph, TipoGrafico } from '../../../models/tipos-graficos.type';
 import { Static } from '../../../util/static';
-import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
+import contratosmenoresJson from '../../../../assets/data/contratosMenores202106map.json';
 import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({

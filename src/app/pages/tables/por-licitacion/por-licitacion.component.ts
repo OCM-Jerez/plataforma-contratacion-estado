@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, ViewChild } from '@angular/core';
-import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
+import contratosmenoresJson from '../../../../assets/data/contratosMenores202106map.json';
 
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
@@ -44,8 +44,9 @@ export class PorLicitacionComponent {
 						cellRenderer: 'agGroupCellRenderer',
 						valueGetter: (params: any) => {
 							if (params.data) {
+								// return `${params.data.ContractFolderID}  ${params.data.AwardDate}  ${params.data.Name}  ${params.data.TaxExclusiveAmount} euros`;
 								// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-								return `${params.data.ContractFolderID}  ${params.data.AwardDate}  ${params.data.Name}  ${params.data.TaxExclusiveAmount} euros`;
+								return `${params.data.ContractFolderID}  ${params.data.AwardDate}  ${params.data.Name}`;
 							} else {
 								return null;
 							}
