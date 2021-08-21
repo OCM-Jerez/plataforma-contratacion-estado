@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, ViewChild } from '@angular/core';
-import contratosmenoresJson from '../../../../assets/data/finalNoRepeat2020.json';
+import contratosmenoresJson from '../../../../assets/data/todos.json';
 
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
@@ -32,8 +32,8 @@ export class PorLicitacionComponent {
 	constructor() {
 		this.columnDefs = [
 			{
-				// headerName: 'Capitulo-Económico.',
 				children: [
+
 					{
 						headerName: 'Contrato menor',
 						field: 'ContractFolderID',
@@ -47,13 +47,13 @@ export class PorLicitacionComponent {
 							if (params.data) {
 								// return `${params.data.ContractFolderID}  ${params.data.AwardDate}  ${params.data.Name}  ${params.data.TaxExclusiveAmount} euros`;
 								// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-								return `${params.data.ContractFolderID}  ${params.data.AwardDate}  ${params.data.Name}`;
+								return `${params.data.ContractFolderID}  ${params.data.updated}  ${params.data.Name}`;
 							} else {
 								return null;
 							}
 						},
 						cellRendererParams: {
-							// suppressCount: true,
+							suppressCount: true,
 							innerRenderer: (params: { node: { group: any }; value: any }) => {
 								if (params.node.group) {
 									// eslint-disable-next-line @typescript-eslint/no-unsafe-return
@@ -75,7 +75,15 @@ export class PorLicitacionComponent {
 							}
 						}
 					},
+
 				]
+			},
+
+			{
+				headerName: 'Fecha',
+				field: 'updated',
+				width: 90,
+				resizable: true,
 			},
 
 			{
