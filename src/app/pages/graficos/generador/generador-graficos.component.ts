@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { IChartContrato, IContratoMenor } from '../../../models/contratos.interfaces';
 import { OptionsGraph, TipoGrafico } from '../../../models/tipos-graficos.type';
 import { Static } from '../../../util/static';
-import contratosmenoresJson from '../../../../assets/data/contratosMenores202106map.json';
+// import contratosmenoresJson from '../../../../assets/data/licitacionesPerfilesContratanteCompleto3_202106.json';
+import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
+
 import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({
@@ -101,8 +103,8 @@ export class GeneradorGraficosComponent {
 				const datosTipoReporte = Static.RANGO_IMPORTE.find((item) => item.id === rango);
 				rangoFilter = contratosmenoresJson.filter(
 					(item) =>
-						item.TaxExclusiveAmount1 >= datosTipoReporte!.value.rangoInicial &&
-						item.TaxExclusiveAmount1 <= datosTipoReporte!.value.rangoFinal
+						item.TaxExclusiveAmount >= datosTipoReporte!.value.rangoInicial &&
+						item.TaxExclusiveAmount <= datosTipoReporte!.value.rangoFinal
 				);
 				codeText = datosTipoReporte!.value.codeText;
 				break;
@@ -143,7 +145,7 @@ export class GeneradorGraficosComponent {
 
 		let suma = 0;
 		rangoFilter.forEach((x) => {
-			suma = suma + x.TaxExclusiveAmount1;
+			suma = suma + x.TaxExclusiveAmount;
 		});
 
 		itemRango.codeText = codeText;
