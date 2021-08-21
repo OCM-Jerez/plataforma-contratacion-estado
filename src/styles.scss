@@ -69,6 +69,36 @@ body {
 }
 
 /*************************/
+/*     grid 2x2    */
+/*************************/
+
+.grid2x2 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: [col] 50% [col] 50% ;
+	grid-template-rows: [row] auto [row] auto; 
+	background-color: #3d94f6;
+	color: #444;
+	}
+	
+.grid2x2c1r1s2 {
+		grid-column: col 1/ span 2;
+		grid-row: row 1;
+	}
+
+.grid2x2c1r2 {
+	grid-column: col 1; 
+	grid-row: row 2;
+}
+
+.grid2x2c2r2 {
+	grid-column: col 2;
+	grid-row: row 2;
+}
+
+/*************************/
+
+/*************************/
 /*     02. grid 5x3    */
 /*************************/
 
