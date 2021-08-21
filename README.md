@@ -35,13 +35,11 @@
 
 - 
 
-# Licencia 
-⚖
+# Licencia ⚖
 
 ️- Distribuido bajo ```MIT License```. Ver LICENSE.TXT para más información.
 
-# Contacto 
-☎️
+# Contacto ☎️
 
 - <a href= 'mailto:info@ocmjerez.org'> email </a>
 - <a href= 'https://w.ocmjerez.org' target="_blank"> WEB</a>
