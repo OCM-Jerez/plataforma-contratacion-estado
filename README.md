@@ -1,4 +1,4 @@
-<h2 align='center'> App para la consulta de las licitaciones y contratos menores de un Ayutnamiento </h2>
+<h2 align='center'> App para la consulta de las licitaciones y contratos menores de un Ayuntamiento </h2>
 <img src='https://res.cloudinary.com/dabrencx7/image/upload/v1629558986/Licitaciones/Licitaciones_kelgdt.jpg'/>
 
 # Motivación 💪
