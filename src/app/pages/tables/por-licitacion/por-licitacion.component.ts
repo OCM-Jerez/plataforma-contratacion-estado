@@ -2,13 +2,14 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, ViewChild } from '@angular/core';
-import contratosmenoresJson from '../../../../assets/data/contratosMenores202106map.json';
+import contratosmenoresJson from '../../../../assets/data/finalNoRepeat2020.json';
 
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 
 import { CellRendererOCM } from '../../../util/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
+import { IArrayTenderResult } from 'src/app/models/contratos.interfaces';
 
 @Component({
 	selector: 'app-por-licitacion',
@@ -73,29 +74,81 @@ export class PorLicitacionComponent {
 								}
 							}
 						}
-					}
+					},
 				]
 			},
+
 			{
 				headerName: 'Adjudicatario',
-				field: 'PartyName',
+				field: 'arrayTenderResult',
 				width: 300,
-				resizable: true
+				resizable: true,
+
+				// rowSpan: (params: any) => { return 4 },
+				valueFormatter: (params: any) => {
+					if (params.data && params.data.arrayTenderResult) {
+						const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
+						const empresas = tenderResult.map((item) => {
+							return item.PartyName;
+						});
+
+						return empresas;
+					} else {
+						return null;
+					}
+				}
+				// valueGetter: (params: any) => {
+				// 	if (params.data && params.data.arrayTenderResult) {
+				// 		const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
+
+				// 		const empresas = tenderResult.map((item) => {
+				// 			return item.PartyName;
+				// 		});
+
+				// 		return empresas;
+				// 	} else {
+				// 		return null;
+				// 	}
+				// }
 			},
 			{
 				headerName: 'CIF',
 				field: 'PartyIdentification',
 				width: 90,
-				resizable: true
+				resizable: true,
+				valueFormatter: (params: any) => {
+					if (params.data && params.data.arrayTenderResult) {
+						const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
+						const empresas = tenderResult.map((item) => {
+							return item.PartyIdentification;
+						});
+
+						return empresas;
+					} else {
+						return null;
+					}
+				}
 			},
 
 			{
 				headerName: 'Parcial',
-				field: 'TaxExclusiveAmount1',
+				field: 'TaxExclusiveAmount',
 				width: 80,
 				resizable: true,
 				aggFunc: 'sum',
-				cellRenderer: CellRendererOCM
+				cellRenderer: CellRendererOCM,
+				valueFormatter: (params: any) => {
+					if (params.data && params.data.arrayTenderResult) {
+						const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
+						const empresas = tenderResult.map((item) => {
+							return item.TaxExclusiveAmount;
+						});
+
+						return empresas;
+					} else {
+						return null;
+					}
+				}
 			}
 		];
 
