@@ -17,7 +17,7 @@ export interface IContratoMenor {
 	ReceivedTenderQuantity: string;
 	PartyIdentification: string;
 	PartyName: string;
-	TaxExclusiveAmount1: number;
+	// TaxExclusiveAmount1: number;
 	PayableAmount: number;
 	ProcedureCode: string;
 	UrgencyCode: string;
@@ -35,4 +35,32 @@ export interface IChannelChart {
 	tituloPagina: string;
 	tipoReporte: TipoGrafico;
 	rangos: number[];
+}
+
+
+export interface ILicitacion {
+	link: string;
+	summary: string;
+	title: string;
+	updated: string;
+	ContractFolderID: string;
+	ContractFolderStatusCode: string;
+	Name: string;
+	TypeCode: string;
+	SubTypeCode: string;
+	TotalAmount: number;
+	TaxExclusiveAmount: number;
+	DurationMeasure: string;
+	unitCode: string;
+	arrayTenderResult: IArrayTenderResult[];
+}
+
+export interface IArrayTenderResult {
+	ResultCode: string;
+	AwardDate: string;
+	ReceivedTenderQuantity: string;
+	PartyIdentification: string;
+	PartyName: string;
+	TaxExclusiveAmount: number | string;
+	PayableAmount: number | string;
 }
