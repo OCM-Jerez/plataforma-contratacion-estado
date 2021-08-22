@@ -45,13 +45,13 @@
 
 <div style="margin: 100px">
 	<div class="grid">
-		<div
-			class="col-6 col-offset-3 bg-green-500 text-white font-bold border-round flex justify-content-center text-3xl">
+		<div class="col-12 bg-green-500 text-white font-bold border-round flex justify-content-center text-3xl">
 			Opciones para filtrar los datos</div>
 	</div>
 
 	<div class="grid">
-		<div class="col-5 col-offset-1 border-solid flex justify-content-center text-xl">datePickers
+		<div class="col-5 col-offset-1 border-solid flex justify-content-center text-xl">Selecciona fecha de inicio y
+			fecha final
 		</div>
 		<div class="col-5 col-offset-1 border-solid flex justify-content-center text-xl">Selecciona un ente de la lista
 		</div>
@@ -98,6 +98,31 @@
 		</div>
 
 		<div class="gridc3r3">
+			<a (click)="graficos()" class="myButton">Graficos</a>
+		</div>
+	</div>
+</div>
+
+
+<div style="margin: 100px">
+	<div class="grid">
+		<div class="col-12 bg-green-500 text-white font-bold border-round flex justify-content-center text-3xl">
+			Opciones visualización de los datos
+		</div>
+
+		<div class="col-4 flex justify-content-center mt-2">
+			<a (click)="porLicitacion()" class="myButton">Por licitación</a>
+		</div>
+
+		<div class="col-4 flex justify-content-center mt-2">
+			<a (click)="porAdjudicatario()" class="myButton">Por razón social</a>
+		</div>
+
+		<div class="col-4 flex justify-content-center mt-2">
+			<a (click)="porCIF()" class="myButton">Por CIF</a>
+		</div>
+
+		<div class="col-12 flex justify-content-center mt-2">
 			<a (click)="graficos()" class="myButton">Graficos</a>
 		</div>
 	</div>
