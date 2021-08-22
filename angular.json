@@ -54,7 +54,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeflex/primeflex.css",
+              "node_modules/primeflex/themes/vela-blue.css"
             ],
             "scripts": [],
             "vendorChunk": true,

@@ -26,6 +26,7 @@
     "ag-grid-community": "^25.3.0",
     "ag-grid-enterprise": "^25.3.0",
     "ngx-xml2json": "^1.0.2",
+    "primeflex": "^3.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"

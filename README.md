@@ -27,13 +27,20 @@
 
 - Crea una Issue explicando la mejora requerida.
 
+
 # Issues:🐛
 
 - Si encuentras algun error, por favor, crea una nueva Issue.
 
+
 # Planes futuras mejoras 📆
 
 - 
+
+# Librerias usadas 📖
+- <a href= 'https://www.primefaces.org/primeflex/' target="_blank"> PrimeFlex</a>
+
+
 
 # Licencia ⚖
 

@@ -9,3 +9,12 @@ import contratosmenoresJson from '../../../../assets/data/contratosMenores2020ma
 this.rowData = contratosmenoresJson;
 Hay que eliminar el pipe | async
 	[rowData]="rowData | async" =>  	[rowData]="rowData"
+
+
+Ademas de npm install primeflex --save
+En angular.json añadir:
+"styles": [
+              "src/styles.scss",
+              "node_modules/primeflex/primeflex.css",
+              "node_modules/primeflex/themes/vela-blue.css"
+            ],
