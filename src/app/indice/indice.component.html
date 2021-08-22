@@ -12,37 +12,6 @@
 	</div>
 </div>
 
-<div style="margin: 100px; align-items: center">
-	<div class="grid2x2">
-		<div class="grid2x2c1r1s2">
-			<span class="mam-opciones">Opciones para filtrar los datos</span>
-		</div>
-
-		<div class="grid2x2c1r2">
-			<img src="https://res.cloudinary.com/dabrencx7/image/upload/v1629562383/Licitaciones/calendar_n16yta.jpg"
-				alt="ocm" />
-			<img src="https://res.cloudinary.com/dabrencx7/image/upload/v1629562383/Licitaciones/calendar_n16yta.jpg"
-				alt="ocm" />
-			<a href="https://github.com/vlio20/angular-datepicker">datePickers</a>
-		</div>
-
-		<div class="grid2x2c2r2">
-
-			<label for="entes">Selecciona un ente de la lista</label>
-			<input list="entes">
-			<datalist id="entes">
-				<option value="Ayuntamiento de Jerez">
-				<option value="EMUVIJESA">
-				<option value="COMUJESA">
-				<option value="FUNDARTE">
-				<option value="Centro de acogida San José">
-			</datalist>
-			<input type="submit" value="Seleccionar">
-
-		</div>
-	</div>
-</div>
-
 <div style="margin: 100px">
 	<div class="grid">
 		<div class="col-12 bg-green-500 text-white font-bold border-round flex justify-content-center text-3xl">
@@ -59,11 +28,12 @@
 
 	<div class="grid">
 		<div class="col-5 col-offset-1 border-solid flex justify-content-center mt-2">
-			<img src="https://res.cloudinary.com/dabrencx7/image/upload/v1629562383/Licitaciones/calendar_n16yta.jpg"
-				alt="ocm" />
-			<img src="https://res.cloudinary.com/dabrencx7/image/upload/v1629562383/Licitaciones/calendar_n16yta.jpg"
-				alt="ocm" />
-			<a href="https://github.com/vlio20/angular-datepicker">datePickers</a>
+			<dp-date-picker #datePickerStart (onChange)="changeDatePickerStart($event)" theme="dp-material"
+				[config]="config"></dp-date-picker>
+			<dp-date-picker #datePickerEnd (onChange)="changeDatePickerEnd($event)" theme="dp-material"
+				[config]="config">
+			</dp-date-picker>
+
 		</div>
 		<div class="col-5 col-offset-1 border-solid flex flex align-items-start justify-content-center mt-2">
 			<input class="mt-2" list="entes">
@@ -78,31 +48,6 @@
 		</div>
 	</div>
 </div>
-
-<div style="margin: 100px; align-items: center">
-	<div class="grid5x3">
-		<div class="gridc1r1s5">
-			<span class="mam-opciones">Opciones visualización de los datos</span>
-		</div>
-
-		<div class="gridc2r2">
-			<a (click)="porLicitacion()" class="myButton">Por licitación</a>
-		</div>
-
-		<div class="gridc3r2">
-			<a (click)="porAdjudicatario()" class="myButton">Por razón social</a>
-		</div>
-
-		<div class="gridc4r2">
-			<a (click)="porCIF()" class="myButton">Por CIF</a>
-		</div>
-
-		<div class="gridc3r3">
-			<a (click)="graficos()" class="myButton">Graficos</a>
-		</div>
-	</div>
-</div>
-
 
 <div style="margin: 100px">
 	<div class="grid">
