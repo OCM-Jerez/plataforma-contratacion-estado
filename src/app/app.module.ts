@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 
 import { AgGridModule } from 'ag-grid-angular';
 import 'ag-grid-enterprise';
+
+import { DpDatePickerModule } from 'ng2-date-picker';
+
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -16,6 +19,7 @@ import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
 import { AgChartsAngularModule } from 'ag-charts-angular';
 import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
 import { GeneradorGraficosComponent } from './pages/graficos/generador/generador-graficos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -34,9 +38,12 @@ import { GeneradorGraficosComponent } from './pages/graficos/generador/generador
 		AppRoutingModule,
 		AgGridModule.withComponents([]),
 		HttpClientModule,
-		AgChartsAngularModule
+		AgChartsAngularModule,
+		DpDatePickerModule,
+		FormsModule,
+		ReactiveFormsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
