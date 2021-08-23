@@ -63,7 +63,7 @@ export class PorLicitacionComponent {
 					if (params.data && params.data.arrayTenderResult) {
 						const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
 						const empresas = tenderResult.map((item) => {
-							return item.PartyName;
+							return `${item.PartyName} ${item.PayableAmount}`;
 						});
 						return empresas;
 					} else {
@@ -90,7 +90,7 @@ export class PorLicitacionComponent {
 			},
 			{
 				headerName: 'Importe',
-				field: 'TaxExclusiveAmount',
+				field: 'TotalAmount',
 				width: 80,
 				resizable: true,
 				aggFunc: 'sum',
@@ -99,7 +99,7 @@ export class PorLicitacionComponent {
 					if (params.data && params.data.arrayTenderResult) {
 						const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
 						const empresas = tenderResult.map((item) => {
-							return item.TaxExclusiveAmount;
+							return item.PayableAmount;
 						});
 						return empresas;
 					} else {
