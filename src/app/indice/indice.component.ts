@@ -17,7 +17,7 @@ export class IndiceComponent implements AfterViewInit {
 	constructor(private router: Router, private _channelFilterDateService: ChannelFilterDateService) { }
 
 
-	config: IDatePickerConfig = { closeOnSelect: false, closeOnEnter: false, hideOnOutsideClick: false }
+	config: IDatePickerConfig = { closeOnSelect: false, closeOnEnter: false, hideOnOutsideClick: false, locale: 'es', format: 'DD-MM-YYYY', firstDayOfWeek: 'mo' }
 	@ViewChild('datePickerStart') datePickerStart!: DatePickerComponent;
 	@ViewChild('datePickerEnd') datePickerEnd!: DatePickerComponent;
 
