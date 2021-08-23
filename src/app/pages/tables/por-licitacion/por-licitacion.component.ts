@@ -11,7 +11,6 @@ import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
 import { CellRendererOCM } from '../../../util/CellRendererOCM';
 
 import { IArrayTenderResult, ILicitacion } from 'src/app/models/contratos.interfaces';
-import { ChannelFilterDateService } from 'src/app/services/channel-filter-date.service';
 
 @Component({
 	selector: 'app-por-licitacion',
@@ -31,7 +30,7 @@ export class PorLicitacionComponent {
 	public rowData: ILicitacion[] = [];
 	public isExpanded = false;
 
-	constructor(private _channelFilterDateService: ChannelFilterDateService) {
+	constructor() {
 		this.columnDefs = [
 			{
 				headerName: 'ID',
