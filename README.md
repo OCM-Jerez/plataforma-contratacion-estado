@@ -12,7 +12,7 @@
 
 <ul>
   <li>Permite listar los datos agrupados por diferentes conceptos.</li>
-   <li>TGraficos de los diferentes tipos de licitaciones.</li>
+   <li>Graficos de los diferentes tipos de licitaciones.</li>
    <li>Filtrar entre fechas.</li>
   </li>
  </ul>
@@ -39,6 +39,8 @@
 
 # Librerias usadas 📖
 - <a href= 'https://www.primefaces.org/primeflex/' target="_blank"> PrimeFlex</a>
+- <a href= 'https://github.com/vlio20/angular-datepicker' target="_blank"> angular-datepicker</a>
+- <a href= 'https://momentjs.com/' target="_blank"> Moment </a>(Deprecada pero seguimos usandola)
 
 
 
