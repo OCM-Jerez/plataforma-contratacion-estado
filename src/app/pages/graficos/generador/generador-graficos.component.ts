@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
+
 import { IChartContrato, IContratoMenor } from '../../../models/contratos.interfaces';
 import { OptionsGraph, TipoGrafico } from '../../../models/tipos-graficos.type';
 import { Static } from '../../../util/static';
-// import contratosmenoresJson from '../../../../assets/data/licitacionesPerfilesContratanteCompleto3_202106.json';
 import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
-
 import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({
@@ -17,7 +16,6 @@ export class GeneradorGraficosComponent {
 	tipoReporte: TipoGrafico = 'por importe';
 	rangos: number[] = [];
 	tituloPagina = '';
-	// public options1: OptionsGraph;
 	public options1: any;
 	public options2: any;
 
@@ -78,7 +76,7 @@ export class GeneradorGraficosComponent {
 	}
 
 	private _formatearMoneda(params: { value: number }): string {
-		console.log(this.options1);
+		// console.log(this.options1);
 		return params.value === undefined
 			? ''
 			: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
