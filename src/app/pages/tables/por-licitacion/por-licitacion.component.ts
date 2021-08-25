@@ -53,12 +53,16 @@ export class PorLicitacionComponent {
 				field: 'Name',
 				width: 900,
 				resizable: true,
+				wrapText: true,
+				autoHeight: true,
 			},
 			{
 				headerName: 'Adjudicatario',
 				field: 'arrayTenderResult',
 				width: 300,
 				resizable: true,
+				wrapText: true,
+				autoHeight: true,
 				valueFormatter: (params: any) => {
 					if (params.data && params.data.arrayTenderResult) {
 						const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
@@ -76,6 +80,8 @@ export class PorLicitacionComponent {
 				field: 'PartyIdentification',
 				width: 100,
 				resizable: true,
+				wrapText: true,
+				autoHeight: true,
 				valueFormatter: (params: any) => {
 					if (params.data && params.data.arrayTenderResult) {
 						const tenderResult: IArrayTenderResult[] = params.data.arrayTenderResult;
