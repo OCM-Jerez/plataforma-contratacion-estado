@@ -1,4 +1,6 @@
 import { AfterViewInit, ViewChild } from '@angular/core';
+import { FormBuilder, Validators } from "@angular/forms";
+
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
@@ -6,7 +8,9 @@ import moment from 'moment';
 import { DatePickerComponent, IDatePickerConfig } from 'ng2-date-picker';
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
 import contratosmenoresJson from '../../assets/data/todos.json';
+
 import { ILicitacion } from '../models/contratos.interfaces';
+import { ENTES_CONTRATACION } from '../../assets/data/entesContratacion-data';
 
 @Component({
 	selector: 'app-indice',
@@ -14,8 +18,12 @@ import { ILicitacion } from '../models/contratos.interfaces';
 	styleUrls: ['./indice.component.scss']
 })
 export class IndiceComponent implements AfterViewInit {
-	constructor(private router: Router, private _channelFilterDateService: ChannelFilterDateService) { }
+	isSubmitted = false;
 
+	radioSel: any;
+	radioSelected?: string;
+	radioSelectedString?: string;
+	entesList: any[] | null = ENTES_CONTRATACION;
 
 	config: IDatePickerConfig = { closeOnSelect: false, closeOnEnter: false, hideOnOutsideClick: false, locale: 'es', format: 'DD-MM-YYYY', firstDayOfWeek: 'mo' }
 	@ViewChild('datePickerStart') datePickerStart!: DatePickerComponent;
@@ -23,6 +31,12 @@ export class IndiceComponent implements AfterViewInit {
 
 	dateStart!: Date;
 	dateEnd!: Date;
+
+	constructor(public fb: FormBuilder, private router: Router, private _channelFilterDateService: ChannelFilterDateService) {
+		this.entesList = ENTES_CONTRATACION;
+		this.radioSelected = "ayto";
+		this.getSelecteditem();
+	}
 
 	ngAfterViewInit(): void {
 		this.datePickerStart.api.open();
@@ -66,9 +80,23 @@ export class IndiceComponent implements AfterViewInit {
 				const updated = moment(item.updated).toDate();
 				return updated >= this.dateStart && updated <= this.dateEnd
 			})
-
 		}
-		localStorage.setItem('dataLicitacion', JSON.stringify(data))
 
+		data = data.filter(item => {
+			console.log(this.radioSel.label);
+			return item.summary.match(this.radioSel.name)
+		})
+
+		localStorage.setItem('dataLicitacion', JSON.stringify(data))
 	}
+
+	getSelecteditem() {
+		this.radioSel = ENTES_CONTRATACION.find(Item => Item.value === this.radioSelected);
+		this.radioSelectedString = JSON.stringify(this.radioSel);
+	}
+
+	onItemChange() {
+		this.getSelecteditem();
+	}
+
 }

@@ -12,7 +12,7 @@
 	</div>
 </div>
 
-<div style="margin: 100px; height: 300px">
+<div style="margin: 50px; height: 300px">
 	<div class="grid">
 		<div class="col-12 bg-blue-700 text-white font-bold border-round flex justify-content-center text-3xl">
 			Opciones para filtrar los datos</div>
@@ -22,29 +22,32 @@
 		<div class="col-5 col-offset-1 border-solid flex justify-content-center text-xl">Selecciona fecha de inicio y
 			fecha final
 		</div>
-		<div class="col-5 col-offset-1 border-solid flex justify-content-center text-xl">Selecciona un ente de la lista
+		<div class="col-4 col-offset-1 border-solid flex justify-content-center text-xl">Selecciona un ente de la lista
 		</div>
 	</div>
 
 	<div class="grid">
-		<div class="col-5 col-offset-1 border-solid flex justify-content-center mt-2">
+		<div class="col-5 col-offset-1 flex justify-content-center mt-2">
 			<dp-date-picker #datePickerStart (onChange)="changeDatePickerStart($event)" theme="dp-material"
 				[config]="config"></dp-date-picker>
 			<dp-date-picker #datePickerEnd (onChange)="changeDatePickerEnd($event)" theme="dp-material"
 				[config]="config">
 			</dp-date-picker>
-
 		</div>
-		<div class="col-5 col-offset-1 border-solid flex flex align-items-start justify-content-center mt-2">
-			<input class="mt-2" list="entes">
-			<datalist id="entes">
-				<option value="Ayuntamiento de Jerez">
-				<option value="EMUVIJESA">
-				<option value="COMUJESA">
-				<option value="FUNDARTE">
-				<option value="Centro de acogida San José">
-			</datalist>
-			<input class="mt-2" type="submit" value="Seleccionar">
+
+		<div class="col-5 col-offset-1  mt-2">
+			<!-- <h4>Ente selecionado => {{radioSel.label}}</h4><br> -->
+			<div>
+				<ul class="list-group">
+					<li class="list-group-item" *ngFor="let item of entesList">
+						<input type="radio" [(ngModel)]="radioSelected" name="list_name" value="{{item.value}}"
+							(change)="onItemChange()" />
+						{{item.label}}
+
+					</li>
+				</ul>
+			</div>
+			<!-- <h5>{{radioSelectedString}}</h5> -->
 		</div>
 	</div>
 </div>
