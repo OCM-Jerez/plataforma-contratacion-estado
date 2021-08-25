@@ -1,4 +1,4 @@
-<h2 align='center'> App para la consulta de las licitaciones y contratos menores de un Ayuntamiento </h2>
+<h2 align='center'> App desarrolla en Angular para la consulta de las licitaciones y contratos menores de un Ayuntamiento </h2>
 <img src='https://res.cloudinary.com/dabrencx7/image/upload/v1629558986/Licitaciones/Licitaciones_kelgdt.jpg'/>
 
 # Motivación 💪
@@ -8,12 +8,16 @@
  </ul>
 
 # Caracteristicas ⭐
-
-
 <ul>
   <li>Permite listar los datos agrupados por diferentes conceptos.</li>
+  <ul>
+          <li>Por contrato menor o licitación.</li>
+          <li>Por razon social del adjudicatario.</li>
+          <li>Por CIF del adjudicatario.</li>
+      </ul>
    <li>Graficos de los diferentes tipos de licitaciones.</li>
    <li>Filtrar entre fechas.</li>
+   <li>Filtrar por entes dependientes.</li>
   </li>
  </ul>
 
@@ -21,6 +25,7 @@
 
 - Clonar el repositorio.
 - npm install para instalar referencias.
+- ng serve
 
 
 # Sugerencias nuevas caracteristicas💎
