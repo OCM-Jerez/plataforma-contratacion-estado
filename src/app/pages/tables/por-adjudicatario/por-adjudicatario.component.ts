@@ -3,12 +3,15 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, ViewChild } from '@angular/core';
 
-import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
+// import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
+import contratosmenoresJson from '../../../../assets/data/todos.json';
+
 import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 
 import { CellRendererOCM } from '../../../util/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
+import { ILicitacion } from 'src/app/models/contratos.interfaces';
 
 @Component({
 	selector: 'app-por-adjudicatario',
@@ -28,6 +31,7 @@ export class PorAdjudicatarioComponent {
 	public rowData: any;
 	public isExpanded = false;
 	public rowHeight = 50;
+	detailCellRendererParams: any;
 
 	constructor() {
 		// this.rowHeight = 180;
@@ -113,21 +117,69 @@ export class PorAdjudicatarioComponent {
 			}
 		];
 
+		// this.defaultColDef = {
+		// 	sortable: true,
+		// 	resizable: true,
+		// 	filter: true
+		// };
+
+		this.gridOptions = {} as GridOptions;
+		this.localeText = localeTextESPes;
 		this.defaultColDef = {
+			flex: 1,
 			sortable: true,
 			resizable: true,
 			filter: true
 		};
 
-		this.gridOptions = {} as GridOptions;
-		this.localeText = localeTextESPes;
+		this.columnDefs = [
+			{
+				headerName: 'Descripción',
+				field: 'PartyName',
+				cellRenderer: 'agGroupCellRenderer',
+			},
+			{ field: 'PartyIdentification' },
+
+		];
+
+		this.detailCellRendererParams = {
+			detailGridOptions: {
+				rowSelection: 'multiple',
+				suppressRowClickSelection: true,
+				enableRangeSelection: true,
+				pagination: false,
+				paginationAutoPageSize: false,
+				columnDefs: [
+					{
+						field: 'title',
+					},
+					{ field: 'ContractFolderID' },
+				],
+				defaultColDef: {
+					sortable: true,
+					flex: 1,
+				},
+			},
+			getDetailRowData: function (params: any) {
+				params.successCallback(params.data.detail);
+			},
+		};
+
 	}
 
 	onGridReady(params: { api: any; columnApi: any }) {
 		this.gridApi = params.api;
 		this.gridColumnApi = params.columnApi;
-		this.rowData = contratosmenoresJson;
+
+		this.rowData = this.generateData();
 	}
+
+	onFirstDataRendered(params: any) {
+		setTimeout(function () {
+			params.api.getDisplayedRowAtIndex(1).setExpanded(true);
+		}, 0);
+	}
+
 
 	expandAll() {
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-call
@@ -140,4 +192,67 @@ export class PorAdjudicatarioComponent {
 		this.gridApi.collapseAll();
 		this.isExpanded = false;
 	}
+
+	private generateData(): IData[] {
+		const dataLocalStorage = localStorage.getItem('dataLicitacion')
+		const dataLicitacion = JSON.parse(dataLocalStorage!) as ILicitacion[];
+
+		let data: IData[] = [];
+
+		dataLicitacion.forEach(item => {
+			if (item.arrayTenderResult) {
+				item.arrayTenderResult.forEach(tender => {
+					const dataFinal: IData = {
+						PartyName: tender.PartyName,
+						PartyIdentification: tender.PartyIdentification,
+					}
+					data.push(dataFinal)
+				})
+			}
+		})
+		const set = new Set();
+
+		data = data.filter(item => {
+			const duplicate = set.has(item.PartyName);
+			set.add(item.PartyName);
+			return !duplicate;
+		}).sort((a, b) => {
+			if (a.PartyName < b.PartyName) { return -1 }
+			if (a.PartyName > b.PartyName) { return 1 }
+
+			return 0
+
+		});
+
+
+		data.forEach(item => {
+			const licitaciones: IDetail[] = [];
+
+			dataLicitacion.forEach(licitacion => {
+				if (licitacion.arrayTenderResult) {
+					const findTender = licitacion.arrayTenderResult.find(tender => tender.PartyName === item.PartyName);
+					if (findTender) {
+						const detail: IDetail = { title: licitacion.title, ContractFolderID: licitacion.ContractFolderID }
+						licitaciones.push(detail);
+					}
+				}
+
+			})
+			item.detail = licitaciones;
+
+		})
+
+		return data;
+	}
+}
+
+interface IData {
+	PartyName: string,
+	PartyIdentification: string,
+	detail?: IDetail[]
+}
+
+interface IDetail {
+	title: string;
+	ContractFolderID: string;
 }
