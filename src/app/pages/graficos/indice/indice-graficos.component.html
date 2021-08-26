@@ -1,37 +1,34 @@
-<div style="margin: 100px; align-items: center">
-	<div class="grid5x3">
-		<div class="gridc1r1s5">
-			<h1 class="mam-text-center">Opciones visualización de los datos</h1>
+<div class="container">
+	<div class="grid">
+		<div class="col-12 bg-blue-700 text-white font-bold border-round flex justify-content-center text-3xl">
+			Opciones visualización de los datos
 		</div>
 
-		<div class="gridc2r2">
-			<!-- <a href="/graficosPorImporte" class="myButton">Por importe</a> -->
+		<div class="col-1 col-offset-3 flex justify-content-center mt-2">
 			<a (click)="graficosPorImporte()" class="myButton">Por importe</a>
 		</div>
 
-		<div class="gridc3r2">
-			<!-- <a href="/graficosPorProcedimiento" class="myButton">Por procedimiento</a> -->
+		<div class="col-1 col-offset-1 flex justify-content-center mt-2">
 			<a (click)="graficosPorProcedimiento()" class="myButton">Por procedimiento</a>
 		</div>
 
-		<div class="gridc4r2">
-			<!-- <a href="/graficosPorResultcode" class="myButton">Resultado licitación</a> -->
+		<div class="col-1 col-offset-1 flex justify-content-center mt-2">
 			<a (click)="graficosPorResultcode()" class="myButton">Resultado licitación</a>
 		</div>
+	</div>
 
-		<div class="gridc2r3">
-			<!-- <a href="graficosPorTypecode" class="myButton">Tipología contratos</a> -->
+	<div class="grid">
+		<div class="col-1 col-offset-3 flex justify-content-center mt-2">
 			<a (click)="graficosPorTypecode()" class="myButton">Tipología contratos</a>
 		</div>
 
-		<div class="gridc3r3">
-			<!-- <a href="/graficosPorSubTypeCode" class="myButton">Subtipo de contrato</a> -->
+		<div class="col-1 col-offset-1 flex justify-content-center mt-2">
 			<a (click)="graficosPorSubTypeCode()" class="myButton">Subtipo de contrato</a>
 		</div>
 
-		<div class="gridc4r3">
-			<!-- <a href="/graficosPorUrgencyCode" class="myButton">Tipo de tramitación</a> -->
+		<div class="col-1 col-offset-1 flex justify-content-center mt-2">
 			<a (click)="graficosPorUrgencyCode()" class="myButton">Tipo de tramitación</a>
 		</div>
 	</div>
+
 </div>
