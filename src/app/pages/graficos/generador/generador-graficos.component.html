@@ -1,17 +1,14 @@
-<div class="grid4x2">
-	<div class="gridc1r1s4">
-		<h1 class="mam-text-center">{{ tituloPagina }}</h1>
+<div class="grid">
+	<div class="col-12 bg-blue-700 text-white font-bold border-round flex justify-content-center text-3xl">
+		{{ tituloPagina }}
 	</div>
 
-	<div class="gridc2r2">
-		<div style="height: 600px" *ngIf="options1">
-			<ag-charts-angular style="height: 100%" [options]="options1"></ag-charts-angular>
-		</div>
+	<div class="col-6" style="height: 600px" *ngIf="options1">
+		<ag-charts-angular style="height: 100%" [options]="options1"></ag-charts-angular>
 	</div>
 
-	<div class="gridc3r2">
-		<div style="height: 600px" *ngIf="options2">
-			<ag-charts-angular style="height: 100%" [options]="options2"></ag-charts-angular>
-		</div>
+	<div class="col-6" style="height: 600px" *ngIf="options2">
+		<ag-charts-angular style="height: 100%" [options]="options2"></ag-charts-angular>
 	</div>
+
 </div>
