@@ -41,11 +41,14 @@
 # Planes futuras mejoras 📆
 
 - 
+# Framework desarrollo 🚀
+
+- [Angular](https://github.com/angular/angular) 
 
 # Librerias usadas 📖
+- <a href= 'https://www.ag-grid.com/' target="_blank"> AG Grid</a>
 - <a href= 'https://www.primefaces.org/primeflex/' target="_blank"> PrimeFlex</a>
-- <a href= 'https://github.com/vlio20/angular-datepicker' target="_blank"> angular-datepicker</a>
-- <a href= 'https://momentjs.com/' target="_blank"> Moment </a>(Deprecada pero seguimos usandola)
+- <a href= 'https://github.com/vlio20/angular-datepicker' target="_blank"> ng2-date-picker</a>
 
 
 
@@ -63,6 +66,5 @@
 
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
 
