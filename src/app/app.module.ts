@@ -1,25 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { AgGridModule } from 'ag-grid-angular';
+import 'ag-grid-enterprise';
+import { AgChartsAngularModule } from 'ag-charts-angular';
+
+import { DpDatePickerModule } from 'ng2-date-picker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AgGridModule } from 'ag-grid-angular';
-import 'ag-grid-enterprise';
-
-import { DpDatePickerModule } from 'ng2-date-picker';
-
-import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { IndiceComponent } from './indice/indice.component';
+
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
 import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
 import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
-import { AgChartsAngularModule } from 'ag-charts-angular';
+
 import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
 import { GeneradorGraficosComponent } from './pages/graficos/generador/generador-graficos.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -35,13 +37,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 	],
 	imports: [
 		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpClientModule,
 		AppRoutingModule,
 		AgGridModule.withComponents([]),
-		HttpClientModule,
 		AgChartsAngularModule,
 		DpDatePickerModule,
-		FormsModule,
-		ReactiveFormsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
