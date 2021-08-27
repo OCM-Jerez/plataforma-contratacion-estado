@@ -37,7 +37,6 @@ export interface IChannelChart {
 	rangos: number[];
 }
 
-
 export interface ILicitacion {
 	link: string;
 	summary: string;
@@ -63,4 +62,17 @@ export interface IArrayTenderResult {
 	PartyName: string;
 	TaxExclusiveAmount: number | string;
 	PayableAmount: number | string;
+}
+
+export interface IData {
+	PartyName: string,
+	PartyIdentification: string,
+	detail?: IDetail[]
+}
+
+export interface IDetail {
+	updated: string;
+	ContractFolderID: string;
+	Name: string;
+	TotalAmount: number
 }

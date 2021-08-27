@@ -6,7 +6,7 @@ import moment from 'moment';
 
 import { CellRendererOCM } from '../../../util/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
-import { ILicitacion } from 'src/app/models/contratos.interfaces';
+import { ILicitacion, IData, IDetail } from 'src/app/models/contratos.interfaces';
 
 @Component({
 	selector: 'app-por-adjudicatario',
@@ -146,15 +146,3 @@ export class PorAdjudicatarioComponent {
 	}
 }
 
-interface IData {
-	PartyName: string,
-	PartyIdentification: string,
-	detail?: IDetail[]
-}
-
-interface IDetail {
-	updated: string;
-	ContractFolderID: string;
-	Name: string;
-	TotalAmount: number
-}
