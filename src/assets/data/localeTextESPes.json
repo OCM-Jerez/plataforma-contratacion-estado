@@ -1,39 +1,32 @@
 {
   "page": "Pagina",
   "more": "Más",
-  "to": "A",
-  "of": "De",
-  "next": "Siguiente",
-  "last": "Ultimo",
-  "first": "Primero",
-  "previous": "Anterior",
+  "to": "a",
+  "of": "de",
+  "next": "siguiente",
+  "last": "último",
+  "first": "primero",
+  "previous": "anterior",
   "loadingOoo": "Cargando...",
-
   "selectAll": "Seleccionar todos",
   "searchOoo": "Buscar...",
   "blanks": "Blanco",
-
   "filterOoo": "Filtrar...",
   "applyFilter": "Aplicar filtro....",
   "equals": "Igual",
   "notEquals": "Diferente",
-
   "lessThan": "Menor que",
   "greaterThan": "Mayor qu",
   "lessThanOrEqual": "Menor o igual",
   "greaterThanOrEqual": "Igual o mayor",
   "inRange": "En rango",
-
   "contains": "Contiene",
   "notContains": "No contiene",
   "startsWith": "Comienza con",
   "endsWith": "Termina con",
-
   "andCondition": "AND",
   "orCondition": "OR",
-
   "group": "Grupo",
-
   "columns": "Columnas",
   "filters": "Programas",
   "rowGroupColumns": "Pivot Cols",
@@ -46,9 +39,7 @@
   "valueColumnsEmptyMessage": "drag cols to aggregate",
   "pivotColumnsEmptyMessage": "drag here to pivot",
   "toolPanelButton": "tool panel",
-
   "noRowsToShow": "Sin filas",
-
   "pinColumn": "Inmovilizar columna",
   "valueAggregation": "Value Agg",
   "autosizeThiscolumn": "Auto tamaño columna",
@@ -63,40 +54,31 @@
   "csvExport": "Exportar a CSV",
   "excelExport": "Exportar a Excel (.xlsx)",
   "excelXmlExport": "Exportar a Excel (.xml)",
-
   "pivotChartAndPivotMode": "Pivot Chart & Pivot Mode",
   "pivotChart": "Pivot Chart",
   "chartRange": "Chart Range",
-
   "columnChart": "Column",
   "groupedColumn": "Grouped",
   "stackedColumn": "Stacked",
   "normalizedColumn": "100% Stacked",
-
   "barChart": "Bar",
   "groupedBar": "Grouped",
   "stackedBar": "Stacked",
   "normalizedBar": "100% Stacked",
-
   "pieChart": "Pie",
   "pie": "Pie",
   "doughnut": "Doughnut",
-
   "line": "Line",
-
   "xyChart": "X Y (Scatter)",
   "scatter": "Scatter",
   "bubble": "Bubble",
-
   "areaChart": "Area",
   "area": "Area",
   "stackedArea": "Stacked",
   "normalizedArea": "100% Stacked",
-
   "pinLeft": "Inmovilizar <<",
   "pinRight": "Inmovilizar >>",
   "noPin": "Movilizar <>",
-
   "sum": "sum",
   "min": "min",
   "max": "max",
@@ -107,13 +89,11 @@
   "selectedRows": "Selected",
   "totalRows": "Total Rows",
   "totalAndFilteredRows": "Rows",
-
   "copy": "Copy",
   "copyWithHeaders": "Copy Width hHeaders",
   "ctrlC": "ctrl n C",
   "paste": "Paste",
   "ctrlV": "ctrl n V",
-
   "pivotChartTitle": "Pivot Chart",
   "rangeChartTitle": "Range Chart",
   "settings": "Settings",
@@ -186,4 +166,3 @@
   "noDataToChart": "No data available to be charted.",
   "pivotChartRequiresPivotMode": "Pivot Chart requires Pivot Mode enabled."
 }
-
