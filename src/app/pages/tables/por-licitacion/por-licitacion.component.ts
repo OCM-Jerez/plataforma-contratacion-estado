@@ -26,7 +26,10 @@ export class PorLicitacionComponent {
 	detailCellRendererParams: any;
 
 	constructor() {
-		this.gridOptions = {} as GridOptions;
+		this.gridOptions = {
+			overlayNoRowsTemplate:
+				'<span style="padding: 10px; border: 2px solid #444; background: lightgoldenrodyellow;">This is a custom \'no rows\' overlay</span>'
+		} as GridOptions;
 		this.localeText = localeTextESPes;
 		this.defaultColDef = {
 			// flex: 1,
@@ -96,8 +99,17 @@ export class PorLicitacionComponent {
 			},
 			getDetailRowData: function (params: any) {
 				params.successCallback(params.data.arrayTenderResult);
+
 			},
+
 		};
+
+		// this.onBtShowNoRows();
+	}
+
+	// https://www.ag-grid.com/javascript-data-grid/overlays/#example
+	onBtShowNoRows() {
+		this.gridOptions.api!.showNoRowsOverlay();
 	}
 
 	onGridReady(params: { api: any; columnApi: any }) {
@@ -107,3 +119,4 @@ export class PorLicitacionComponent {
 		this.rowData = JSON.parse(data!) as ILicitacion[];
 	}
 }
+
