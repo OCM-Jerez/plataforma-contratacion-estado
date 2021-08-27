@@ -1,33 +1,6 @@
 <div>
-	<button *ngIf="!isExpanded" type="button" class="btn btnExpand" (click)="expandAll()">
-		Expandir todo
-	</button>
-	<button *ngIf="isExpanded" type="button" class="btn btnCollapse" (click)="collapseAll()">
-		Colapsar todo
-	</button>
-
-	<!-- <ag-grid-angular
-		#agGrid
-		style="width: 100%; height: 90vh; padding-right: 20px; margin-left: 10px"
-		class="ag-theme-balham"
-		[rowData]="rowData"
-		[columnDefs]="columnDefs"
-		[defaultColDef]="defaultColDef"
-		rowSelection="multiple"
-		[groupSuppressAutoColumn]="true"
-		[groupIncludeFooter]="true"
-		[groupIncludeTotalFooter]="true"
-		[groupHeaderHeight]="groupHeaderHeight"
-		[headerHeight]="headerHeight"
-		[rowHeight]="rowHeight"
-		[localeText]="localeText"
-		[suppressAggFuncInHeader]="true"
-		(gridReady)="onGridReady($event)"
-	>
-	</ag-grid-angular> -->
-
 	<ag-grid-angular style="width: 100%; height: 90vh; padding-right: 20px; margin-left: 10px" id="myGrid"
 		class="ag-theme-balham" [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" [masterDetail]="true"
-		[detailCellRendererParams]="detailCellRendererParams" [rowData]="rowData"
-		(firstDataRendered)="onFirstDataRendered($event)" (gridReady)="onGridReady($event)"></ag-grid-angular>
+		[detailCellRendererParams]="detailCellRendererParams" [rowData]="rowData" (gridReady)="onGridReady($event)">
+	</ag-grid-angular>
 </div>

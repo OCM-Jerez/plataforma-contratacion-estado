@@ -1,12 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component, ViewChild } from '@angular/core';
-
-// import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
-import contratosmenoresJson from '../../../../assets/data/todos.json';
-
 import { AgGridAngular } from 'ag-grid-angular';
+
 import { GridOptions } from 'ag-grid-community/main';
 
 import { CellRendererOCM } from '../../../util/CellRendererOCM';
@@ -34,7 +28,6 @@ export class PorAdjudicatarioComponent {
 	detailCellRendererParams: any;
 
 	constructor() {
-		// this.rowHeight = 180;
 		this.columnDefs = [
 			{
 				children: [
@@ -49,7 +42,6 @@ export class PorAdjudicatarioComponent {
 						cellRenderer: 'agGroupCellRenderer',
 						valueGetter: (params: any) => {
 							if (params.data) {
-								// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
 								return `${params.data.PartyName}      ${params.data.PartyIdentification}`;
 							} else {
 								return null;
@@ -58,7 +50,6 @@ export class PorAdjudicatarioComponent {
 						cellRendererParams: {
 							innerRenderer: (params: { node: { group: any }; value: any }) => {
 								if (params.node.group) {
-									// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 									return params.value;
 								} else {
 									return '';
@@ -117,12 +108,6 @@ export class PorAdjudicatarioComponent {
 			}
 		];
 
-		// this.defaultColDef = {
-		// 	sortable: true,
-		// 	resizable: true,
-		// 	filter: true
-		// };
-
 		this.gridOptions = {} as GridOptions;
 		this.localeText = localeTextESPes;
 		this.defaultColDef = {
@@ -164,39 +149,17 @@ export class PorAdjudicatarioComponent {
 				params.successCallback(params.data.detail);
 			},
 		};
-
 	}
 
 	onGridReady(params: { api: any; columnApi: any }) {
 		this.gridApi = params.api;
 		this.gridColumnApi = params.columnApi;
-
 		this.rowData = this.generateData();
-	}
-
-	onFirstDataRendered(params: any) {
-		setTimeout(function () {
-			params.api.getDisplayedRowAtIndex(1).setExpanded(true);
-		}, 0);
-	}
-
-
-	expandAll() {
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-call
-		this.gridApi.expandAll();
-		this.isExpanded = true;
-	}
-
-	collapseAll() {
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-call
-		this.gridApi.collapseAll();
-		this.isExpanded = false;
 	}
 
 	private generateData(): IData[] {
 		const dataLocalStorage = localStorage.getItem('dataLicitacion')
 		const dataLicitacion = JSON.parse(dataLocalStorage!) as ILicitacion[];
-
 		let data: IData[] = [];
 
 		dataLicitacion.forEach(item => {
@@ -211,7 +174,6 @@ export class PorAdjudicatarioComponent {
 			}
 		})
 		const set = new Set();
-
 		data = data.filter(item => {
 			const duplicate = set.has(item.PartyName);
 			set.add(item.PartyName);
@@ -219,15 +181,11 @@ export class PorAdjudicatarioComponent {
 		}).sort((a, b) => {
 			if (a.PartyName < b.PartyName) { return -1 }
 			if (a.PartyName > b.PartyName) { return 1 }
-
 			return 0
-
 		});
-
 
 		data.forEach(item => {
 			const licitaciones: IDetail[] = [];
-
 			dataLicitacion.forEach(licitacion => {
 				if (licitacion.arrayTenderResult) {
 					const findTender = licitacion.arrayTenderResult.find(tender => tender.PartyName === item.PartyName);
@@ -236,12 +194,9 @@ export class PorAdjudicatarioComponent {
 						licitaciones.push(detail);
 					}
 				}
-
 			})
 			item.detail = licitaciones;
-
 		})
-
 		return data;
 	}
 }
