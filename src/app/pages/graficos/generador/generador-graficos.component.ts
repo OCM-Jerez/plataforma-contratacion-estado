@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { IChartContrato, IContratoMenor } from '../../../models/contratos.interfaces';
-import { OptionsGraph, TipoGrafico } from '../../../models/tipos-graficos.type';
+import { TipoGrafico } from '../../../models/tipos-graficos.type';
 import { Static } from '../../../util/static';
 import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
 import { ChannelChartsService } from '../../../services/channel-charts.service';
@@ -84,11 +84,9 @@ export class GeneradorGraficosComponent {
 
 	private _generarData() {
 		const data: IChartContrato[] = [];
-
 		this.rangos.forEach((item) => {
 			data.push(this._getDataRango(item));
 		});
-
 		return data;
 	}
 
