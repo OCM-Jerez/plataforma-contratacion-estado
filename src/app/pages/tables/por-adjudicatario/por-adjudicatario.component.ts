@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { AgGridAngular } from 'ag-grid-angular';
 
 import { GridOptions } from 'ag-grid-community/main';
+import moment from 'moment';
 
 import { CellRendererOCM } from '../../../util/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
@@ -28,90 +29,10 @@ export class PorAdjudicatarioComponent {
 	detailCellRendererParams: any;
 
 	constructor() {
-		this.columnDefs = [
-			{
-				children: [
-					{
-						headerName: 'Adjudicatario',
-						field: 'PartyName',
-						width: 350,
-						rowGroup: true,
-						filter: false,
-						pinned: 'left',
-						showRowGroup: 'PartyName',
-						cellRenderer: 'agGroupCellRenderer',
-						valueGetter: (params: any) => {
-							if (params.data) {
-								return `${params.data.PartyName}      ${params.data.PartyIdentification}`;
-							} else {
-								return null;
-							}
-						},
-						cellRendererParams: {
-							innerRenderer: (params: { node: { group: any }; value: any }) => {
-								if (params.node.group) {
-									return params.value;
-								} else {
-									return '';
-								}
-							},
-							footerValueGetter(params: { value: string; node: { level: any } }) {
-								switch (params.node.level) {
-									case 0: // Total adjudicatario.
-										return `<span style="color: red; font-size: 10px;  font-weight: bold; margin-left: 0px;"> Total ${params.value}</span>`;
-									case -1: // Total general.
-										return '';
-									default:
-										return 'SIN FORMATO';
-								}
-							}
-						}
-					},
-					{
-						headerName: 'Fecha',
-						field: 'AwardDate',
-						width: 90,
-						resizable: true,
-						pinned: 'left',
-						suppressCount: true
-					},
-					{
-						headerName: 'Descripción',
-						field: 'Name',
-						width: 850,
-						resizable: true,
-						rowGroup: false,
-						filter: false,
-						pinned: 'left',
-						wrapText: true
-					},
-					{
-						headerName: 'TOTAL',
-						field: 'TaxExclusiveAmount',
-						width: 88,
-						resizable: true,
-						rowGroup: false,
-						filter: false,
-						pinned: 'left',
-						showRowGroup: 'TaxExclusiveAmount',
-						cellRenderer: CellRendererOCM
-					}
-				]
-			},
-			{
-				headerName: 'Parcial',
-				field: 'TaxExclusiveAmount1',
-				width: 80,
-				resizable: true,
-				aggFunc: 'sum',
-				cellRenderer: CellRendererOCM
-			}
-		];
-
 		this.gridOptions = {} as GridOptions;
 		this.localeText = localeTextESPes;
 		this.defaultColDef = {
-			flex: 1,
+			// flex: 1,
 			sortable: true,
 			resizable: true,
 			filter: true
@@ -119,12 +40,16 @@ export class PorAdjudicatarioComponent {
 
 		this.columnDefs = [
 			{
-				headerName: 'Descripción',
+				headerName: 'Empresa adjudicataria',
 				field: 'PartyName',
+				width: 400,
 				cellRenderer: 'agGroupCellRenderer',
 			},
-			{ field: 'PartyIdentification' },
-
+			{
+				headerName: 'CIF',
+				field: 'PartyIdentification',
+				width: 400,
+			},
 		];
 
 		this.detailCellRendererParams = {
@@ -136,14 +61,34 @@ export class PorAdjudicatarioComponent {
 				paginationAutoPageSize: false,
 				columnDefs: [
 					{
-						field: 'title',
+						headerName: 'Fecha',
+						field: 'updated',
+						width: 130,
+						cellRenderer: 'agGroupCellRenderer',
+						valueFormatter: (params: any) => {
+							return moment(moment(params.data.updated).toDate()).format('DD-MM-YYYY')
+						}
 					},
-					{ field: 'ContractFolderID' },
+					{
+						headerName: 'Referencia',
+						field: 'ContractFolderID',
+						width: 140
+					},
+					{
+						headerName: 'Descripción',
+						field: 'Name',
+						width: 900,
+						wrapText: true,
+						autoHeight: true,
+					},
+					{
+						headerName: 'Importe',
+						field: 'TotalAmount',
+						width: 120,
+						aggFunc: 'sum',
+						cellRenderer: CellRendererOCM,
+					},
 				],
-				defaultColDef: {
-					sortable: true,
-					flex: 1,
-				},
 			},
 			getDetailRowData: function (params: any) {
 				params.successCallback(params.data.detail);
@@ -190,7 +135,7 @@ export class PorAdjudicatarioComponent {
 				if (licitacion.arrayTenderResult) {
 					const findTender = licitacion.arrayTenderResult.find(tender => tender.PartyName === item.PartyName);
 					if (findTender) {
-						const detail: IDetail = { title: licitacion.title, ContractFolderID: licitacion.ContractFolderID }
+						const detail: IDetail = { updated: licitacion.updated, Name: licitacion.Name, ContractFolderID: licitacion.ContractFolderID, TotalAmount: licitacion.TotalAmount }
 						licitaciones.push(detail);
 					}
 				}
@@ -208,6 +153,8 @@ interface IData {
 }
 
 interface IDetail {
-	title: string;
+	updated: string;
 	ContractFolderID: string;
+	Name: string;
+	TotalAmount: number
 }
