@@ -34,7 +34,8 @@ export class Static {
 		{ id: 10, value: { rangoInicial: 14000, rangoFinal: 14999, codeText: '14.000 - 15.000' } },
 		{ id: 11, value: { rangoInicial: 15000, rangoFinal: 24999, codeText: '15.000 - 25.000' } },
 		{ id: 12, value: { rangoInicial: 25000, rangoFinal: 34999, codeText: '25.000 - 35.000' } },
-		{ id: 13, value: { rangoInicial: 35000, rangoFinal: 45000, codeText: '35.000 - 45.000' } }
+		{ id: 13, value: { rangoInicial: 35000, rangoFinal: 45000, codeText: '35.000 - 45.000' } },
+		{ id: 14, value: { rangoInicial: 45001, rangoFinal: 20000000, codeText: 'Más de 45.000' } }
 	];
 
 	public static TIPOS_TYPE = [
