@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({
@@ -8,10 +9,10 @@ import { ChannelChartsService } from '../../../services/channel-charts.service';
 	templateUrl: './indice-graficos.component.html'
 })
 export class IndiceGraficosComponent {
-	constructor(private router: Router, private _channelChartsService: ChannelChartsService) {}
+	constructor(private router: Router, private _channelChartsService: ChannelChartsService) { }
 
 	async graficosPorImporte() {
-		const rangos = [13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+		const rangos = [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 		const resolve = await this.router?.navigate(['/graficosPorImporte']);
 		if (resolve) {
 			this._channelChartsService.enviarData({
@@ -50,8 +51,6 @@ export class IndiceGraficosComponent {
 				tipoReporte: 'por result'
 			});
 		}
-
-		// this.router?.navigate(['/graficosPorResultcode']);
 	}
 
 	async graficosPorTypecode() {
@@ -67,8 +66,6 @@ export class IndiceGraficosComponent {
 				tipoReporte: 'por type'
 			});
 		}
-
-		// this.router?.navigate(['/graficosPorTypecode']);
 	}
 
 	async graficosPorSubTypeCode() {
@@ -85,8 +82,6 @@ export class IndiceGraficosComponent {
 				tipoReporte: 'por subtype'
 			});
 		}
-
-		// this.router?.navigate(['/graficosPorSubTypeCode']);
 	}
 
 	async graficosPorUrgencyCode() {
@@ -101,7 +96,5 @@ export class IndiceGraficosComponent {
 				tipoReporte: 'por urgency'
 			});
 		}
-
-		// this.router?.navigate(['/graficosPorUrgencyCode']);
 	}
 }
