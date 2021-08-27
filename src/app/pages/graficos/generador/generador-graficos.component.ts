@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
-import { IChartContrato, IContratoMenor } from '../../../models/contratos.interfaces';
+import { IChartContrato, IContratoMenor, ILicitacion } from '../../../models/contratos.interfaces';
 import { TipoGrafico } from '../../../models/tipos-graficos.type';
 import { Static } from '../../../util/static';
-import contratosmenoresJson from '../../../../assets/data/contratosMenores2020map.json';
 import { ChannelChartsService } from '../../../services/channel-charts.service';
 
 @Component({
@@ -18,6 +17,7 @@ export class GeneradorGraficosComponent {
 	tituloPagina = '';
 	public options1: any;
 	public options2: any;
+	public rowData: IContratoMenor[] = [];
 
 	constructor(private _channelChartsService: ChannelChartsService) {
 		this._channelChartsService.$subject.subscribe((data) => {
@@ -30,6 +30,9 @@ export class GeneradorGraficosComponent {
 			this.options1 = this._generarChart('contratos', dataChart, this.titulo1);
 			this.options2 = this._generarChart('sumPayableAmount', dataChart, this.titulo2);
 		});
+
+		const data = localStorage.getItem('dataLicitacion');
+		this.rowData = JSON.parse(data!) as IContratoMenor[];
 	}
 
 	private _generarChart(yKeys: string, data: IChartContrato[], titulo: string) {
@@ -76,7 +79,6 @@ export class GeneradorGraficosComponent {
 	}
 
 	private _formatearMoneda(params: { value: number }): string {
-		// console.log(this.options1);
 		return params.value === undefined
 			? ''
 			: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
@@ -97,7 +99,7 @@ export class GeneradorGraficosComponent {
 		switch (this.tipoReporte) {
 			case 'por importe': {
 				const datosTipoReporte = Static.RANGO_IMPORTE.find((item) => item.id === rango);
-				rangoFilter = contratosmenoresJson.filter(
+				rangoFilter = this.rowData.filter(
 					(item) =>
 						item.TaxExclusiveAmount >= datosTipoReporte!.value.rangoInicial &&
 						item.TaxExclusiveAmount <= datosTipoReporte!.value.rangoFinal
@@ -108,7 +110,7 @@ export class GeneradorGraficosComponent {
 			case 'por procedure': {
 				const procedure = Static.TIPOS_PROCEDURE.find((item) => item.id === rango);
 				codeText = procedure ? procedure.value : 'Sin dato';
-				rangoFilter = contratosmenoresJson.filter(
+				rangoFilter = this.rowData.filter(
 					(item) => item.ProcedureCode === rango.toString()
 				);
 				break;
@@ -116,25 +118,25 @@ export class GeneradorGraficosComponent {
 			case 'por urgency': {
 				const procedure = Static.TIPOS_URGENCY.find((item) => item.id === rango);
 				codeText = procedure ? procedure.value : 'Sin dato';
-				rangoFilter = contratosmenoresJson.filter((item) => item.UrgencyCode === rango.toString());
+				rangoFilter = this.rowData.filter((item) => item.UrgencyCode === rango.toString());
 				break;
 			}
 			case 'por type': {
 				const procedure = Static.TIPOS_TYPE.find((item) => item.id === rango);
 				codeText = procedure ? procedure.value : 'Sin dato';
-				rangoFilter = contratosmenoresJson.filter((item) => item.TypeCode === rango.toString());
+				rangoFilter = this.rowData.filter((item) => item.TypeCode === rango.toString());
 				break;
 			}
 			case 'por subtype': {
 				const procedure = Static.TIPOS_SUBTYPE.find((item) => item.id === rango);
 				codeText = procedure ? procedure.value : 'Sin dato';
-				rangoFilter = contratosmenoresJson.filter((item) => item.SubTypeCode === rango.toString());
+				rangoFilter = this.rowData.filter((item) => item.SubTypeCode === rango.toString());
 				break;
 			}
 			case 'por result': {
 				const procedure = Static.TIPOS_RESULT.find((item) => item.id === rango);
 				codeText = procedure ? procedure.value : 'Sin dato';
-				rangoFilter = contratosmenoresJson.filter((item) => item.ResultCode === rango.toString());
+				rangoFilter = this.rowData.filter((item) => item.ResultCode === rango.toString());
 				break;
 			}
 		}
