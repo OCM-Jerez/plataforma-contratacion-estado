@@ -13,8 +13,6 @@
 @import '../node_modules/ag-grid-community/src/styles/ag-grid.scss';
 @import '../node_modules/ag-grid-community/src/styles/ag-theme-balham/sass/legacy/ag-theme-balham-v22-compat.scss';
 
-// $odd-row-background-color: rgb(238, 20, 68);
-
 :root {
 	// The :root pseudo-class represents an element that is the root of the document. In HTML, this is always the HTML element.
 	--fuente-principal: 'Roboto', serif;
@@ -29,10 +27,8 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+// #region Mis cosas
 
-/*************************/
-/*     01. Mis cosas     */
-/*************************/
 // .centrarSection{
 //   min-height: 90vh; /*will cover the 100% of viewport */
 //  overflow: hidden;
@@ -123,6 +119,7 @@ body {
 	background-color: rgb(201, 72, 72);
 }
 
+// #region @media screen
 @media screen and (max-width: 1900px) {
 	.ag-cell-value {
 		font-size: 12px;
@@ -323,12 +320,13 @@ body {
 		text-shadow: 2px 2px 2px rgb(10, 2, 2);
 	}
 }
+// #endregion
+/******** END @media screen *****************/
 
+// #endregion
 /******** END Mis cosas *****************/
 
-/*************************/
-/*     02. ag-grid     */
-/*************************/
+// #region AG Grid
 .ag-header-group-cell {
 	font-size: 20px;
 	color: red;
@@ -416,12 +414,11 @@ body {
 	text-overflow: ellipsis;
 	color: black;
 }
-
+// #endregion
 /******** END ag-grid *****************/
 
-/*************************/
-/*     03. Preloader     */
-/*************************/
+// #region Preloader
+
 .spinner-wrapper {
 	position: fixed;
 	z-index: 999999;
@@ -487,4 +484,5 @@ body {
 		transform: scale(1);
 	}
 }
+// #endregion
 /******** END Preloader *****************/
