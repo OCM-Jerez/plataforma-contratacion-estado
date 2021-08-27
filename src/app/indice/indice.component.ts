@@ -1,14 +1,13 @@
 import { AfterViewInit, ViewChild } from '@angular/core';
-import { FormBuilder, Validators } from "@angular/forms";
-
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormBuilder } from "@angular/forms";
+
 import moment from 'moment';
 import { DatePickerComponent, IDatePickerConfig } from 'ng2-date-picker';
+
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
 import contratosmenoresJson from '../../assets/data/todos.json';
-
 import { ILicitacion } from '../models/contratos.interfaces';
 import { ENTES_CONTRATACION } from '../../assets/data/entesContratacion-data';
 
@@ -19,7 +18,6 @@ import { ENTES_CONTRATACION } from '../../assets/data/entesContratacion-data';
 })
 export class IndiceComponent implements AfterViewInit {
 	isSubmitted = false;
-
 	radioSel: any;
 	radioSelected?: string;
 	radioSelectedString?: string;
@@ -46,18 +44,19 @@ export class IndiceComponent implements AfterViewInit {
 	porLicitacion() {
 		this.filterData();
 		this.router?.navigate(['/porLicitacion']);
-		// this._channelFilterDateService.sendDates({ startDate: this.dateStart, endDate: this.dateEnd })
 	}
 
 	porAdjudicatario() {
+		this.filterData();
 		this.router?.navigate(['/porAdjudicatario']);
 	}
 
-	porCIF() {
-		this.router?.navigate(['/porCIF']);
-	}
+	// porCIF() {
+	// 	this.router?.navigate(['/porCIF']);
+	// }
 
 	graficos() {
+		this.filterData();
 		this.router?.navigate(['/indiceGraficos']);
 	}
 
@@ -86,7 +85,6 @@ export class IndiceComponent implements AfterViewInit {
 			console.log(this.radioSel.label);
 			return item.summary.match(this.radioSel.name)
 		})
-
 		localStorage.setItem('dataLicitacion', JSON.stringify(data))
 	}
 
