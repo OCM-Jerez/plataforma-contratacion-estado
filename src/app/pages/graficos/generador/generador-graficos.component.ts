@@ -55,8 +55,9 @@ export class GeneradorGraficosComponent {
 					label: {
 						color: 'red',
 						fontWeight: 'bold',
+						placement: 'inside',
 						formatter: (params: { value: number }) => {
-							return this._formatearMoneda(params);
+							return `                 ${this._formatearMoneda(params)}`;
 						}
 					}
 				}
@@ -88,10 +89,6 @@ export class GeneradorGraficosComponent {
 	}
 
 	private _calcularTotal() {
-		// this.totalEuros = this.rowData.reduce(function (previousValue, currentValue) {
-		// 	return (previousValue + currentValue.TotalAmount)
-		// }, 0)
-
 		let initialValue = 0
 		this.totalEuros = this.rowData.reduce(function (previousValue, currentValue) {
 			return previousValue + currentValue.TotalAmount
