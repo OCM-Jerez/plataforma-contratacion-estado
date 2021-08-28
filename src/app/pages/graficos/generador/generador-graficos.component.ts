@@ -18,6 +18,7 @@ export class GeneradorGraficosComponent {
 	public options1: any;
 	public options2: any;
 	public rowData: IContratoMenor[] = [];
+	totalEuros!: number;
 
 	constructor(private _channelChartsService: ChannelChartsService) {
 		this._channelChartsService.$subject.subscribe((data) => {
@@ -27,17 +28,19 @@ export class GeneradorGraficosComponent {
 			this.rangos = data.rangos;
 			this.tituloPagina = data.tituloPagina;
 			const dataChart = this._generarData();
-			this.options1 = this._generarChart('contratos', dataChart, this.titulo1);
-			this.options2 = this._generarChart('sumPayableAmount', dataChart, this.titulo2);
+			const totalEuros = this._calcularTotal();
+			this.options1 = this._generarChart('contratos', dataChart, this.titulo1, `Total licitaciones: ${this.rowData.length}`);
+			this.options2 = this._generarChart('sumPayableAmount', dataChart, this.titulo2, `Total euros: ${this.totalEuros.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}`);
 		});
 
 		const data = localStorage.getItem('dataLicitacion');
 		this.rowData = JSON.parse(data!) as IContratoMenor[];
 	}
 
-	private _generarChart(yKeys: string, data: IChartContrato[], titulo: string) {
+	private _generarChart(yKeys: string, data: IChartContrato[], titulo: string, total: string) {
 		return {
 			title: { text: titulo },
+			subtitle: { text: total },
 			legend: { enabled: false },
 			data: data,
 			series: [
@@ -84,6 +87,17 @@ export class GeneradorGraficosComponent {
 			: params.value.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 	}
 
+	private _calcularTotal() {
+		// this.totalEuros = this.rowData.reduce(function (previousValue, currentValue) {
+		// 	return (previousValue + currentValue.TotalAmount)
+		// }, 0)
+
+		let initialValue = 0
+		this.totalEuros = this.rowData.reduce(function (previousValue, currentValue) {
+			return previousValue + currentValue.TotalAmount
+		}, initialValue)
+	}
+
 	private _generarData() {
 		const data: IChartContrato[] = [];
 		this.rangos.forEach((item) => {
@@ -101,8 +115,8 @@ export class GeneradorGraficosComponent {
 				const datosTipoReporte = Static.RANGO_IMPORTE.find((item) => item.id === rango);
 				rangoFilter = this.rowData.filter(
 					(item) =>
-						item.TaxExclusiveAmount >= datosTipoReporte!.value.rangoInicial &&
-						item.TaxExclusiveAmount <= datosTipoReporte!.value.rangoFinal
+						item.TotalAmount >= datosTipoReporte!.value.rangoInicial &&
+						item.TotalAmount <= datosTipoReporte!.value.rangoFinal
 				);
 				codeText = datosTipoReporte!.value.codeText;
 				break;
@@ -143,7 +157,7 @@ export class GeneradorGraficosComponent {
 
 		let suma = 0;
 		rangoFilter.forEach((x) => {
-			suma = suma + x.TaxExclusiveAmount;
+			suma = suma + x.TotalAmount;
 		});
 
 		itemRango.codeText = codeText;
