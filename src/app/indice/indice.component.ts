@@ -7,7 +7,11 @@ import moment from 'moment';
 import { DatePickerComponent, IDatePickerConfig } from 'ng2-date-picker';
 
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
-import contratosmenoresJson from '../../assets/data/todos.json';
+// import contratosmenoresJson from '../../assets/data/todos.json';
+// import contratosmenoresJson from '../../assets/data/finalNoRepeat.json';
+import contratosmenoresJson from '../../assets/data/2108todasLicitacionesContratosNoRepeat.json';
+
+
 import { ILicitacion } from '../models/contratos.interfaces';
 import { ENTES_CONTRATACION } from '../../assets/data/entesContratacion-data';
 
