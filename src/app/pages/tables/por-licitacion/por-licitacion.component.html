@@ -1,5 +1,5 @@
 <div>
-	<ag-grid-angular style="width: 100%; height: 67vh; padding-right: 20px; margin-left: 10px" id="myGrid"
+	<ag-grid-angular #agGrid style="width: 100%; height: 67vh; padding-right: 20px; margin-left: 10px" id="myGrid"
 		class="ag-theme-balham" [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" [masterDetail]="true"
 		[detailCellRendererParams]="detailCellRendererParams" [pagination]="true" [paginationPageSize]="25"
 		[rowData]="rowData" [localeText]="localeText" (gridReady)="onGridReady($event)">

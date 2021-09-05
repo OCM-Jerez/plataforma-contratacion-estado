@@ -18,7 +18,6 @@ import { IndiceComponent } from './indice/indice.component';
 
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
 import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
-import { PorCIFComponent } from './pages/tables/por-cif/por-cif.component';
 
 import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
 import { GeneradorGraficosComponent } from './pages/graficos/generador/generador-graficos.component';
@@ -32,7 +31,6 @@ import { GeneradorGraficosComponent } from './pages/graficos/generador/generador
 		IndiceGraficosComponent,
 		PorLicitacionComponent,
 		PorAdjudicatarioComponent,
-		PorCIFComponent,
 		GeneradorGraficosComponent
 	],
 	imports: [
