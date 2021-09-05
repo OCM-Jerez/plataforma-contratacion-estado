@@ -55,10 +55,6 @@ export class IndiceComponent implements AfterViewInit {
 		this.router?.navigate(['/porAdjudicatario']);
 	}
 
-	// porCIF() {
-	// 	this.router?.navigate(['/porCIF']);
-	// }
-
 	graficos() {
 		this.filterData();
 		this.router?.navigate(['/indiceGraficos']);
