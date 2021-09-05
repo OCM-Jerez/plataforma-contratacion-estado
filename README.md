@@ -1,5 +1,5 @@
 <h2 align='center'> App desarrolla en Angular para la consulta de las licitaciones y contratos menores de un Ayuntamiento </h2>
-<img src='https://res.cloudinary.com/dabrencx7/image/upload/v1629883040/Licitaciones/portada_rokxcm.jpg'/>
+<img src='https://res.cloudinary.com/dabrencx7/image/upload/v1630835581/Licitaciones/portadaLicitaciones_extr9j.jpg'/>
 
 # Motivación 💪
 <ul>
@@ -8,16 +8,30 @@
  </ul>
 
 # Caracteristicas ⭐
+Permite mostrar los datos del fichero JSON generado con nuestra utilidad [xml2json](https://github.com/OCM-Jerez/xml2json) a
+partir de los ficheros XML de los [Datos Abiertos Plataforma Contratación del sector público](https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx)
+
 <ul>
   <li>Permite listar los datos agrupados por diferentes conceptos.</li>
   <ul>
           <li>Por contrato menor o licitación.</li>
           <li>Por razon social del adjudicatario.</li>
-          <li>Por CIF del adjudicatario.</li>
-      </ul>
-   <li>Graficos de los diferentes tipos de licitaciones.</li>
-   <li>Filtrar entre fechas.</li>
-   <li>Filtrar por entes dependientes.</li>
+  </ul>
+   <li>Graficos de los diferentes tipos de licitaciones o contratos menores.
+    <ul>
+          <li>Por importe.</li>
+          <li>Por procedimiento.</li>
+          <li>Por resultado.</li>
+          <li>Por tipología.</li>
+          <li>Por subtipo.</li>
+          <li>Por tipo tramitación.</li>
+  </ul>
+  </li>
+  <li>Permite filtrar los datos a  mostrar por:</li>
+  <ul>
+          <li>Entre dos fechas.</li>
+          <li>Por Ayuntamiento o entes dependientes.</li>
+  </ul>
   </li>
  </ul>
 
