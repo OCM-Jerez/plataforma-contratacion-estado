@@ -20,9 +20,10 @@ import { IEntesContratacion } from '../models/entesContratacion.interface';
 })
 export class IndiceComponent implements AfterViewInit {
 	isSubmitted = false;
-	radioSel: any;
+	radioSel!: IEntesContratacion;
 	radioSelected?: string;
-	radioSelectedString?: string;
+	radioSelectedString?:
+		string;
 	entesList: IEntesContratacion[];
 	config: IDatePickerConfig = { closeOnSelect: false, closeOnEnter: false, hideOnOutsideClick: false, locale: 'es', format: 'DD-MM-YYYY', firstDayOfWeek: 'mo' }
 	@ViewChild('datePickerStart') datePickerStart!: DatePickerComponent;
@@ -33,7 +34,7 @@ export class IndiceComponent implements AfterViewInit {
 
 	constructor(public fb: FormBuilder, private router: Router, private _channelFilterDateService: ChannelFilterDateService) {
 		this.entesList = ENTES_CONTRATACION;
-		this.radioSelected = "ayto";
+		this.radioSelected = "todos";
 		this.getSelectedItem();
 	}
 
@@ -74,22 +75,27 @@ export class IndiceComponent implements AfterViewInit {
 	private filterData() {
 		let data = contratosmenoresJson as ILicitacion[]
 
-		if (this.dateStart && this.dateEnd) {
+		if (this.radioSel.value === 'todos') {
+			localStorage.setItem('dataLicitacion', JSON.stringify(data))
+		} else {
+			if (this.dateStart && this.dateEnd) {
+				data = data.filter(item => {
+					const updated = moment(item.updated).toDate();
+					return updated >= this.dateStart && updated <= this.dateEnd
+				})
+			}
+
 			data = data.filter(item => {
-				const updated = moment(item.updated).toDate();
-				return updated >= this.dateStart && updated <= this.dateEnd
+				return item.summary.match(this.radioSel.name)
 			})
+
+			localStorage.setItem('dataLicitacion', JSON.stringify(data))
 		}
 
-		data = data.filter(item => {
-			return item.summary.match(this.radioSel.name)
-		})
-
-		localStorage.setItem('dataLicitacion', JSON.stringify(data))
 	}
 
 	getSelectedItem() {
-		this.radioSel = ENTES_CONTRATACION.find(Item => Item.value === this.radioSelected);
+		this.radioSel = ENTES_CONTRATACION.find(Item => Item.value === this.radioSelected)!;
 		this.radioSelectedString = JSON.stringify(this.radioSel);
 	}
 
