@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { IChartContrato, IContratoMenor, ILicitacion } from '../../../models/contratos.interfaces';
+import { IChartContrato, ILicitacion } from '../../../models/contratos.interfaces';
 import { TipoGrafico } from '../../../models/tipos-graficos.type';
 import { Static } from '../../../util/static';
 import { ChannelChartsService } from '../../../services/channel-charts.service';
@@ -17,7 +17,7 @@ export class GeneradorGraficosComponent {
 	tituloPagina = '';
 	public options1: any;
 	public options2: any;
-	public rowData: IContratoMenor[] = [];
+	public rowData: ILicitacion[] = [];
 	totalEuros!: number;
 
 	constructor(private _channelChartsService: ChannelChartsService) {
@@ -29,12 +29,18 @@ export class GeneradorGraficosComponent {
 			this.tituloPagina = data.tituloPagina;
 			const dataChart = this._generarData();
 			const totalEuros = this._calcularTotal();
-			this.options1 = this._generarChart('contratos', dataChart, this.titulo1, `Total licitaciones: ${this.rowData.length}`);
+			let titleTotal = `Total licitaciones: ${this.rowData.length}`;
+			if (this.tipoReporte === 'por result') {
+				const countTenderSinDaro = this.rowData.filter(item => item.arrayTenderResult === undefined);
+				titleTotal = `${titleTotal} - sin dato: ${countTenderSinDaro.length}`
+			}
+
+			this.options1 = this._generarChart('contratos', dataChart, this.titulo1, titleTotal);
 			this.options2 = this._generarChart('sumPayableAmount', dataChart, this.titulo2, `Total euros: ${this.totalEuros.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}`);
 		});
 
 		const data = localStorage.getItem('dataLicitacion');
-		this.rowData = JSON.parse(data!) as IContratoMenor[];
+		this.rowData = JSON.parse(data!) as ILicitacion[];
 	}
 
 	private _generarChart(yKeys: string, data: IChartContrato[], titulo: string, total: string) {
@@ -95,17 +101,20 @@ export class GeneradorGraficosComponent {
 		}, initialValue)
 	}
 
-	private _generarData() {
+	private _generarData(): IChartContrato[] {
 		const data: IChartContrato[] = [];
 		this.rangos.forEach((item) => {
 			data.push(this._getDataRango(item));
 		});
+
+
 		return data;
 	}
 
 	private _getDataRango(rango: number): IChartContrato {
+
 		const itemRango: IChartContrato = <IChartContrato>{};
-		let rangoFilter: IContratoMenor[] = [];
+		let rangoFilter: ILicitacion[] = [];
 		let codeText = '';
 		switch (this.tipoReporte) {
 			case 'por importe': {
@@ -147,7 +156,15 @@ export class GeneradorGraficosComponent {
 			case 'por result': {
 				const procedure = Static.TIPOS_RESULT.find((item) => item.id === rango);
 				codeText = procedure ? procedure.value : 'Sin dato';
-				rangoFilter = this.rowData.filter((item) => item.ResultCode === rango.toString());
+
+				rangoFilter = this.rowData.filter((item) => {
+					if (!item.arrayTenderResult) {
+						return false;
+					}
+					const resultCode = item.arrayTenderResult.find(tender => tender.ResultCode === rango.toString())
+					return resultCode !== undefined
+				});
+
 				break;
 			}
 		}
