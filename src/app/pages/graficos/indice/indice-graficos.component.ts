@@ -40,7 +40,7 @@ export class IndiceGraficosComponent {
 	}
 
 	async graficosPorResultcode() {
-		const rangos = [10, 9, 8, 7, 6, 5, 4, 2, 1];
+		const rangos = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 		const resolve = await this.router?.navigate(['graficos']);
 		if (resolve) {
 			this._channelChartsService.enviarData({
