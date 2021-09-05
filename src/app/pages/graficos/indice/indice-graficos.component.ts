@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -13,7 +12,8 @@ export class IndiceGraficosComponent {
 
 	async graficosPorImporte() {
 		const rangos = [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-		const resolve = await this.router?.navigate(['/graficosPorImporte']);
+		const resolve = await this.router?.navigate(['/graficos']);
+
 		if (resolve) {
 			this._channelChartsService.enviarData({
 				titulo1: 'Importe',
@@ -27,7 +27,7 @@ export class IndiceGraficosComponent {
 
 	async graficosPorProcedimiento() {
 		const rangos = [999, 100, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-		const resolve = await this.router?.navigate(['/graficosPorProcedimiento']);
+		const resolve = await this.router?.navigate(['/graficos']);
 		if (resolve) {
 			this._channelChartsService.enviarData({
 				titulo1: 'ProcedureCode',
@@ -41,7 +41,7 @@ export class IndiceGraficosComponent {
 
 	async graficosPorResultcode() {
 		const rangos = [10, 9, 8, 7, 6, 5, 4, 2, 1];
-		const resolve = await this.router?.navigate(['graficosPorResultcode']);
+		const resolve = await this.router?.navigate(['graficos']);
 		if (resolve) {
 			this._channelChartsService.enviarData({
 				titulo1: 'ResultCode',
@@ -55,7 +55,7 @@ export class IndiceGraficosComponent {
 
 	async graficosPorTypecode() {
 		const rangos = [50, 40, 32, 31, 22, 21, 8, 7, 3, 2, 1];
-		const resolve = await this.router?.navigate(['/graficosPorTypecode']);
+		const resolve = await this.router?.navigate(['/graficos']);
 		if (resolve) {
 			this._channelChartsService.enviarData({
 				titulo1: 'TypeCode',
@@ -72,7 +72,7 @@ export class IndiceGraficosComponent {
 		const rangos = [
 			27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 		];
-		const resolve = await this.router?.navigate(['/graficosPorSubTypeCode']);
+		const resolve = await this.router?.navigate(['/graficos']);
 		if (resolve) {
 			this._channelChartsService.enviarData({
 				titulo1: 'SubTypeCode',
@@ -86,7 +86,7 @@ export class IndiceGraficosComponent {
 
 	async graficosPorUrgencyCode() {
 		const rangos = [3, 2, 1];
-		const resolve = await this.router?.navigate(['/graficosPorUrgencyCode']);
+		const resolve = await this.router?.navigate(['/graficos']);
 		if (resolve) {
 			this._channelChartsService.enviarData({
 				titulo1: 'UrgencyCode',
@@ -97,4 +97,5 @@ export class IndiceGraficosComponent {
 			});
 		}
 	}
+
 }
