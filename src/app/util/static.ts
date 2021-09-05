@@ -84,6 +84,7 @@ export class Static {
 	public static TIPOS_RESULT = [
 		{ id: 1, value: 'Adjudicado Provisionalmente' },
 		{ id: 2, value: 'Adjudicado Definitivamente' },
+		{ id: 3, value: 'Sin definir' },
 		{ id: 4, value: 'Desistimiento' },
 		{ id: 5, value: 'Renuncia' },
 		{ id: 6, value: 'Desierto Provisionalmente' },
