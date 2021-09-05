@@ -11,6 +11,7 @@ import contratosmenoresJson from '../../assets/data/2108todasLicitacionesContrat
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
 import { ILicitacion } from '../models/contratos.interfaces';
 import { ENTES_CONTRATACION } from '../../assets/data/entesContratacion-data';
+import { IEntesContratacion } from '../models/entesContratacion.interface';
 
 @Component({
 	selector: 'app-indice',
@@ -22,11 +23,7 @@ export class IndiceComponent implements AfterViewInit {
 	radioSel: any;
 	radioSelected?: string;
 	radioSelectedString?: string;
-	// TODO! ¿Qué tipo podria ser para evitar any?
-	// TODO! No entiedo la parte => | null = ENTES_CONTRATACION
-	// Todo! ¿Por qué no puedo asignar aqui = ENTES_CONTRATACION y hay que hacerlo en el constructor()?
-	entesList: any[] | null = ENTES_CONTRATACION;
-
+	entesList: IEntesContratacion[];
 	config: IDatePickerConfig = { closeOnSelect: false, closeOnEnter: false, hideOnOutsideClick: false, locale: 'es', format: 'DD-MM-YYYY', firstDayOfWeek: 'mo' }
 	@ViewChild('datePickerStart') datePickerStart!: DatePickerComponent;
 	@ViewChild('datePickerEnd') datePickerEnd!: DatePickerComponent;
@@ -41,8 +38,10 @@ export class IndiceComponent implements AfterViewInit {
 	}
 
 	ngAfterViewInit(): void {
-		this.datePickerStart.api.open();
-		this.datePickerEnd.api.open();
+		setTimeout(() => {
+			this.datePickerStart.api.open();
+			this.datePickerEnd.api.open();
+		}, 0);
 	}
 
 	porLicitacion() {
