@@ -7,9 +7,10 @@ export type TipoGrafico =
 	| 'por result';
 
 export type OptionsGraph = {
-	axes: number[];
-	data: [];
-	legend: boolean;
-	series: [];
 	title: string;
+	subtitle: string;
+	legend: boolean;
+	data: [];
+	series: [];
+	axes: number[];
 };
