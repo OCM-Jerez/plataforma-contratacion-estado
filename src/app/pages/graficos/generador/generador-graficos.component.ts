@@ -31,10 +31,9 @@ export class GeneradorGraficosComponent {
 			const totalEuros = this._calcularTotal();
 			let titleTotal = `Total licitaciones: ${this.rowData.length}`;
 			if (this.tipoReporte === 'por result') {
-				const countTenderSinDaro = this.rowData.filter(item => item.arrayTenderResult === undefined);
-				titleTotal = `${titleTotal} - sin dato: ${countTenderSinDaro.length}`
+				const countTenderSinDato = this.rowData.filter(item => item.arrayTenderResult === undefined);
+				titleTotal = `${titleTotal} - sin dato: ${countTenderSinDato.length}`
 			}
-
 			this.options1 = this._generarChart('contratos', dataChart, this.titulo1, titleTotal);
 			this.options2 = this._generarChart('sumPayableAmount', dataChart, this.titulo2, `Total euros: ${this.totalEuros.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}`);
 		});
@@ -106,13 +105,10 @@ export class GeneradorGraficosComponent {
 		this.rangos.forEach((item) => {
 			data.push(this._getDataRango(item));
 		});
-
-
 		return data;
 	}
 
 	private _getDataRango(rango: number): IChartContrato {
-
 		const itemRango: IChartContrato = <IChartContrato>{};
 		let rangoFilter: ILicitacion[] = [];
 		let codeText = '';
@@ -164,7 +160,6 @@ export class GeneradorGraficosComponent {
 					const resultCode = item.arrayTenderResult.find(tender => tender.ResultCode === rango.toString())
 					return resultCode !== undefined
 				});
-
 				break;
 			}
 		}
