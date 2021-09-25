@@ -12,8 +12,8 @@ import { DpDatePickerModule } from 'ng2-date-picker';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FooterComponent } from './shared/footer/footer.component';
-import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { HeaderComponent } from './layouts/header/header.component';
 import { IndiceComponent } from './indice/indice.component';
 
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
