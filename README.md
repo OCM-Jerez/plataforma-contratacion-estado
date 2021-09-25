@@ -63,7 +63,7 @@ partir de los ficheros XML de los [Datos Abiertos Plataforma Contratación del s
 - <a href= 'https://www.ag-grid.com/' target="_blank"> AG Grid</a>
 - <a href= 'https://www.primefaces.org/primeflex/' target="_blank"> PrimeFlex</a>
 - <a href= 'https://github.com/vlio20/angular-datepicker' target="_blank"> ng2-date-picker</a>
-- <a href= 'https://momentjs.com/' target="_blank"> Moment </a>(Deprecada pero seguimos usandola)
+- <a href= 'https://momentjs.com/' target="_blank"> Moment </a>(Es una dependencia de ng2-date-picker. Esta deprecada)
 
 
 # Contacto ☎️
