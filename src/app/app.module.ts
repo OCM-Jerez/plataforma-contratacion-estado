@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { FooterComponent } from './layouts/footer/footer.component';
-import { HeaderComponent } from './layouts/header/header.component';
+import { HeaderComponent } from './layouts/navbar/navbar.component';
 import { IndiceComponent } from './indice/indice.component';
 
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
