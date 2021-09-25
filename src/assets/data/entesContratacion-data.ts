@@ -1,4 +1,4 @@
-import { IEntesContratacion } from '../../../src/app/models/entesContratacion.interface';
+import { IEntesContratacion } from '../../app/models/entesContratacion.interface';
 
 export const ENTES_CONTRATACION: IEntesContratacion[] = [
     {
