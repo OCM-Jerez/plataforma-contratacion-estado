@@ -64,6 +64,8 @@ export class PorAdjudicatarioComponent {
 						headerName: 'Fecha',
 						field: 'updated',
 						width: 130,
+						sortable: true,
+						filter: true,
 						cellRenderer: 'agGroupCellRenderer',
 						valueFormatter: (params: any) => {
 							return moment(moment(params.data.updated).toDate()).format('DD-MM-YYYY')
@@ -80,11 +82,15 @@ export class PorAdjudicatarioComponent {
 						width: 900,
 						wrapText: true,
 						autoHeight: true,
+						resizable: true,
+						filter: true,
 					},
 					{
 						headerName: 'Importe',
 						field: 'TotalAmount',
 						width: 120,
+						sortable: true,
+						filter: true,
 						aggFunc: 'sum',
 						cellRenderer: CellRendererOCM,
 					},
