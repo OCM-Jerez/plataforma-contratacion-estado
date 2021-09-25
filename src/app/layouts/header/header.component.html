@@ -1,11 +1,21 @@
-<header>
-	<a href="http://ocmjerez.org" target="_blank">
-		<span class="mam-logoImg"></span>
-		<span class="mam-logoText">Observatorio Ciudadano Municipal de Jerez</span>
-	</a>
-	<span class="mam-titulo">Contratos menores y licitaciones del Ayuntamiento de Jerez y sus entes
-		dependientes</span>
-	<a routerLink="/" *ngIf="router.url !== '/home'">
-		<span class="mam-logoHome"></span>
-	</a>
-</header>
+<nav class="OCM-navbar">
+
+	<div class="OCM-navbar--brand">
+		<div class="OCM-navbar--brand--logo">
+			<a href="http://ocmjerez.org"></a>
+		</div>
+		<div class="OCM-navbar--brand--text">
+			Observatorio Ciudadano Municipal de Jerez
+		</div>
+	</div>
+
+	<div class="OCM-navbar--titulo">
+		Contratos menores y licitaciones del Ayuntamiento de Jerez y sus entes dependientes
+	</div>
+
+	<div>
+		<a routerLink="/" *ngIf="router.url !== '/home'">
+			<span class="OCM-logoHome"></span>
+		</a>
+	</div>
+</nav>

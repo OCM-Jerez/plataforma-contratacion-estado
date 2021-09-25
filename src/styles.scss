@@ -1,20 +1,20 @@
 // Mis parciales.
 // https://www.udemy.com/course/advanced-css-and-scss/learn/lecture/8274478#overview
 
-@import '/src/app/scss/animations';
-@import '/src/app/scss/base';
-@import '/src/app/scss/typography';
-@import '/src/app/scss/utilities';
-@import '/src/app/scss/functions';
-@import '/src/app/scss/mixins';
-@import '/src/app/scss/variables';
+@import "/src/app/scss/animations";
+@import "/src/app/scss/base";
+@import "/src/app/scss/typography";
+@import "/src/app/scss/utilities";
+@import "/src/app/scss/functions";
+@import "/src/app/scss/mixins";
+@import "/src/app/scss/variables";
 
-@import '../node_modules/ag-grid-community/src/styles/ag-grid.scss';
-@import '../node_modules/ag-grid-community/src/styles/ag-theme-balham/sass/legacy/ag-theme-balham-v22-compat.scss';
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-balham/sass/legacy/ag-theme-balham-v22-compat.scss";
 
 :root {
 	// The :root pseudo-class represents an element that is the root of the document. In HTML, this is always the HTML element.
-	--fuente-principal: 'Roboto', serif;
+	--fuente-principal: "Roboto", serif;
 	--primario: #da595e;
 	--obscuro: #484848;
 	--claro: #ffffff;
@@ -27,16 +27,8 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
 // #region Mis cosas
-
-// .centrarSection{
-//   min-height: 90vh; /*will cover the 100% of viewport */
-//  overflow: hidden;
-//  display: block;
-//  position: relative;
-//  padding-bottom: 90px; /* height of your footer */
-// }
-
 .myButton {
 	box-shadow: inset 0px 1px 0px 0px #f0f7fa;
 	background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
@@ -64,43 +56,6 @@ body {
 	top: 1px;
 }
 
-.mam-titulo {
-	margin: auto;
-	font-size: 20px;
-}
-
-.mam-text-center {
-	text-align: center;
-	font-size: 40px;
-	margin-top: 20px;
-	color: blue;
-	font-weight: bold;
-}
-
-.navBarOCM {
-	height: 50px;
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-top: 10px;
-	/* background-color: aqua; */
-}
-
-.navbar-center {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 0;
-	text-align: center;
-	overflow: visible;
-	height: 0;
-}
-
-.homeOCM {
-	font-size: 32px;
-	color: white;
-	margin-right: 40px;
-}
-
 .btnExpand {
 	margin-left: 20px;
 	margin-bottom: 5px;
@@ -118,6 +73,8 @@ body {
 	color: aliceblue;
 	background-color: rgb(201, 72, 72);
 }
+// #endregion
+/******** END Mis cosas *****************/
 
 // #region @media screen
 @media screen and (max-width: 1900px) {
@@ -291,12 +248,6 @@ body {
 		font-size: 5px;
 	}
 
-	.homeOCM {
-		font-size: 16px;
-		color: white;
-		margin-right: 40px;
-	}
-
 	#home {
 		font-size: 8px;
 	}
@@ -322,9 +273,6 @@ body {
 }
 // #endregion
 /******** END @media screen *****************/
-
-// #endregion
-/******** END Mis cosas *****************/
 
 // #region AG Grid
 .ag-header-group-cell {
@@ -418,7 +366,6 @@ body {
 /******** END ag-grid *****************/
 
 // #region Preloader
-
 .spinner-wrapper {
 	position: fixed;
 	z-index: 999999;
