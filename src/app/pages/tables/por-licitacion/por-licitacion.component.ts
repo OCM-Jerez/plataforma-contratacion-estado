@@ -5,7 +5,7 @@ import { GridOptions } from 'ag-grid-community/main';
 import moment from 'moment';
 
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
-import { CellRendererOCM } from '../../../util/CellRendererOCM';
+import { CellRendererOCM } from '../../../ag-grid/CellRendererOCM';
 
 import { ILicitacion } from 'src/app/models/contratos.interfaces';
 

@@ -4,7 +4,7 @@ import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 import moment from 'moment';
 
-import { CellRendererOCM } from '../../../util/CellRendererOCM';
+import { CellRendererOCM } from '../../../ag-grid/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
 import { ILicitacion, IData, IDetail } from 'src/app/models/contratos.interfaces';
 
