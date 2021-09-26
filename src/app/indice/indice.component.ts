@@ -6,7 +6,9 @@ import { FormBuilder } from "@angular/forms";
 import moment from 'moment';
 import { DatePickerComponent, IDatePickerConfig } from 'ng2-date-picker';
 
-import contratosmenoresJson from '../../assets/data/2108todasLicitacionesContratosNoRepeat.json';
+// import contratosmenoresJson from '../../assets/data/2108todasLicitacionesContratosNoRepeat.json';
+import contratosmenoresJson from '../../assets/data/todosContratosHasta082021NoRepeat.json';
+
 
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
 import { ILicitacion } from '../models/contratos.interfaces';
