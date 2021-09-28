@@ -6,9 +6,9 @@ import { FormBuilder } from "@angular/forms";
 import moment from 'moment';
 import { DatePickerComponent, IDatePickerConfig } from 'ng2-date-picker';
 
-// import contratosmenoresJson from '../../assets/data/2108todasLicitacionesContratosNoRepeat.json';
 import contratosmenoresJson from '../../assets/data/todosContratosHasta082021NoRepeat.json';
-
+import licitacionesJson from '../../assets/data/todasLicitacionesHasta082021NoRepeat.json';
+const contratosYlicitacionesJSON = [...contratosmenoresJson, ...licitacionesJson];
 
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
 import { ILicitacion } from '../models/contratos.interfaces';
@@ -75,7 +75,53 @@ export class IndiceComponent implements AfterViewInit {
 	}
 
 	private filterData() {
-		let data = contratosmenoresJson as ILicitacion[]
+		// public static TIPOS_PROCEDURE = [
+		// 	{ id: 1, value: 'Abierto' },
+		// 	{ id: 2, value: 'Restringido' },
+		// 	{ id: 3, value: 'Negociado sin publicidad' },
+		// 	{ id: 4, value: 'Negociado con publicidad' },
+		// 	{ id: 5, value: 'Diálogo competitivo' },
+		// 	{ id: 6, value: 'Contrato menor' },
+		// 	{ id: 7, value: 'Derivado de acuerdo marco' },
+		// 	{ id: 8, value: 'Concurso de proyectos' },
+		// 	{ id: 9, value: 'Abierto simplificado' },
+		// 	{ id: 10, value: 'Asociación para la innovación' },
+		// 	{ id: 11, value: 'Basado en un sistema dinámico de adquisición' },
+		// 	{ id: 100, value: 'Normas internas' },
+		// 	{ id: 999, value: 'Otros' }
+		// ];
+
+		// public static TIPOS_TYPE = [
+		// 	{ id: 1, value: 'Suministros' },
+		// 	{ id: 2, value: 'Servicios' },
+		// 	{ id: 3, value: 'Obras' },
+		// 	{ id: 7, value: 'Administrativo especial' },
+		// 	{ id: 8, value: 'Privado' },
+		// 	{ id: 21, value: 'Gestión de Servicios Públicos' },
+		// 	{ id: 22, value: 'Concesión de Servicios' },
+		// 	{ id: 31, value: 'Concesión de Obras Públicas' },
+		// 	{ id: 32, value: 'Concesión de Obras' },
+		// 	{ id: 40, value: 'Colaboración entre el sector público y sector privado' },
+		// 	{ id: 50, value: 'Patrimonial' }
+		// ];
+
+		let data = contratosYlicitacionesJSON as ILicitacion[]
+
+		data = data.filter(item => {
+			return item.ProcedureCode.match(/["6"]/)
+		})
+
+		data = data.filter(item => {
+			return item.TypeCode.match(/["1","2"]/)
+		})
+
+		// data = data.filter(item => {
+		// 	return item.TypeCode.match(/["3"]/)
+		// })
+
+		// data = data.filter(item => {
+		// 	return item.TaxExclusiveAmount > 14000
+		// })
 
 		if (this.radioSel.value === 'todos') {
 			localStorage.setItem('dataLicitacion', JSON.stringify(data))
@@ -90,6 +136,9 @@ export class IndiceComponent implements AfterViewInit {
 			data = data.filter(item => {
 				return item.summary.match(this.radioSel.name)
 			})
+
+
+
 
 			localStorage.setItem('dataLicitacion', JSON.stringify(data))
 		}

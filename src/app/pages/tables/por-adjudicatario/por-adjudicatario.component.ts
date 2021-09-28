@@ -63,10 +63,10 @@ export class PorAdjudicatarioComponent {
 					{
 						headerName: 'Fecha',
 						field: 'updated',
-						width: 130,
+						width: 100,
 						sortable: true,
 						filter: true,
-						cellRenderer: 'agGroupCellRenderer',
+						// cellRenderer: 'agGroupCellRenderer',
 						valueFormatter: (params: any) => {
 							return moment(moment(params.data.updated).toDate()).format('DD-MM-YYYY')
 						}
