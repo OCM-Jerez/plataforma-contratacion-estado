@@ -6,6 +6,7 @@ import moment from 'moment';
 
 import { CellRendererOCM } from '../../../ag-grid/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
+
 import { ILicitacion, IData, IDetail } from 'src/app/models/contratos.interfaces';
 
 @Component({
@@ -49,6 +50,13 @@ export class PorAdjudicatarioComponent {
 				headerName: 'CIF',
 				field: 'PartyIdentification',
 				width: 400,
+			},
+			{
+				headerName: 'Importe',
+				field: 'TotalAmount',
+				width: 120,
+				aggFunc: 'sum',
+				cellRenderer: CellRendererOCM,
 			},
 		];
 
@@ -111,6 +119,7 @@ export class PorAdjudicatarioComponent {
 	private generateData(): IData[] {
 		const dataLocalStorage = localStorage.getItem('dataLicitacion')
 		const dataLicitacion = JSON.parse(dataLocalStorage!) as ILicitacion[];
+		console.log(dataLicitacion);
 		let data: IData[] = [];
 
 		dataLicitacion.forEach(item => {
@@ -119,6 +128,7 @@ export class PorAdjudicatarioComponent {
 					const dataFinal: IData = {
 						PartyName: tender.PartyName,
 						PartyIdentification: tender.PartyIdentification,
+						TotalAmount: item.TotalAmount
 					}
 					data.push(dataFinal)
 				})
@@ -146,8 +156,11 @@ export class PorAdjudicatarioComponent {
 					}
 				}
 			})
+			item.TotalAmount = licitaciones.reduce((a, b) => a + b.TotalAmount, 0);
 			item.detail = licitaciones;
 		})
+		console.log(data);
+
 		return data;
 	}
 }

@@ -21,6 +21,8 @@ export class PorLicitacionComponent {
 	public columnDefs: any;
 	public defaultColDef: any;
 	public gridOptions: GridOptions;
+
+
 	public localeText;
 	public rowData: ILicitacion[] = [];
 	detailCellRendererParams: any;
@@ -32,7 +34,6 @@ export class PorLicitacionComponent {
 		} as GridOptions;
 		this.localeText = localeTextESPes;
 		this.defaultColDef = {
-			// flex: 1,
 			sortable: true,
 			resizable: true,
 			filter: true

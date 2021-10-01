@@ -19,15 +19,15 @@
 	</div>
 
 	<div class="grid">
-		<div class="col-5 col-offset-1 border-solid flex justify-content-center text-xl">Selecciona fecha de inicio y
+		<div class="col-3 border-solid flex justify-content-center text-xl">Selecciona fecha de inicio y
 			fecha final
 		</div>
-		<div class="col-4 col-offset-1 border-solid flex justify-content-center text-xl">Selecciona un ente de la lista
+		<div class="col-3 border-solid flex justify-content-center text-xl">Selecciona un ente de la lista
 		</div>
 	</div>
 
 	<div class="grid">
-		<div class="col-5 col-offset-1 flex justify-content-center mt-2">
+		<div class="col-3 flex justify-content-center mt-2">
 			<dp-date-picker #datePickerStart (onChange)="changeDatePickerStart($event)" theme="dp-material"
 				[config]="config"></dp-date-picker>
 			<dp-date-picker #datePickerEnd (onChange)="changeDatePickerEnd($event)" theme="dp-material"
@@ -35,8 +35,7 @@
 			</dp-date-picker>
 		</div>
 
-		<div class="col-5 col-offset-1  mt-2">
-			<!-- <h4>Ente selecionado => {{radioSel.label}}</h4><br> -->
+		<div class="col-3  mt-2">
 			<div>
 				<ul class="list-group">
 					<li class="list-group-item" *ngFor="let item of entesList">
@@ -47,8 +46,32 @@
 					</li>
 				</ul>
 			</div>
-			<!-- <h5>{{radioSelectedString}}</h5> -->
 		</div>
+
+		<div class="col-3  mt-2">
+			<div>
+				<ul class="list-group">
+
+					<li class="list-group-item" *ngFor="let item of typeProcedureListChecked">
+						<input type="checkbox" [value]="item.id" [checked]="item.checked" [disabled]="item.disabled"
+							(change)="changeProcedure(item, $any($event.target).checked)" />
+						{{item.value}}
+
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-3  mt-2">
+			<div>
+				<input type="number" [(ngModel)]="rangeInit">
+				<input type="number" [(ngModel)]="rangeEnd">
+			</div>
+		</div>
+
+
+
 	</div>
 </div>
 

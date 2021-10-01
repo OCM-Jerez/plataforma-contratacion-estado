@@ -112,6 +112,7 @@ export class GeneradorGraficosComponent {
 		const itemRango: IChartContrato = <IChartContrato>{};
 		let rangoFilter: ILicitacion[] = [];
 		let codeText = '';
+
 		switch (this.tipoReporte) {
 			case 'por importe': {
 				const datosTipoReporte = Static.RANGO_IMPORTE.find((item) => item.id === rango);

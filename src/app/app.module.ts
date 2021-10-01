@@ -17,6 +17,7 @@ import { IndiceComponent } from './indice/indice.component';
 import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
 import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
 	declarations: [
@@ -30,14 +31,16 @@ import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licita
 		PorLicitacionComponent,
 	],
 	imports: [
-		AgChartsAngularModule,
-		AgGridModule.withComponents([]),
+		CommonModule,
 		AppRoutingModule,
 		BrowserModule,
-		DpDatePickerModule,
-		FormsModule,
 		HttpClientModule,
+		FormsModule,
 		ReactiveFormsModule,
+		AgChartsAngularModule,
+		AgGridModule.withComponents([]),
+		DpDatePickerModule,
+
 	],
 	providers: [],
 	bootstrap: [AppComponent]

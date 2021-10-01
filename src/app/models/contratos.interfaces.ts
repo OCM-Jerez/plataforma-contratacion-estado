@@ -46,6 +46,7 @@ export interface IArrayTenderResult {
 export interface IData {
 	PartyName: string,
 	PartyIdentification: string,
+	TotalAmount: number,
 	detail?: IDetail[]
 }
 
