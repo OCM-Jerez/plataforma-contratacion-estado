@@ -8,6 +8,8 @@ import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
 import { CellRendererOCM } from '../../../ag-grid/CellRendererOCM';
 
 import { ILicitacion } from 'src/app/models/contratos.interfaces';
+import { Static } from '../../../util/static';
+
 
 @Component({
 	selector: 'app-por-licitacion',
@@ -59,38 +61,18 @@ export class PorLicitacionComponent {
 				headerName: 'Procedimiento',
 				field: 'ProcedureCode',
 				width: 190,
-				// valueFormatter: (params: any) => {
-				// 	if (params.data.ProcedureCode == 6) {
-				// 		return (params.data.ProcedureCode) + " Contrato menor"
-				// 	} else {
-				// 		return params.data.ProcedureCode
-				// 	}
-				// }
-
-				valueFormatter: (params: any) => params.data.ProcedureCode == 6 ? (params.data.ProcedureCode) + " Contrato menor" : params.data.ProcedureCode
+				valueFormatter: (params: any) => {
+					const ProcedureCode = Static.TIPOS_PROCEDURE.find((item) => item.id == params.data.ProcedureCode);
+					return `${ProcedureCode!.id}  ${ProcedureCode!.value}`;
+				}
 			},
 			{
 				headerName: 'Tipo',
 				field: 'TypeCode',
 				width: 125,
 				valueFormatter: (params: any) => {
-					switch (params.data.TypeCode) {
-						case '1':
-							return params.data.TypeCode + ' Suministros'
-							break;
-						case '2':
-							return params.data.TypeCode + ' Servicios'
-							break;
-						case '3':
-							return params.data.TypeCode + ' Obras'
-							break;
-						case '22':
-							return params.data.TypeCode + ' Concesión de Servicios'
-							break;
-						default:
-							return params.data.TypeCode
-							break;
-					}
+					const TypeCode = Static.TIPOS_TYPE.find((item) => item.id == params.data.TypeCode);
+					return `${TypeCode!.id}  ${TypeCode!.value}`;
 				}
 			},
 			{
@@ -147,7 +129,6 @@ export class PorLicitacionComponent {
 				params.successCallback(params.data.arrayTenderResult);
 
 			},
-
 		};
 
 		// this.onBtShowNoRows();
