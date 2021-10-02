@@ -58,6 +58,11 @@ export class PorLicitacionComponent {
 				// type: 'rightAligned',
 			},
 			{
+				headerName: 'Estado',
+				field: 'ContractFolderStatusCode',
+				width: 100,
+			},
+			{
 				headerName: 'Procedimiento',
 				field: 'ProcedureCode',
 				width: 190,
@@ -73,6 +78,20 @@ export class PorLicitacionComponent {
 				valueFormatter: (params: any) => {
 					const TypeCode = Static.TIPOS_TYPE.find((item) => item.id == params.data.TypeCode);
 					return `${TypeCode!.id}  ${TypeCode!.value}`;
+				}
+			},
+			{
+				headerName: 'Unidades',
+				field: 'unitCode',
+				width: 100,
+			},
+			{
+				headerName: 'Duración',
+				field: 'DurationMeasure',
+				width: 100,
+				valueFormatter: (params: any) => {
+					const UnitCode = Static.DURATION_MEASURE.find((item) => item.id === params.data.unitCode);
+					return `${params.data.DurationMeasure}  ${UnitCode!.value}`;
 				}
 			},
 			{

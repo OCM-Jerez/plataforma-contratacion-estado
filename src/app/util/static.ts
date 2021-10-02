@@ -93,4 +93,12 @@ export class Static {
 		{ id: 9, value: 'Formalizado' },
 		{ id: 10, value: 'Licitador mejor valorado:Requerimiento de documentacion' }
 	];
+
+	public static DURATION_MEASURE = [
+		{ id: 'DAY', value: 'Día/s' },
+		{ id: 'MON', value: 'Mes/es' },
+		{ id: 'ANN', value: 'Año/s' },
+		{ id: 'Sin dato', value: '' }
+	];
+
 }
