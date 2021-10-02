@@ -159,9 +159,9 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 		// 	return item.ProcedureCode.match(/["6"]/)
 		// })
 
-		// data = data.filter(item => {
-		// 	return item.TypeCode.match(/["1","2"]/)
-		// })
+		data = data.filter(item => {
+			return item.TypeCode.match(/["1","2"]/)
+		})
 
 		// data = data.filter(item => {
 		// 	return item.TypeCode.match(/["3"]/)
@@ -190,11 +190,11 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 	}
 	private filterRange(data: ILicitacion[]): ILicitacion[] {
 		if (this.rangeEnd > 0 && this.rangeInit > 0) {
-			data = data.filter(item => item.TotalAmount >= this.rangeInit && item.TotalAmount <= this.rangeEnd)
+			data = data.filter(item => item.TaxExclusiveAmount >= this.rangeInit && item.TaxExclusiveAmount <= this.rangeEnd)
 		} else if (this.rangeInit > 0) {
-			data = data.filter(item => item.TotalAmount >= this.rangeInit)
+			data = data.filter(item => item.TaxExclusiveAmount >= this.rangeInit)
 		} else if (this.rangeEnd > 0) {
-			data = data.filter(item => item.TotalAmount <= this.rangeEnd)
+			data = data.filter(item => item.TaxExclusiveAmount <= this.rangeEnd)
 		}
 		return data
 	}

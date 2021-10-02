@@ -56,6 +56,44 @@ export class PorLicitacionComponent {
 				// type: 'rightAligned',
 			},
 			{
+				headerName: 'Procedimiento',
+				field: 'ProcedureCode',
+				width: 190,
+				// valueFormatter: (params: any) => {
+				// 	if (params.data.ProcedureCode == 6) {
+				// 		return (params.data.ProcedureCode) + " Contrato menor"
+				// 	} else {
+				// 		return params.data.ProcedureCode
+				// 	}
+				// }
+
+				valueFormatter: (params: any) => params.data.ProcedureCode == 6 ? (params.data.ProcedureCode) + " Contrato menor" : params.data.ProcedureCode
+			},
+			{
+				headerName: 'Tipo',
+				field: 'TypeCode',
+				width: 125,
+				valueFormatter: (params: any) => {
+					switch (params.data.TypeCode) {
+						case '1':
+							return params.data.TypeCode + ' Suministros'
+							break;
+						case '2':
+							return params.data.TypeCode + ' Servicios'
+							break;
+						case '3':
+							return params.data.TypeCode + ' Obras'
+							break;
+						case '22':
+							return params.data.TypeCode + ' Concesión de Servicios'
+							break;
+						default:
+							return params.data.TypeCode
+							break;
+					}
+				}
+			},
+			{
 				headerName: 'Descripción',
 				field: 'Name',
 				width: 900,
@@ -64,8 +102,15 @@ export class PorLicitacionComponent {
 			},
 			{
 				headerName: 'Importe',
+				field: 'TaxExclusiveAmount',
+				width: 105,
+				aggFunc: 'sum',
+				cellRenderer: CellRendererOCM,
+			},
+			{
+				headerName: 'Importe + IVA',
 				field: 'TotalAmount',
-				width: 120,
+				width: 140,
 				aggFunc: 'sum',
 				cellRenderer: CellRendererOCM,
 			},
