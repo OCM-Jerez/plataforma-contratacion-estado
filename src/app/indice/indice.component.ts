@@ -31,6 +31,7 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 	radioSelectedString?: string;
 	entesList: IEntesContratacion[];
 	typeProcedureListChecked: IProcedureChecked[] = [];
+	typeCodeListChecked: IProcedureChecked[] = [];
 
 	config: IDatePickerConfig = { closeOnSelect: false, closeOnEnter: false, hideOnOutsideClick: false, locale: 'es', format: 'DD-MM-YYYY', firstDayOfWeek: 'mo' }
 	@ViewChild('datePickerStart') datePickerStart!: DatePickerComponent;
@@ -47,8 +48,10 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 		this.radioSelected = "todos";
 		this.getSelectedItem();
 	}
+
 	ngOnInit(): void {
-		this._loadProcedureCheckedList()
+		this._loadProcedureCheckedList();
+		this._loadTypeCheckedList()
 	}
 
 	ngAfterViewInit(): void {
@@ -94,7 +97,21 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 			this.typeProcedureListChecked[0].checked = false;
 			this.typeProcedureListChecked[0].disabled = true
 		}
+	}
 
+	changeType(item: IProcedureChecked, checked: boolean) {
+		this.typeCodeListChecked[0].disabled = false
+		item.checked = checked;
+
+		const listCheckedFalse = this.typeCodeListChecked.filter(item => item.checked === false);
+		const listCheckedTrue = this.typeCodeListChecked.filter(item => item.checked === true);
+
+		if (listCheckedFalse.length > 0 && listCheckedFalse.length === this.typeCodeListChecked.length) {
+			this.typeCodeListChecked[0].checked = true;
+		} else if (listCheckedTrue.length > 1) {
+			this.typeCodeListChecked[0].checked = false;
+			this.typeCodeListChecked[0].disabled = true
+		}
 	}
 
 	private _loadProcedureCheckedList() {
@@ -109,43 +126,27 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 			)
 		});
 	}
+
+	private _loadTypeCheckedList() {
+		this.typeCodeListChecked.push({ id: 0, value: 'Todos', checked: true })
+		Static.TIPOS_TYPE.forEach(item => {
+			this.typeCodeListChecked.push(
+				{
+					id: item.id,
+					value: item.value,
+					checked: false
+				}
+			)
+		});
+	}
+
 	private _getDate(momentValue: any): Date {
 		return moment(momentValue).toDate();
 	}
 
 	private filterData() {
-		// public static TIPOS_PROCEDURE = [
-		// 	{ id: 1, value: 'Abierto' },
-		// 	{ id: 2, value: 'Restringido' },
-		// 	{ id: 3, value: 'Negociado sin publicidad' },
-		// 	{ id: 4, value: 'Negociado con publicidad' },
-		// 	{ id: 5, value: 'Diálogo competitivo' },
-		// 	{ id: 6, value: 'Contrato menor' },
-		// 	{ id: 7, value: 'Derivado de acuerdo marco' },
-		// 	{ id: 8, value: 'Concurso de proyectos' },
-		// 	{ id: 9, value: 'Abierto simplificado' },
-		// 	{ id: 10, value: 'Asociación para la innovación' },
-		// 	{ id: 11, value: 'Basado en un sistema dinámico de adquisición' },
-		// 	{ id: 100, value: 'Normas internas' },
-		// 	{ id: 999, value: 'Otros' }
-		// ];
-
-		// public static TIPOS_TYPE = [
-		// 	{ id: 1, value: 'Suministros' },
-		// 	{ id: 2, value: 'Servicios' },
-		// 	{ id: 3, value: 'Obras' },
-		// 	{ id: 7, value: 'Administrativo especial' },
-		// 	{ id: 8, value: 'Privado' },
-		// 	{ id: 21, value: 'Gestión de Servicios Públicos' },
-		// 	{ id: 22, value: 'Concesión de Servicios' },
-		// 	{ id: 31, value: 'Concesión de Obras Públicas' },
-		// 	{ id: 32, value: 'Concesión de Obras' },
-		// 	{ id: 40, value: 'Colaboración entre el sector público y sector privado' },
-		// 	{ id: 50, value: 'Patrimonial' }
-		// ];
-
 		let data = contratosYlicitacionesJSON as ILicitacion[]
-		console.log('NO filter: ', data.length);
+		// console.log('NO filter: ', data.length);
 
 		const list = this.typeProcedureListChecked.filter(item => item.id !== 0 && item.checked);
 		if (list.length > 0) {
@@ -155,22 +156,23 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 				return existe !== undefined;
 			})
 		}
+
+		const listType = this.typeCodeListChecked.filter(item => item.id !== 0 && item.checked);
+		// console.log('listType: ', listType);
+
+		if (listType.length > 0) {
+			data = data.filter(item => {
+				const value = Number(item.TypeCode);
+				const existe = listType.find(item => item.id === value)
+				return existe !== undefined;
+			})
+		}
+
 		// data = data.filter(item => {
-		// 	return item.ProcedureCode.match(/["6"]/)
+		// 	return item.TypeCode.match(/["1","2"]/)
 		// })
 
-		data = data.filter(item => {
-			return item.TypeCode.match(/["1","2"]/)
-		})
-
-		// data = data.filter(item => {
-		// 	return item.TypeCode.match(/["3"]/)
-		// })
-
-		// data = data.filter(item => {
-		// 	return item.TaxExclusiveAmount > 14000
-		// })
-		console.log('data filter: ', data.length);
+		// console.log('data filter: ', data.length);
 
 		if (this.radioSel.value === 'todos') {
 			data = this.filterRange(data);
@@ -186,8 +188,8 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 
 			localStorage.setItem('dataLicitacion', JSON.stringify(data))
 		}
-
 	}
+
 	private filterRange(data: ILicitacion[]): ILicitacion[] {
 		if (this.rangeEnd > 0 && this.rangeInit > 0) {
 			data = data.filter(item => item.TaxExclusiveAmount >= this.rangeInit && item.TaxExclusiveAmount <= this.rangeEnd)

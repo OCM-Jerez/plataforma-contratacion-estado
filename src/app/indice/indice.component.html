@@ -48,7 +48,7 @@
 			</div>
 		</div>
 
-		<div class="col-3  mt-2">
+		<div class="col-2  mt-2">
 			<div>
 				<ul class="list-group">
 
@@ -63,7 +63,23 @@
 			</div>
 		</div>
 
-		<div class="col-3  mt-2">
+		<div class="col-2  mt-2">
+			<div>
+				<ul class="list-group">
+
+					<li class="list-group-item" *ngFor="let item of typeCodeListChecked">
+						<input type="checkbox" [value]="item.id" [checked]="item.checked" [disabled]="item.disabled"
+							(change)="changeType(item, $any($event.target).checked)" />
+						{{item.value}}
+
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="col-2 mt-2">
 			<div>
 				<input type="number" [(ngModel)]="rangeInit">
 				<input type="number" [(ngModel)]="rangeEnd">
