@@ -2,6 +2,10 @@ body {
 	margin: 100px;
 }
 
+ul {
+	list-style: none;
+}
+
 $bright-color: #fff;
 @mixin bottom {
 	position: absolute;

@@ -10,7 +10,7 @@ import { DatePickerComponent, IDatePickerConfig } from 'ng2-date-picker';
 // import licitacionesJson from '../../assets/data/todasLicitacionesHasta082021NoRepeat.json';
 // const contratosYlicitacionesJSON = [...contratosmenoresJson, ...licitacionesJson];
 
-import contratosYlicitacionesJSON from '../../assets/data/contratosYlicitaciones082021.json';
+import contratosYlicitacionesJSON from '../../assets/data/contratosYlicitaciones092021NoRepeat.json';
 
 
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';

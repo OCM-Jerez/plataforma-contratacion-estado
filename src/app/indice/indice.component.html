@@ -19,11 +19,11 @@
 	</div>
 
 	<div class="grid">
-		<div class="col-3 border-solid flex justify-content-center text-xl">Selecciona fecha de inicio y
-			fecha final
-		</div>
-		<div class="col-3 border-solid flex justify-content-center text-xl">Selecciona un ente de la lista
-		</div>
+		<div class="col-3 border-solid flex justify-content-center text-xl">Selecciona fecha de inicio y final </div>
+		<div class="col-3 border-solid flex justify-content-center text-xl">Selecciona un ente de la lista </div>
+		<div class="col-2 border-solid flex justify-content-center text-xl">Selecciona procedimiento de la lista </div>
+		<div class="col-2 border-solid flex justify-content-center text-xl">Selecciona tipo de la lista </div>
+		<div class="col-2 border-solid flex justify-content-center text-xl">Introduce cantidades. 0 = todos </div>
 	</div>
 
 	<div class="grid">
@@ -81,8 +81,10 @@
 
 		<div class="col-2 mt-2">
 			<div>
-				<input type="number" [(ngModel)]="rangeInit">
-				<input type="number" [(ngModel)]="rangeEnd">
+				<label for="desde">Desde:</label><br>
+				<input type="number" [(ngModel)]="rangeInit" name="desde"><br>
+				<label for="hasta">Hasta:</label><br>
+				<input type="number" [(ngModel)]="rangeEnd" name="hasta">
 			</div>
 		</div>
 
