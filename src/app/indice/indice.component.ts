@@ -6,18 +6,13 @@ import { FormBuilder } from "@angular/forms";
 import moment from 'moment';
 import { DatePickerComponent, IDatePickerConfig } from 'ng2-date-picker';
 
-// import contratosmenoresJson from '../../assets/data/todosContratosHasta082021NoRepeat.json';
-// import licitacionesJson from '../../assets/data/todasLicitacionesHasta082021NoRepeat.json';
-// const contratosYlicitacionesJSON = [...contratosmenoresJson, ...licitacionesJson];
-
-import contratosYlicitacionesJSON from '../../assets/data/contratosYlicitaciones092021NoRepeat.json';
-
-
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
 import { ILicitacion } from '../models/contratos.interfaces';
 import { ENTES_CONTRATACION } from '../../assets/data/entesContratacion-data';
 import { IEntesContratacion } from '../models/entesContratacion.interface';
 import { Static } from '../util/static';
+
+import contratosYlicitacionesJSON from '../../assets/data/todo092021NoRepeatOkCIF.json';
 
 @Component({
 	selector: 'app-indice',
@@ -39,7 +34,6 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 
 	dateStart!: Date;
 	dateEnd!: Date;
-
 	rangeInit = 0;
 	rangeEnd = 0;
 
@@ -171,8 +165,6 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 		// data = data.filter(item => {
 		// 	return item.TypeCode.match(/["1","2"]/)
 		// })
-
-		// console.log('data filter: ', data.length);
 
 		if (this.radioSel.value === 'todos') {
 			data = this.filterRange(data);

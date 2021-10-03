@@ -159,8 +159,6 @@ export class PorAdjudicatarioComponent {
 			item.TotalAmount = licitaciones.reduce((a, b) => a + b.TotalAmount, 0);
 			item.detail = licitaciones;
 		})
-		console.log(data);
-
 		return data;
 	}
 }
