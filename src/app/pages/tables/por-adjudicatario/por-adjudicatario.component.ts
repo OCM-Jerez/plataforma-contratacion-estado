@@ -45,6 +45,9 @@ export class PorAdjudicatarioComponent {
 				field: 'PartyName',
 				width: 400,
 				cellRenderer: 'agGroupCellRenderer',
+				valueFormatter: (params: any) => {
+					return params.data.PartyName.toUpperCase();
+				}
 			},
 			{
 				headerName: 'CIF',
