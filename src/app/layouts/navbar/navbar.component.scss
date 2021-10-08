@@ -1,4 +1,6 @@
 @import "/src/app/scss/variables";
+@import "/src/app/scss/mixins";
+@import "/src/app/scss/functions";
 
 .OCM-navbar {
   display: flex;
@@ -27,17 +29,22 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-align: center;
       color: white;
-      font-size: 20px;
+      font-size: 8px;
       font-weight: bold;
+      margin-right: 20px;
     }
   }
   &--titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     color: white;
-    font-size: 20px;
+    // font-size: clamp(0.5rem, 2.5vw, 4rem);
+    // https://css-tricks.com/snippets/css/fluid-typography/
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
     font-weight: bold;
   }
 }
