@@ -54,5 +54,7 @@ export interface IDetail {
 	updated: string;
 	ContractFolderID: string;
 	Name: string;
-	TotalAmount: number
+	TotalAmount: number;
+	ProcedureCode: string;
+	TypeCode: string;
 }

@@ -8,6 +8,7 @@ import { CellRendererOCM } from '../../../ag-grid/CellRendererOCM';
 import localeTextESPes from '../../../../assets/data/localeTextESPes.json';
 
 import { ILicitacion, IData, IDetail } from 'src/app/models/contratos.interfaces';
+import { Static } from 'src/app/util/static';
 
 @Component({
 	selector: 'app-por-adjudicatario',
@@ -88,9 +89,27 @@ export class PorAdjudicatarioComponent {
 						width: 140
 					},
 					{
+						headerName: 'Procedimiento',
+						field: 'ProcedureCode',
+						width: 130,
+						valueFormatter: (params: any) => {
+							const ProcedureCode = Static.TIPOS_PROCEDURE.find((item) => item.id == params.data.ProcedureCode);
+							return `${ProcedureCode!.id}  ${ProcedureCode!.value}`;
+						}
+					},
+					{
+						headerName: 'Tipo',
+						field: 'TypeCode',
+						width: 100,
+						valueFormatter: (params: any) => {
+							const TypeCode = Static.TIPOS_TYPE.find((item) => item.id == params.data.TypeCode);
+							return `${TypeCode!.id}  ${TypeCode!.value}`;
+						}
+					},
+					{
 						headerName: 'Descripción',
 						field: 'Name',
-						width: 900,
+						width: 400,
 						wrapText: true,
 						autoHeight: true,
 						resizable: true,
@@ -154,7 +173,14 @@ export class PorAdjudicatarioComponent {
 				if (licitacion.arrayTenderResult) {
 					const findTender = licitacion.arrayTenderResult.find(tender => tender.PartyName === item.PartyName);
 					if (findTender) {
-						const detail: IDetail = { updated: licitacion.updated, Name: licitacion.Name, ContractFolderID: licitacion.ContractFolderID, TotalAmount: licitacion.TotalAmount }
+						const detail: IDetail = {
+							updated: licitacion.updated,
+							Name: licitacion.Name,
+							ContractFolderID: licitacion.ContractFolderID,
+							ProcedureCode: licitacion.ProcedureCode,
+							TypeCode: licitacion.TypeCode,
+							TotalAmount: licitacion.TotalAmount
+						}
 						licitaciones.push(detail);
 					}
 				}
