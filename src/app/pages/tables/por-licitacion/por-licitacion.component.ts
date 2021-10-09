@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { AgGridAngular } from 'ag-grid-angular';
 
+import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 import moment from 'moment';
 
@@ -9,7 +9,6 @@ import { CellRendererOCM } from '../../../ag-grid/CellRendererOCM';
 
 import { ILicitacion } from 'src/app/models/contratos.interfaces';
 import { Static } from '../../../util/static';
-
 
 @Component({
 	selector: 'app-por-licitacion',
@@ -23,8 +22,6 @@ export class PorLicitacionComponent {
 	public columnDefs: any;
 	public defaultColDef: any;
 	public gridOptions: GridOptions;
-
-
 	public localeText;
 	public rowData: ILicitacion[] = [];
 	detailCellRendererParams: any;
@@ -56,6 +53,17 @@ export class PorLicitacionComponent {
 				field: 'ContractFolderID',
 				width: 140,
 				// type: 'rightAligned',
+			},
+			{
+				headerName: 'Link',
+				field: 'link',
+				width: 70,
+				sortable: false,
+				resizable: false,
+				filter: false,
+				cellRenderer: function (params: any) {
+					return '<a href="' + params.data.link + '">' + "Enlace" + '</a>';
+				}
 			},
 			{
 				headerName: 'Estado',
