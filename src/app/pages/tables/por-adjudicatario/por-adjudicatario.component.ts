@@ -87,6 +87,17 @@ export class PorAdjudicatarioComponent {
 						width: 140
 					},
 					{
+						headerName: 'Link',
+						field: 'link',
+						width: 70,
+						sortable: false,
+						resizable: false,
+						filter: false,
+						cellRenderer: function (params: any) {
+							return '<a href="' + params.data.link + '">' + "Enlace" + '</a>';
+						}
+					},
+					{
 						headerName: 'Procedimiento',
 						field: 'ProcedureCode',
 						width: 130,
@@ -174,6 +185,7 @@ export class PorAdjudicatarioComponent {
 							updated: licitacion.updated,
 							Name: licitacion.Name,
 							ContractFolderID: licitacion.ContractFolderID,
+							link: licitacion.link,
 							ProcedureCode: licitacion.ProcedureCode,
 							TypeCode: licitacion.TypeCode,
 							TotalAmount: licitacion.TotalAmount

@@ -53,6 +53,7 @@ export interface IData {
 export interface IDetail {
 	updated: string;
 	ContractFolderID: string;
+	link: string;
 	Name: string;
 	TotalAmount: number;
 	ProcedureCode: string;
