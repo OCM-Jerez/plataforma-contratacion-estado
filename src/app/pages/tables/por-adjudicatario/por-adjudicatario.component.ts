@@ -52,12 +52,19 @@ export class PorAdjudicatarioComponent {
 			{
 				headerName: 'CIF',
 				field: 'PartyIdentification',
-				width: 400,
+				width: 120,
 			},
 			{
 				headerName: 'Importe',
+				field: 'TaxExclusiveAmount',
+				width: 105,
+				aggFunc: 'sum',
+				cellRenderer: CellRendererOCM,
+			},
+			{
+				headerName: 'Importe + IVA',
 				field: 'TotalAmount',
-				width: 120,
+				width: 140,
 				aggFunc: 'sum',
 				cellRenderer: CellRendererOCM,
 			},
@@ -126,10 +133,15 @@ export class PorAdjudicatarioComponent {
 					},
 					{
 						headerName: 'Importe',
+						field: 'TaxExclusiveAmount',
+						width: 105,
+						aggFunc: 'sum',
+						cellRenderer: CellRendererOCM,
+					},
+					{
+						headerName: 'Importe + IVA',
 						field: 'TotalAmount',
-						width: 120,
-						sortable: true,
-						filter: true,
+						width: 140,
 						aggFunc: 'sum',
 						cellRenderer: CellRendererOCM,
 					},
@@ -158,7 +170,8 @@ export class PorAdjudicatarioComponent {
 					const dataFinal: IData = {
 						PartyName: tender.PartyName,
 						PartyIdentification: tender.PartyIdentification,
-						TotalAmount: item.TotalAmount
+						TotalAmount: item.TotalAmount,
+						TaxExclusiveAmount: item.TaxExclusiveAmount
 					}
 					data.push(dataFinal)
 				})
@@ -188,13 +201,15 @@ export class PorAdjudicatarioComponent {
 							link: licitacion.link,
 							ProcedureCode: licitacion.ProcedureCode,
 							TypeCode: licitacion.TypeCode,
-							TotalAmount: licitacion.TotalAmount
+							TotalAmount: licitacion.TotalAmount,
+							TaxExclusiveAmount: licitacion.TaxExclusiveAmount
 						}
 						licitaciones.push(detail);
 					}
 				}
 			})
 			item.TotalAmount = licitaciones.reduce((a, b) => a + b.TotalAmount, 0);
+			item.TaxExclusiveAmount = licitaciones.reduce((a, b) => a + b.TaxExclusiveAmount, 0);
 			item.detail = licitaciones;
 		})
 		return data;

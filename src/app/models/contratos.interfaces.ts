@@ -46,6 +46,7 @@ export interface IArrayTenderResult {
 export interface IData {
 	PartyName: string,
 	PartyIdentification: string,
+	TaxExclusiveAmount: number,
 	TotalAmount: number,
 	detail?: IDetail[]
 }
@@ -56,6 +57,7 @@ export interface IDetail {
 	link: string;
 	Name: string;
 	TotalAmount: number;
+	TaxExclusiveAmount: number;
 	ProcedureCode: string;
 	TypeCode: string;
 }
