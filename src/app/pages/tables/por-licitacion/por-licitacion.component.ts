@@ -161,7 +161,6 @@ export class PorLicitacionComponent {
 			},
 			getDetailRowData: function (params: any) {
 				params.successCallback(params.data.arrayTenderResult);
-				console.log(params.data.arrayTenderResult);
 			},
 		};
 
