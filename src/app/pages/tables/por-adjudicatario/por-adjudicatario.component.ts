@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { AgGridAngular } from 'ag-grid-angular';
 
+import { AgGridAngular } from 'ag-grid-angular';
 import { GridOptions } from 'ag-grid-community/main';
 import moment from 'moment';
 
@@ -34,7 +34,6 @@ export class PorAdjudicatarioComponent {
 		this.gridOptions = {} as GridOptions;
 		this.localeText = localeTextESPes;
 		this.defaultColDef = {
-			// flex: 1,
 			sortable: true,
 			resizable: true,
 			filter: true
@@ -78,7 +77,6 @@ export class PorAdjudicatarioComponent {
 						width: 100,
 						sortable: true,
 						filter: true,
-						// cellRenderer: 'agGroupCellRenderer',
 						valueFormatter: (params: any) => {
 							return moment(moment(params.data.updated).toDate()).format('DD-MM-YYYY')
 						}
@@ -141,7 +139,6 @@ export class PorAdjudicatarioComponent {
 	private generateData(): IData[] {
 		const dataLocalStorage = localStorage.getItem('dataLicitacion')
 		const dataLicitacion = JSON.parse(dataLocalStorage!) as ILicitacion[];
-		console.log(dataLicitacion);
 		let data: IData[] = [];
 
 		dataLicitacion.forEach(item => {
