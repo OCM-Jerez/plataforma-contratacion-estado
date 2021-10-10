@@ -61,3 +61,52 @@ export interface IDetail {
 	ProcedureCode: string;
 	TypeCode: string;
 }
+
+// https://quicktype.io/
+export interface IOption {
+	title?: Title;
+	subtitle?: Title;
+	legend?: Legend;
+	data?: Datum[];
+	series?: Series[];
+	axes?: Axe[];
+}
+
+export interface Axe {
+	type?: string;
+	position?: string;
+	label?: AxeLabel;
+}
+
+export interface AxeLabel {
+	fontWeight?: string;
+	rotation?: number;
+}
+
+export interface Datum {
+	codeText?: string;
+	contratos?: number;
+	sumPayableAmount?: number;
+}
+
+export interface Legend {
+	enabled?: boolean;
+}
+
+export interface Series {
+	type?: string;
+	xKey?: string;
+	yKeys?: string[];
+	yNames?: string[];
+	label?: SeriesLabel;
+}
+
+export interface SeriesLabel {
+	color?: string;
+	fontWeight?: string;
+	placement?: string;
+}
+
+export interface Title {
+	text?: string;
+}

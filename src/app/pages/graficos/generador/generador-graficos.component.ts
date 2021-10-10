@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { IChartContrato, ILicitacion } from '../../../models/contratos.interfaces';
+import { IChartContrato, ILicitacion, IOption } from '../../../models/contratos.interfaces';
 import { TipoGrafico } from '../../../models/tipos-graficos.type';
 import { Static } from '../../../util/static';
 import { ChannelChartsService } from '../../../services/channel-charts.service';
@@ -15,6 +15,8 @@ export class GeneradorGraficosComponent {
 	tipoReporte: TipoGrafico = 'por importe';
 	rangos: number[] = [];
 	tituloPagina = '';
+	// public options1: IOption = {};
+	// public options2: IOption = {};
 	public options1: any;
 	public options2: any;
 	public rowData: ILicitacion[] = [];
@@ -35,6 +37,8 @@ export class GeneradorGraficosComponent {
 				titleTotal = `${titleTotal} - sin dato: ${countTenderSinDato.length}`
 			}
 			this.options1 = this._generarChart('contratos', dataChart, this.titulo1, titleTotal);
+			console.log(this.options1);
+
 			this.options2 = this._generarChart('sumPayableAmount', dataChart, this.titulo2, `Total euros: ${this.totalEuros.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}`);
 		});
 
