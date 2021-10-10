@@ -1,21 +1,13 @@
-body {
-	margin: 100px;
-}
+@import "/src/app/scss/animations";
+@import "/src/app/scss/base";
+@import "/src/app/scss/functions";
+@import "/src/app/scss/mixins";
+@import "/src/app/scss/typography";
+@import "/src/app/scss/utilities";
+@import "/src/app/scss/variables";
 
 ul {
 	list-style: none;
-}
-
-$bright-color: #fff;
-@mixin bottom {
-	position: absolute;
-	right: 0;
-	left: 0;
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 }
 
 .container {
@@ -34,7 +26,7 @@ $bright-color: #fff;
 		display: flex;
 		align-items: center;
 		padding: 15px 1px;
-		color: $bright-color;
+		color: map-get($OCM-colors, claro);
 		span {
 			margin-right: 20px;
 		}
@@ -72,4 +64,29 @@ $bright-color: #fff;
 			font-style: italic;
 		}
 	}
+}
+
+.OCM-button {
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color: #3d94f6;
+	border-radius: 6px;
+	border: 1px solid #337fed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: #ffffff;
+	height: 75px;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+.OCM-button:hover {
+	cursor: grab;
+	transform: scale(1.2);
+	box-shadow: 0 5px 15px rgba(238, 5, 24, 0.932);
 }
