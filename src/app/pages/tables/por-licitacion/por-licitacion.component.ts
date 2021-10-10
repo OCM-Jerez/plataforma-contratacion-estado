@@ -35,7 +35,21 @@ export class PorLicitacionComponent {
 		this.defaultColDef = {
 			sortable: true,
 			resizable: true,
-			filter: true
+			filter: true,
+			headerComponentParams: {
+				template:
+					'<div class="ag-cell-label-container" role="presentation">' +
+					'  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button"></span>' +
+					'  <div ref="eLabel" class="ag-header-cell-label" role="presentation">' +
+					'    <span ref="eSortOrder" class="ag-header-icon ag-sort-order"></span>' +
+					'    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon"></span>' +
+					'    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon"></span>' +
+					'    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon"></span>' +
+					'    <span ref="eText" class="ag-header-cell-text" role="columnheader" style="white-space: normal;"></span>' +
+					'    <span ref="eFilter" class="ag-header-icon ag-filter-icon"></span>' +
+					'  </div>' +
+					'</div>',
+			},
 		};
 
 		this.columnDefs = [
@@ -178,5 +192,23 @@ export class PorLicitacionComponent {
 		const data = localStorage.getItem('dataLicitacion');
 		this.rowData = JSON.parse(data!) as ILicitacion[];
 	}
+
+	headerHeightSetter() {
+		var padding = 20;
+		var height = headerHeightGetter() + padding;
+		this.gridApi.setHeaderHeight(height);
+		this.gridApi.resetRowHeights();
+	}
+}
+
+function headerHeightGetter() {
+	var columnHeaderTexts = document.querySelectorAll('.ag-header-cell-text');
+	var columnHeaderTextsArray: Element[] = [];
+	columnHeaderTexts.forEach(node => columnHeaderTextsArray.push(node));
+	var clientHeights = columnHeaderTextsArray.map(
+		headerText => headerText.clientHeight
+	);
+	var tallestHeaderTextHeight = Math.max(...clientHeights);
+	return tallestHeaderTextHeight;
 }
 
