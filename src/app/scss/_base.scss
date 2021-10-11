@@ -1,6 +1,7 @@
-body{
+body {
   width: 98vw;
-  height: 100vh;
-  display:flex;
-  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto;
 }
