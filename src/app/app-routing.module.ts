@@ -6,11 +6,12 @@ import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
 import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
 import { GeneradorGraficosComponent } from './pages/graficos/generador/generador-graficos.component';
+import { GeneradorTableComponent } from './pages/tables/generador-table/generador-table.component';
 
 const routes: Routes = [
 	{ path: 'home', component: IndiceComponent },
-	{ path: 'porAdjudicatario', component: PorAdjudicatarioComponent },
-	{ path: 'porLicitacion', component: PorLicitacionComponent },
+	{ path: 'porAdjudicatario/:id', component: GeneradorTableComponent },
+	{ path: 'porLicitacion/:id', component: GeneradorTableComponent },
 	{ path: 'indiceGraficos', component: IndiceGraficosComponent },
 	{ path: 'graficos', component: GeneradorGraficosComponent },
 	{ path: '**', pathMatch: 'full', redirectTo: 'home' }

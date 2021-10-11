@@ -22,8 +22,11 @@ export class PorLicitacionComponent {
 	public columnDefs: any;
 	public defaultColDef: any;
 	public gridOptions: GridOptions;
+	public groupHeaderHeight = 25;
+	public headerHeight = 25;
 	public localeText;
 	public rowData: ILicitacion[] = [];
+	public rowHeight = 50;
 	detailCellRendererParams: any;
 
 	constructor() {

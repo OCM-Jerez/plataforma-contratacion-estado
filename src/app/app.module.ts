@@ -18,6 +18,7 @@ import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos
 import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
 import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
 import { CommonModule } from '@angular/common';
+import { GeneradorTableComponent } from './pages/tables/generador-table/generador-table.component';
 
 @NgModule({
 	declarations: [
@@ -29,6 +30,7 @@ import { CommonModule } from '@angular/common';
 		IndiceGraficosComponent,
 		PorAdjudicatarioComponent,
 		PorLicitacionComponent,
+  GeneradorTableComponent,
 	],
 	imports: [
 		CommonModule,

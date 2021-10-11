@@ -57,12 +57,12 @@ export class IndiceComponent implements AfterViewInit, OnInit {
 
 	porLicitacion() {
 		this.filterData();
-		this.router?.navigate(['/porLicitacion']);
+		this.router?.navigate(['/porLicitacion', 1]);
 	}
 
 	porAdjudicatario() {
 		this.filterData();
-		this.router?.navigate(['/porAdjudicatario']);
+		this.router?.navigate(['/porAdjudicatario', 0]);
 	}
 
 	graficos() {
