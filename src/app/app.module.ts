@@ -15,8 +15,6 @@ import { GeneradorGraficosComponent } from './pages/graficos/generador/generador
 import { HeaderComponent } from './layouts/navbar/navbar.component';
 import { IndiceComponent } from './indice/indice.component';
 import { IndiceGraficosComponent } from './pages/graficos/indice/indice-graficos.component';
-import { PorAdjudicatarioComponent } from './pages/tables/por-adjudicatario/por-adjudicatario.component';
-import { PorLicitacionComponent } from './pages/tables/por-licitacion/por-licitacion.component';
 import { CommonModule } from '@angular/common';
 import { GeneradorTableComponent } from './pages/tables/generador-table/generador-table.component';
 
@@ -28,9 +26,7 @@ import { GeneradorTableComponent } from './pages/tables/generador-table/generado
 		HeaderComponent,
 		IndiceComponent,
 		IndiceGraficosComponent,
-		PorAdjudicatarioComponent,
-		PorLicitacionComponent,
-  GeneradorTableComponent,
+		GeneradorTableComponent,
 	],
 	imports: [
 		CommonModule,

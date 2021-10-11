@@ -1,8 +1,0 @@
-<div>
-	<ag-grid-angular style="width: 96%; height: 90vh; padding-right: 20px; margin-left: 10px" id="myGrid"
-		class="ag-theme-balham" [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" [masterDetail]="true"
-		[detailCellRendererParams]="detailCellRendererParams" [rowData]="rowData" [localeText]="localeText"
-		[pagination]="true" [paginationPageSize]="25" (gridReady)="onGridReady($event)"
-		(firstDataRendered)="headerHeightSetter()" (columnResized)="headerHeightSetter()">
-	</ag-grid-angular>
-</div>
