@@ -17,8 +17,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./generador-table.component.scss']
 })
 export class GeneradorTableComponent {
-
-
   @ViewChild('agGrid', { static: false })
   agGrid!: AgGridAngular;
   private gridApi: any;
@@ -30,7 +28,6 @@ export class GeneradorTableComponent {
   public headerHeight = 25;
   public localeText: any;
   public rowData: any;
-  // public isExpanded = false;
   public rowHeight = 50;
   detailCellRendererParams: any;
   isLicitacion!: boolean;
@@ -42,8 +39,6 @@ export class GeneradorTableComponent {
       if (id) {
         this.isLicitacion = id === "1";
         this._generateTable()
-
-
       }
     })
   }
@@ -56,15 +51,12 @@ export class GeneradorTableComponent {
     this.gridApi = params.api;
     this.gridColumnApi = params.columnApi;
     this.rowData = this._generateData(this.isLicitacion);
-
   }
 
   private _generateTable() {
-
     this.localeText = localeTextESPes;
     this.overlayNoRowsTemplate =
       '<span style="padding: 10px; border: 2px solid #444; background: lightgoldenrodyellow;">This is a custom \'no rows\' overlay</span>'
-
     this.defaultColDef = {
       sortable: true,
       resizable: true,
@@ -266,12 +258,9 @@ export class GeneradorTableComponent {
       },
     };
 
-
-
   }
 
   private _getColumnsAdjudicatario(): void {
-
     this.columnDefs = [
       {
         headerName: 'Empresa adjudicataria',
@@ -384,19 +373,18 @@ export class GeneradorTableComponent {
         params.successCallback(params.data.detail);
       },
     };
+
   }
 
   private _generateData(isLicitacion: boolean): IData[] | ILicitacion[] {
     const dataLocalStorage = localStorage.getItem('dataLicitacion')
     const dataLicitacion = JSON.parse(dataLocalStorage!) as ILicitacion[];
 
-
     if (isLicitacion) {
       return dataLicitacion;
     }
 
     let data: IData[] = [];
-
     dataLicitacion.forEach(item => {
       if (item.arrayTenderResult) {
         item.arrayTenderResult.forEach(tender => {
@@ -455,7 +443,6 @@ export class GeneradorTableComponent {
     this.gridApi.resetRowHeights();
   }
 }
-
 
 function headerHeightGetter() {
   var columnHeaderTexts = document.querySelectorAll('.ag-header-cell-text');
