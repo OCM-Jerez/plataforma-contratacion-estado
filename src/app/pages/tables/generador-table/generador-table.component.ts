@@ -48,9 +48,15 @@ export class GeneradorTableComponent {
   }
 
   onGridReady(params: { api: any; columnApi: any }) {
+    console.log(params);
+
     this.gridApi = params.api;
     this.gridColumnApi = params.columnApi;
     this.rowData = this._generateData(this.isLicitacion);
+
+    setTimeout(() => {
+      this.gridColumnApi.showNoRowsOverlay();
+    }, 500);
   }
 
   private _generateTable() {
@@ -173,49 +179,6 @@ export class GeneradorTableComponent {
       },
     ];
 
-    // const detailCellRendererParams: IDetailCellRendererParams={
-    //   detailGridOptions: {
-    //     rowSelection: 'multiple',
-    //     suppressRowClickSelection: false,
-    //     enableRangeSelection: true,
-    //     pagination: false,
-    //     paginationAutoPageSize: true,
-    //     suppressNoRowsOverlay: true,
-    //     columnDefs: [
-    //       {
-    //         headerName: 'CIF',
-    //         field: 'PartyIdentification',
-    //         width: 100,
-    //       },
-    //       {
-    //         headerName: 'Nombre',
-    //         field: 'PartyName',
-    //         width: 400,
-    //       },
-    //       {
-    //         headerName: 'Importe',
-    //         field: 'TaxExclusiveAmount',
-    //         width: 105,
-    //         aggFunc: 'sum',
-    //         cellRenderer: CellRendererOCM,
-    //       },
-    //       {
-    //         headerName: 'Importe + IVA',
-    //         field: 'PayableAmount',
-    //         width: 140,
-    //         aggFunc: 'sum',
-    //         cellRenderer: CellRendererOCM,
-    //       },
-    //     ],
-    //   },
-
-    //   getDetailRowData: function (params: any) {
-    //     params.successCallback(params.data.arrayTenderResult);
-    //   },
-    // }
-    // s.api.showNoRowsOverlay()
-    // this.detailCellRendererParams.detailGridOptions
-
     this.detailCellRendererParams = {
       detailGridOptions: {
         rowSelection: 'multiple',
@@ -223,7 +186,8 @@ export class GeneradorTableComponent {
         enableRangeSelection: true,
         pagination: false,
         paginationAutoPageSize: true,
-        suppressNoRowsOverlay: true,
+        suppressNoRowsOverlay: false,
+        noRowsOverlayTemplate: this.overlayNoRowsTemplate,
         columnDefs: [
           {
             headerName: 'CIF',
@@ -257,6 +221,7 @@ export class GeneradorTableComponent {
         params.successCallback(params.data.arrayTenderResult);
       },
     };
+
 
   }
 
