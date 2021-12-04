@@ -4,6 +4,6 @@
         [detailCellRendererParams]="detailCellRendererParams" [rowData]="rowData" [localeText]="localeText"
         [pagination]="true" [paginationPageSize]="25" [overlayNoRowsTemplate]="overlayNoRowsTemplate"
         (gridReady)="onGridReady($event)" (firstDataRendered)="headerHeightSetter()"
-        (columnResized)="headerHeightSetter()">
+        (onColumnResized)="headerHeightSetter()">
     </ag-grid-angular>
 </div>
