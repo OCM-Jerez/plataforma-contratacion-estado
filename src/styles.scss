@@ -19,6 +19,57 @@
 	grid-template-rows: auto auto auto;
 }
 
+.OCM-navbarFooter {
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 40px;
+	background-color: map-get($OCM-colors, navBarBackground);
+	&--brand {
+		display: flex;
+		justify-content: space-between;
+		&--logo {
+			@include OCM-logo;
+			background: url("./assets/img/logoOCMyellow.svg") no-repeat center center;
+		}
+		&--text {
+			@include OCM-text;
+			font-size: 12px;
+		}
+	}
+	&--title {
+		@include OCM-text;
+		@include fluid-type($min_width, $max_width, $min_font, $max_font);
+	}
+	&--rrss {
+		display: flex;
+		flex-direction: row;
+		.logoFacebook {
+			@include OCM-logo;
+			background: url("./assets/img/facebook.svg") no-repeat center center;
+		}
+		.logoTwitter {
+			@include OCM-logo;
+			background: url("./assets/img/twitter.svg") no-repeat center center;
+		}
+	}
+	&--home {
+		width: 280px;
+	}
+	&--mail {
+		@include OCM-text;
+		text-decoration-style: none;
+		margin-right: 20px;
+		a:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
 // Se utiliza en indice e indice-graficos
 .OCM-button {
 	box-shadow: inset 0px 1px 0px 0px #97c4fe;
