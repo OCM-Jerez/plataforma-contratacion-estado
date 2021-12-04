@@ -58,7 +58,12 @@
 		}
 	}
 	&--home {
-		width: 280px;
+		display: flex;
+		flex-direction: row;
+		.logoHome {
+			@include OCM-logo;
+			background: url("./assets/img/home.svg") no-repeat center center;
+		}
 	}
 	&--mail {
 		@include OCM-text;

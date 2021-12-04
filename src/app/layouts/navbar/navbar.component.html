@@ -8,6 +8,10 @@
 	<div class="OCM-navbarFooter--title">Contratos menores y licitaciones del Ayuntamiento de Jerez y sus entes
 		dependientes </div>
 
-	<div class="OCM-navbarFooter--home"></div> <!-- Esto es para centrar el titulo -->
+	<div></div>
+	<div *ngIf="router.url !== '/home'" class="OCM-navbarFooter--home">
+		<a routerLink="/" class="logoHome"></a>
+
+	</div>
 
 </nav>
