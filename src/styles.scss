@@ -57,12 +57,20 @@
 			background: url("./assets/img/twitter.svg") no-repeat center center;
 		}
 	}
+	&--homeEmpty {
+		display: flex;
+		flex-direction: row;
+		width: 246px;
+	}
 	&--home {
 		display: flex;
 		flex-direction: row;
+		justify-content: flex-end;
+		width: 246px;
 		.logoHome {
 			@include OCM-logo;
 			background: url("./assets/img/home.svg") no-repeat center center;
+			margin-right: 20px;
 		}
 	}
 	&--mail {
