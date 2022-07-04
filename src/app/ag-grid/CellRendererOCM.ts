@@ -19,7 +19,7 @@ export function CellRendererOCM(params: any) {
 					return 'SIN FORMATO';
 			}
 		} else {
-			return `<h1 style="font-size: 10px; text-align: right">${valorFormateado}</h1>`;
+			return `<h1 style="font-size: 10px; margin: auto; text-align: right">${valorFormateado}</h1>`;
 		}
 	} else {
 		return '';
