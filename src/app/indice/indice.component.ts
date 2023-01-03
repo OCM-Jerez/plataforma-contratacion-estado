@@ -12,7 +12,7 @@ import { ENTES_CONTRATACION } from '../../assets/data/entesContratacion-data';
 import { IEntesContratacion } from '../models/entesContratacion.interface';
 import { Static } from '../util/static';
 
-import contratosYlicitacionesJSON from '../../assets/data/todo112022NoRepeatOkCIFOK.json';
+import contratosYlicitacionesJSON from '../../assets/data/todo122022NoRepeatOkCIFOK.json';
 
 @Component({
 	selector: 'app-indice',
