@@ -27,6 +27,7 @@
     "ng2-date-picker": "12.0.3",
     "primeflex": "3.0.1",
     "rxjs": "6.6.0",
+    "source-map": "^0.7.4",
     "tslib": "2.0.0",
     "zone.js": "0.11.4"
   },
