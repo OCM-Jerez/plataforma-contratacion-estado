@@ -11,7 +11,7 @@ import { IEntesContratacion } from '../models/entesContratacion.interface';
 import { ChannelFilterDateService } from '../services/channel-filter-date.service';
 import { Static } from '../util/static';
 
-import contratosYlicitacionesJSON from '../../assets/data/todo072023NoRepeatOkCIFOK.json';
+import contratosYlicitacionesJSON from '../../assets/data/todo092023NoRepeatOkCIFOK.json';
 
 @Component({
 	selector: 'app-indice',
