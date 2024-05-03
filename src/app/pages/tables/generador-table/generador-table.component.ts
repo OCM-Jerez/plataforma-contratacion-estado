@@ -116,7 +116,7 @@ export class GeneradorTableComponent {
         resizable: false,
         filter: false,
         cellRenderer: function (params: any) {
-          return '<a href="' + params.data.link + '">' + "Enlace" + '</a>';
+          return '<a href="' + params.data.link + '" target="_blank" rel="noopener noreferrer">' + "Enlace" + '</a>';
         }
       },
       {
@@ -288,7 +288,7 @@ export class GeneradorTableComponent {
             resizable: false,
             filter: false,
             cellRenderer: function (params: any) {
-              return '<a href="' + params.data.link + '">' + "Enlace" + '</a>';
+              return '<a href="' + params.data.link + '" target="_blank" rel="noopener noreferrer">' + "Enlace" + '</a>';
             }
           },
           {
