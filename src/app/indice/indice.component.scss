@@ -16,8 +16,9 @@ ul {
 	//  background-position: center;
 	background-size: contain, cover;
 	margin: auto;
-	width: 950px;
-	height: 300px;
+	margin-top: 20px;
+	width:58%;
+	height: 220px;
 	position: relative;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
 	.container__info {
@@ -36,10 +37,11 @@ ul {
 	}
 
 	.container__profile {
-		background-color: #e4f2fd;
+		// background-color: #e4f2fd;
 		display: flex;
+		width: 90%;
 		align-items: center;
-		padding: 20px;
+		// padding: 10px;
 		@include bottom();
 		bottom: 0;
 		img {
@@ -56,9 +58,9 @@ ul {
 		}
 		p {
 			color: #04324d;
-			font-size: 1.2rem;
-			margin-bottom: 15px;
-			margin-top: 15px;
+			// font-size: 1.2rem;
+			// margin-bottom: 15px;
+			// margin-top: 15px;
 		}
 		p b {
 			font-style: italic;
